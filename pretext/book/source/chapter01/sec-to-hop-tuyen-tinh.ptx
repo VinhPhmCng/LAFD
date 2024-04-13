@@ -7,8 +7,9 @@ Phạm Công Vinh, Phạm Xuân Trung
 See the file COPYING for copying conditions.
 ******************************************-->
 
-<section xml:id="sec-khong-gian-vector-2" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Không Gian Vector</title>
+<section xml:id="sec-to-hop-tuyen-tinh" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Tổ Hợp Tuyến Tính Của Các Vectors</title>
+  <shorttitle>Tổ Hợp Tuyến Tính</shorttitle>
 
   <objectives>
     <ol>

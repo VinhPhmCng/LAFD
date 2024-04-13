@@ -7,18 +7,15 @@ Phạm Công Vinh, Phạm Xuân Trung
 See the file COPYING for copying conditions.
 ******************************************-->
 
-<chapter xml:id="ch-mot-so-ung-dung-ma-tran" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Một Số Ứng Dụng Của Ma Trận</title>
+<chapter xml:id="ch-dinh-thuc" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Định Thức. Biến Đổi Tuyến Tính</title>
 
   <introduction>
     <p> The introduction of the chapter. </p>
   </introduction>
 
   <!-- include sections -->
-  <xi:include href="sec-giai-he-phuong-trinh-1.ptx" />
-  <xi:include href="sec-giai-he-phuong-trinh-2.ptx" />
-  <xi:include href="sec-giai-he-phuong-trinh-3.ptx" />
-  <xi:include href="sec-ma-hoa.ptx" />
-  <xi:include href="sec-ma-tran-doi-xung.ptx" />
+  <xi:include href="sec-dinh-thuc.ptx" />
+  <xi:include href="sec-bien-doi-tuyen-tinh.ptx" />
 
 </chapter>

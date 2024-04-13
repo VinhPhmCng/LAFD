@@ -31,7 +31,7 @@ Free Documentation License"
     <!-- Include chapters -->
     <xi:include href="./chapter01/ch-so-thuc.ptx" />
     <xi:include href="./chapter02/ch-ma-tran.ptx" />
-    <xi:include href="./chapter03/ch-khong-gian-vector.ptx" />
+    <xi:include href="./chapter03/ch-dinh-thuc.ptx" />
     <xi:include href="./chapter04/ch-mot-so-ung-dung-ma-tran.ptx" />
 
 

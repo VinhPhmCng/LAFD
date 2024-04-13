@@ -7,8 +7,9 @@ Phạm Công Vinh, Phạm Xuân Trung
 See the file COPYING for copying conditions.
 ******************************************-->
 
-<section xml:id="sec-ma-tran-nghich-dao" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Ma Trận Nghịch Đảo</title>
+<section xml:id="sec-ma-tran-doi-xung" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Ma Trận Đối Xứng Và Dạng Toàn Phương</title>
+  <shorttitle>Ma Trận Đối Xứng</shorttitle>
 
   <objectives>
     <ol>
