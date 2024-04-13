@@ -541,18 +541,18 @@ var ptx_lunr_docs = [
   "body": " [[2] [4] [6]] [[0.5] [1. ] [1.5]]  "
 },
 {
-  "id": "sec-thtt-vector",
+  "id": "sec-to-hop-tuyen-tinh",
   "level": "1",
-  "url": "sec-thtt-vector.html",
+  "url": "sec-to-hop-tuyen-tinh.html",
   "type": "Mục",
   "number": "1.5",
   "title": "Tổ Hợp Tuyến Tính Của Các Vectors",
-  "body": " Tổ Hợp Tuyến Tính Của Các Vectors    Các mục tiêu của section.      Coming soon.  "
+  "body": " Tổ Hợp Tuyến Tính Của Các Vectors  Tổ Hợp Tuyến Tính    Các mục tiêu của section.      Coming soon.  "
 },
 {
-  "id": "sec-thtt-vector-2",
+  "id": "sec-to-hop-tuyen-tinh-3",
   "level": "2",
-  "url": "sec-thtt-vector.html#sec-thtt-vector-2",
+  "url": "sec-to-hop-tuyen-tinh.html#sec-to-hop-tuyen-tinh-3",
   "type": "Mục Tiêu",
   "number": "1.5",
   "title": "",
@@ -775,128 +775,38 @@ var ptx_lunr_docs = [
   "body": "  Các mục tiêu của section.     "
 },
 {
-  "id": "sec-ma-tran-nghich-dao",
+  "id": "sec-dinh-thuc",
   "level": "1",
-  "url": "sec-ma-tran-nghich-dao.html",
-  "type": "Mục",
-  "number": "2.10",
-  "title": "Ma Trận Nghịch Đảo",
-  "body": " Ma Trận Nghịch Đảo    Các mục tiêu của section.      Coming soon.  "
-},
-{
-  "id": "sec-ma-tran-nghich-dao-2",
-  "level": "2",
-  "url": "sec-ma-tran-nghich-dao.html#sec-ma-tran-nghich-dao-2",
-  "type": "Mục Tiêu",
-  "number": "2.10",
-  "title": "",
-  "body": "  Các mục tiêu của section.     "
-},
-{
-  "id": "sec-khong-gian-vector-2",
-  "level": "1",
-  "url": "sec-khong-gian-vector-2.html",
+  "url": "sec-dinh-thuc.html",
   "type": "Mục",
   "number": "3.1",
-  "title": "Không Gian Vector",
-  "body": " Không Gian Vector    Các mục tiêu của section.      Coming soon.  "
+  "title": "Định Thức",
+  "body": " Định Thức    Các mục tiêu của section.      Coming soon.  "
 },
 {
-  "id": "sec-khong-gian-vector-2-2",
+  "id": "sec-dinh-thuc-2",
   "level": "2",
-  "url": "sec-khong-gian-vector-2.html#sec-khong-gian-vector-2-2",
+  "url": "sec-dinh-thuc.html#sec-dinh-thuc-2",
   "type": "Mục Tiêu",
   "number": "3.1",
   "title": "",
   "body": "  Các mục tiêu của section.     "
 },
 {
-  "id": "sec-khong-gian-con",
+  "id": "sec-bien-doi-tuyen-tinh",
   "level": "1",
-  "url": "sec-khong-gian-con.html",
+  "url": "sec-bien-doi-tuyen-tinh.html",
   "type": "Mục",
   "number": "3.2",
-  "title": "Không Gian Con",
-  "body": " Không Gian Con    Các mục tiêu của section.      Coming soon.  "
+  "title": "Biến Đổi Tuyến Tính",
+  "body": " Biến Đổi Tuyến Tính    Các mục tiêu của section.      Coming soon.  "
 },
 {
-  "id": "sec-khong-gian-con-2",
+  "id": "sec-bien-doi-tuyen-tinh-2",
   "level": "2",
-  "url": "sec-khong-gian-con.html#sec-khong-gian-con-2",
+  "url": "sec-bien-doi-tuyen-tinh.html#sec-bien-doi-tuyen-tinh-2",
   "type": "Mục Tiêu",
   "number": "3.2",
-  "title": "",
-  "body": "  Các mục tiêu của section.     "
-},
-{
-  "id": "sec-tinh-truc-giao",
-  "level": "1",
-  "url": "sec-tinh-truc-giao.html",
-  "type": "Mục",
-  "number": "3.3",
-  "title": "Tính Trực Giao",
-  "body": " Tính Trực Giao    Các mục tiêu của section.      Coming soon.  "
-},
-{
-  "id": "sec-tinh-truc-giao-2",
-  "level": "2",
-  "url": "sec-tinh-truc-giao.html#sec-tinh-truc-giao-2",
-  "type": "Mục Tiêu",
-  "number": "3.3",
-  "title": "",
-  "body": "  Các mục tiêu của section.     "
-},
-{
-  "id": "sec-khong-gian-truc-giao",
-  "level": "1",
-  "url": "sec-khong-gian-truc-giao.html",
-  "type": "Mục",
-  "number": "3.4",
-  "title": "Không Gian Trực Giao. Không Gian Bù",
-  "body": " Không Gian Trực Giao. Không Gian Bù    Các mục tiêu của section.      Coming soon.  "
-},
-{
-  "id": "sec-khong-gian-truc-giao-2",
-  "level": "2",
-  "url": "sec-khong-gian-truc-giao.html#sec-khong-gian-truc-giao-2",
-  "type": "Mục Tiêu",
-  "number": "3.4",
-  "title": "",
-  "body": "  Các mục tiêu của section.     "
-},
-{
-  "id": "sec-4-khong-gian-con",
-  "level": "1",
-  "url": "sec-4-khong-gian-con.html",
-  "type": "Mục",
-  "number": "3.5",
-  "title": "Bốn Không Gian Con Của Ma Trận",
-  "body": " Bốn Không Gian Con Của Ma Trận    Các mục tiêu của section.      Coming soon.  "
-},
-{
-  "id": "sec-4-khong-gian-con-2",
-  "level": "2",
-  "url": "sec-4-khong-gian-con.html#sec-4-khong-gian-con-2",
-  "type": "Mục Tiêu",
-  "number": "3.5",
-  "title": "",
-  "body": "  Các mục tiêu của section.     "
-},
-{
-  "id": "sec-section-name",
-  "level": "1",
-  "url": "sec-section-name.html",
-  "type": "Mục",
-  "number": "3.6",
-  "title": "Phân Tích <span class=\"process-math\">\\(A = QR\\)<\/span>",
-  "body": " Phân Tích    Các mục tiêu của section.      Coming soon.  "
-},
-{
-  "id": "sec-section-name-2",
-  "level": "2",
-  "url": "sec-section-name.html#sec-section-name-2",
-  "type": "Mục Tiêu",
-  "number": "3.6",
   "title": "",
   "body": "  Các mục tiêu của section.     "
 },
@@ -973,18 +883,18 @@ var ptx_lunr_docs = [
   "body": "  Các mục tiêu của section.     "
 },
 {
-  "id": "sec-binh-phuong-toi-thieu",
+  "id": "sec-ma-tran-doi-xung",
   "level": "1",
-  "url": "sec-binh-phuong-toi-thieu.html",
+  "url": "sec-ma-tran-doi-xung.html",
   "type": "Mục",
   "number": "4.5",
-  "title": "Phương Pháp Bình Phương Tối Thiểu",
-  "body": " Phương Pháp Bình Phương Tối Thiểu    Các mục tiêu của section.      Coming soon.  "
+  "title": "Ma Trận Đối Xứng Và Dạng Toàn Phương",
+  "body": " Ma Trận Đối Xứng Và Dạng Toàn Phương  Ma Trận Đối Xứng    Các mục tiêu của section.      Coming soon.  "
 },
 {
-  "id": "sec-binh-phuong-toi-thieu-2",
+  "id": "sec-ma-tran-doi-xung-3",
   "level": "2",
-  "url": "sec-binh-phuong-toi-thieu.html#sec-binh-phuong-toi-thieu-2",
+  "url": "sec-ma-tran-doi-xung.html#sec-ma-tran-doi-xung-3",
   "type": "Mục Tiêu",
   "number": "4.5",
   "title": "",
