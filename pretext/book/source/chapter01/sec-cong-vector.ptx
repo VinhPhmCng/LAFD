@@ -12,9 +12,8 @@ See the file COPYING for copying conditions.
 
   <objectives>
     <ol>
-      <li>Các mục tiêu của section.</li>
-      <li></li>
-      <li></li>
+      <li>Giới thiệu phép cộng hai vector có cùng kích thước.</li>
+      <li>Cộng hai vector trong lập trình.</li>
     </ol>
   </objectives>
   

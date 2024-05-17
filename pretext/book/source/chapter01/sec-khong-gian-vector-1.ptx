@@ -13,9 +13,9 @@ See the file COPYING for copying conditions.
 
   <objectives>
     <ol>
-      <li>Các mục tiêu của section.</li>
-      <li></li>
-      <li></li>
+      <li>Biểu diễn trực quan các vector trong mặt phẳng và trong không gian.</li>
+      <li>Giới thiệu R2 và R3<mdash/>hệ cơ sở của R2(i, j) và R3(i, j, k).</li>
+      <li>Tổng quát hóa cho Rn<mdash/>hệ cơ sở của Rn(e1, e2, ..., en).</li>
     </ol>
   </objectives>
   

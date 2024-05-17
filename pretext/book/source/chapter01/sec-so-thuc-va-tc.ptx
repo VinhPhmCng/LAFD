@@ -12,9 +12,9 @@ See the file COPYING for copying conditions.
 
   <objectives>
     <ol>
-      <li>Các mục tiêu của section.</li>
-      <li></li>
-      <li></li>
+      <li>Giới thiệu các tập số thực cơ bản.</li>
+      <li>Giới thiệu các phép toán cơ bản trên tập số thực <m>\R</m> và tính chất của chúng.</li>
+      <li>Giới thiệu tính đóng của một phép toán trên một tập số.</li>
     </ol>
   </objectives>
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--*****************************************
+This is part of the Ma Trận Sơ Cấp
+Copyright (C) 2023-2024
+Phạm Công Vinh, Phạm Xuân Trung
+See the file COPYING for copying conditions.
+******************************************-->
+
+<section xml:id="sec-nhan-ma-tran-voi-ma-tran" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Nhân Ma Trận Với Ma Trận</title>
+
+  <objectives>
+    <ol>
+      <li>Giới thiệu bốn cách nhân hai ma trận A và B:</li>
+      <li>Nhân thông thường: Nhân các hàng của A với các cột của B (thường sử dụng khi viết tài liệu).</li>
+      <li>Nhân ma trận A với các cột của B.</li>
+      <li>Nhân các hàng của A với ma trận B.</li>
+      <li>Tổng của các phép nhân các cột của A với các hàng của B (thường được sử dụng trong tính toán).</li>
+    </ol>
+  </objectives>
+
+  <p> Coming soon. </p>
+
+</section>

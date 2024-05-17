@@ -7,17 +7,16 @@ Phạm Công Vinh, Phạm Xuân Trung
 See the file COPYING for copying conditions.
 ******************************************-->
 
-<section xml:id="sec-cong-ma-tran" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Cộng Ma Trận</title>
+<section xml:id="sec-nhan-vector-voi-vector" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Nhân Vector Với Vector</title>
 
   <objectives>
     <ol>
-      <li>Giới thiệu về phép cộng các ma trận như sự mở rộng phép cộng các số thực.</li>
-      <li>Cộng ma trận như cộng các vector cột.</li>
-      <li>Cộng ma trận như cộng các vector hàng.</li>
+      <li>Giới thiệu phép nhân vector cột với vector hàng.</li>
+      <li>Giới thiệu phép nhân vector hàng với vector cột.</li>
     </ol>
   </objectives>
-  
+
   <p> Coming soon. </p>
 
 </section>

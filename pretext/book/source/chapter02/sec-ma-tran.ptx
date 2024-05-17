@@ -8,13 +8,15 @@ See the file COPYING for copying conditions.
 ******************************************-->
 
 <section xml:id="sec-ma-tran" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Ma Trận</title>
+  <title>Ma Trận<mdash/>Sự Mở Rộng Số Thực Theo Hai Chiều</title>
+  <shorttitle>Ma Trận</shorttitle>
+
 
   <objectives>
     <ol>
-      <li>Các mục tiêu của section.</li>
-      <li></li>
-      <li></li>
+      <li>Giới thiệu ma trận như sự mở rộng số thực theo hai chiều.</li>
+      <li>Nhìn ma trận như cách ghép các cột.</li>
+      <li>Nhìn ma trận như cách ghép các hàng.</li>
     </ol>
   </objectives>
   

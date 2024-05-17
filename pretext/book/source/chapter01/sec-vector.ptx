@@ -7,15 +7,14 @@ Phạm Công Vinh, Phạm Xuân Trung
 See the file COPYING for copying conditions.
 ******************************************-->
 
-<section xml:id="sec-vector-cot" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Vector Cột<mdash/>Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector</title>
-  <shorttitle>Vector Cột</shorttitle>
+<section xml:id="sec-vector" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Vector<mdash/>Sự Mở Rộng Số Thực Theo Một Chiều. Chuyển Vị Vector</title>
+  <shorttitle>Vector</shorttitle>
 
   <objectives>
     <ol>
-      <li>Các mục tiêu của section.</li>
-      <li></li>
-      <li></li>
+      <li>Giới thiệu vector cột và vector hàng.</li>
+      <li>Giới thiệu phép chuyển vị từ vector cột sang vector hàng và ngược lại.</li>
     </ol>
   </objectives>
   

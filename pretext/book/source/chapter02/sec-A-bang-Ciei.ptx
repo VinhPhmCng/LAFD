@@ -13,9 +13,8 @@ See the file COPYING for copying conditions.
 
   <objectives>
     <ol>
-      <li>Các mục tiêu của section.</li>
-      <li></li>
-      <li></li>
+      <li>Biểu diễn ma trận theo các vector cột.</li>
+      <li>Biểu diễn ma trận thành tổng của các vector cột nhân các vector cơ sở.</li>
     </ol>
   </objectives>
   
