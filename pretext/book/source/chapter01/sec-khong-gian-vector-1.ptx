@@ -12,11 +12,11 @@ See the file COPYING for copying conditions.
   <shorttitle>Không Gian Vector</shorttitle>
 
   <objectives>
-    <ol>
+    <ul>
       <li>Biểu diễn trực quan các vector trong mặt phẳng và trong không gian.</li>
-      <li>Giới thiệu R2 và R3<mdash/>hệ cơ sở của R2(i, j) và R3(i, j, k).</li>
-      <li>Tổng quát hóa cho Rn<mdash/>hệ cơ sở của Rn(e1, e2, ..., en).</li>
-    </ol>
+      <li>Giới thiệu <m>R_{2}</m> và <m>R_{3}</m><mdash/>hệ cơ sở của <m>R_{2}(i, \, j)</m> và <m>R_{3}(i, \, j, \, k)</m>.</li>
+      <li>Tổng quát hóa cho <m>R_{n}</m><mdash/>hệ cơ sở của <m>R_{n}(e_{1}, \, e_{2}, \, \ldots, \, e_{n})</m>.</li>
+    </ul>
   </objectives>
   
 

@@ -8,14 +8,14 @@ See the file COPYING for copying conditions.
 ******************************************-->
 
 <section xml:id="sec-A-bang-Ciei" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Biểu Diễn Cơ Bản Ma Trận <m>A</m> Theo Các Vectors Cột</title>
+  <title>Biểu Diễn Cơ Bản Ma Trận <m>A</m> Theo Các Vector Cột</title>
   <shorttitle><m>A = \sum C_{i}e_{i}</m></shorttitle>
 
   <objectives>
-    <ol>
+    <ul>
       <li>Biểu diễn ma trận theo các vector cột.</li>
       <li>Biểu diễn ma trận thành tổng của các vector cột nhân các vector cơ sở.</li>
-    </ol>
+    </ul>
   </objectives>
   
   <p> Coming soon. </p>

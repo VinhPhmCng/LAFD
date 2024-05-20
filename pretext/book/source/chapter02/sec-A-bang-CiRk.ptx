@@ -12,9 +12,9 @@ See the file COPYING for copying conditions.
   <shorttitle><m>A = \sum C_{i}R_{k}</m></shorttitle>
 
   <objectives>
-    <ol>
-      <li>Biểu diễn A thông qua các cột và hàng của A.</li>
-    </ol>
+    <ul>
+      <li>Biểu diễn <m>A</m> thông qua các cột và hàng của <m>A</m>.</li>
+    </ul>
   </objectives>
   
   <figure xml:id="figure-sage-interact-CiRk">

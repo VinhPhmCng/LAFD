@@ -11,11 +11,11 @@ See the file COPYING for copying conditions.
   <title>Cộng Ma Trận</title>
 
   <objectives>
-    <ol>
-      <li>Giới thiệu về phép cộng các ma trận như sự mở rộng phép cộng các số thực.</li>
+    <ul>
+      <li>Giới thiệu về phép cộng ma trận như sự mở rộng phép cộng số thực.</li>
       <li>Cộng ma trận như cộng các vector cột.</li>
       <li>Cộng ma trận như cộng các vector hàng.</li>
-    </ol>
+    </ul>
   </objectives>
   
   <p> Coming soon. </p>

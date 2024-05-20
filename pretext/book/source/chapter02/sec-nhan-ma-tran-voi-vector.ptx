@@ -11,13 +11,20 @@ See the file COPYING for copying conditions.
   <title>Nhân Ma Trận Với Vector</title>
 
   <objectives>
-    <ol>
-      <li>Các mục tiêu của section.</li>
-      <li></li>
-      <li></li>
-    </ol>
+    <ul>
+      <li>Giới thiệu phép nhân ma trận <m>A</m> và vector <m>v</m>.</li>
+      <li>
+        <p>
+        Biểu diễn kết quả của phép toán trên theo hai cách:
+          <ol>
+            <li>Vector</li>
+            <li>Tổ hợp tuyến tính của các vector cột của ma trận <m>A</m></li>
+          </ol>
+        </p>
+      </li>
+    </ul>
   </objectives>
-  
+
 
   <p> Coming soon. </p>
 

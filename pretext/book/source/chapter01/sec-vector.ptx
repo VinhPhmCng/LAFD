@@ -12,10 +12,10 @@ See the file COPYING for copying conditions.
   <shorttitle>Vector</shorttitle>
 
   <objectives>
-    <ol>
+    <ul>
       <li>Giới thiệu vector cột và vector hàng.</li>
-      <li>Giới thiệu phép chuyển vị từ vector cột sang vector hàng và ngược lại.</li>
-    </ol>
+      <li>Giới thiệu phép chuyển vị vector cột thành vector hàng và ngược lại.</li>
+    </ul>
   </objectives>
   
 
@@ -86,8 +86,7 @@ See the file COPYING for copying conditions.
           </p>
         </li>
       </ul>
-      Khái niệm <term>chỉ số</term> sẽ được nhắc đến ở dưới<mdash />
-      trong <xref provisional="chi-so"></xref>.
+      Khái niệm <term>chỉ số</term> sẽ được nhắc đến trong <xref provisional="chi-so"></xref>.
     </p>
 
     <note>
@@ -180,7 +179,7 @@ See the file COPYING for copying conditions.
     
     <remark>
       <p>
-        Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.
+        Tương tự như đối với vector cột, ta có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số.
       </p>
     </remark>
 

@@ -8,13 +8,13 @@ See the file COPYING for copying conditions.
 ******************************************-->
 
 <section xml:id="sec-AP-bang-LU" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Phân Tích <m>AP = LU</m></title>
+  <title>Phân Tích <m>P = LU</m></title>
 
   <objectives>
-    <ol>
-      <li>Giới tiệu phân rã AP = LU.</li>
-      <li>Giới tiệu phân rã PA = LU.</li>
-    </ol>
+    <ul>
+      <li>Giới tiệu phân rã <m>AP = LU</m>.</li>
+      <li>Giới tiệu phân rã <m>PA = LU</m>.</li>
+    </ul>
   </objectives>
 
   <p> Coming soon. </p>

@@ -12,10 +12,10 @@ See the file COPYING for copying conditions.
   <shorttitle>Tổ Hợp Tuyến Tính</shorttitle>
 
   <objectives>
-    <ol>
-      <li>Giới thiệu tổ hợp tuyến tính<mdash/>sự kết hợp giữa các phép toán cộng vector và nhân vector với một số.</li>
+    <ul>
+      <li>Giới thiệu tổ hợp tuyến tính<mdash/>sự kết hợp giữa phép cộng vector và phép nhân vector với một số.</li>
       <li></li>
-    </ol>
+    </ul>
   </objectives>
   
 
