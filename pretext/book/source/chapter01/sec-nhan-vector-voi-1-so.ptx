@@ -65,12 +65,12 @@ See the file COPYING for copying conditions.
       <ul>
         <li>
           <p>
-            Để nhân vector, ta dùng <c>*</c>.
+            Để nhân trong lập trình, ta dùng <c>*</c>.
           </p>
         </li>
         <li>
           <p>
-            Để chia vector, ta dùng <c>/</c>.
+            Để chia trong lập trình, ta dùng <c>/</c>.
           </p>
         </li>
       </ul>

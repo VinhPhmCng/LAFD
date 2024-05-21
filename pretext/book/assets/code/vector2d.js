@@ -37,7 +37,7 @@ var sliderY = board.create(
 
 var checkboxShowArrow = board.create(
     'checkbox',
-    [-7, 5, 'Arrow / Point'],
+    [-7, 5, 'Arrow'],
 );
 
 

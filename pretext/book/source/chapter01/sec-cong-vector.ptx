@@ -60,6 +60,21 @@ See the file COPYING for copying conditions.
   <subsection xml:id="subsec-cong-vector-code">
     <title>Cộng vector trong lập trình</title>
 
+    <p>
+      <ul>
+        <li>
+          <p>
+            Để cộng trong lập trình, ta dùng <c>+</c>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Để trừ trong lập trình, ta dùng <c>-</c>.
+          </p>
+        </li>
+      </ul>
+    </p>
+
     <sage language="python">
       <input>
         # Trong Numpy (Python)
@@ -81,16 +96,18 @@ See the file COPYING for copying conditions.
         print()
         print(a - b)
       </input>
-      <output>
+    </sage>
+    <problem>
+      <pre>
         [[5. ]
-         [0. ]
-         [3.5]]
+        [0. ]
+        [3.5]]
 
         [[-3. ]
-         [ 4. ]
-         [ 2.5]]
-      </output>
-    </sage>
+        [ 4. ]
+        [ 2.5]]
+      </pre>
+    </problem>
 
     <p>
       Ví dụ cộng 2 vectors cột không có cùng số hàng <m>\rightarrow</m> <alert>Lỗi</alert>:
@@ -115,15 +132,17 @@ See the file COPYING for copying conditions.
 
         print(c + d)
       </input>
-      <output>
+    </sage>
+    <problem>
+      <pre>
         TypeError
         Cell In [1], line 16
 
         ...
 
         TypeError: unsupported operand parent(s) for +:'Full MatrixSpace of 4 by 1 dense matrices over Integer Ring' and 'Full MatrixSpace of 3 by 1 dense matrices over Real Field with 53 bits of precision'
-      </output>
-    </sage>
+      </pre>
+    </problem>
 
   </subsection>
 

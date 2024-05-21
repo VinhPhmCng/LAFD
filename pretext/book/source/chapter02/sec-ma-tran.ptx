@@ -19,6 +19,56 @@ See the file COPYING for copying conditions.
     </ul>
   </objectives>
   
-  <p> Coming soon. </p>
+
+  <subsection xml:id="subsec-ma-tran-code">
+    <title>Ma Trận Trong Lập Trình</title>
+
+    <subsubsection xml:id="subsubsec-nhap-xuat-ma-tran">
+      <title>Nhập, Xuất Ma Trận</title>
+
+      <sage language="python">
+        <input>
+          import numpy as np # Su dung thu vien Numpy
+          mt_1 = np.matrix([
+              [1, 2],
+              [3, 4],
+              [5, 6]
+          ])
+
+          print(mt_1)
+        </input>
+      </sage>
+      <problem>
+        <pre>
+          [[1 2]
+           [3 4]
+           [5 6]]
+        </pre>
+      </problem>
+      
+      <sage>
+        <input>
+          # Trong SageMath
+          mt_2 = matrix(QQ, [
+              [10/3, -1],
+              [0, 5],
+              [1.5, 1]
+          ])
+          latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
+          show(mt_2)
+        </input>
+      </sage>
+      <problem>
+        <p>
+          <me>
+            \bmat{\frac{10}{3} &amp; -1 \\ 0 &amp; 5 \\ \frac{3}{2} &amp; 1}
+          </me>
+        </p>
+      </problem>
+
+    </subsubsection>
+
+  </subsection>
+
 
 </section>

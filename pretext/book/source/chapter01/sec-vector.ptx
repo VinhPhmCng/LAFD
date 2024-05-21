@@ -213,7 +213,7 @@ See the file COPYING for copying conditions.
 
   </subsection>
 
-  <subsection xml:id="subsec-vector-lap-trinh">
+  <subsection xml:id="subsec-vector-code">
     <title>Vector Trong Lập Trình</title>
 
     <subsubsection xml:id="subsubsec-nhap-xuat-vector">
@@ -249,11 +249,11 @@ See the file COPYING for copying conditions.
       
       <sage>
         <input>
-          # SageMath
-          cot_2 = matrix([
+          # Trong SageMath
+          cot_2 = matrix(QQ, [
               [10/3],
               [0],
-              [1.52]
+              [1.5]
           ])
           latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
           show(cot_2)
@@ -262,25 +262,7 @@ See the file COPYING for copying conditions.
       <problem>
         <p>
           <me>
-            \bmat{3.33333333333333 \\ 0.000000000000000 \\ 1.52000000000000}
-          </me>
-        </p>
-      </problem>
-
-      <sage>
-        <input>
-          # SageMath
-          hang_2 = matrix([
-              [2, 4, -6] 
-          ])
-          latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
-          show(hang_2)
-        </input>
-      </sage>
-      <problem>
-        <p>
-          <me>
-            \bmat{2 \amp 4 \amp -6}
+            \bmat{\frac{10}{3} \\ 0 \\ \frac{3}{2}}
           </me>
         </p>
       </problem>
@@ -300,7 +282,6 @@ See the file COPYING for copying conditions.
           # ...
           # Trong Numpy (Python)
           print(cot_1.transpose())
-
           print()
           print(hang_1.transpose())
         </input>
@@ -315,7 +296,6 @@ See the file COPYING for copying conditions.
         </pre>
       </problem>
       
-
       <sage>
         <input>
           # ...
@@ -331,21 +311,6 @@ See the file COPYING for copying conditions.
         </p>
       </problem>
       
-      <sage>
-        <input>
-          # ...
-          # Trong SageMath
-          show(hang_2.transpose())
-        </input>
-      </sage>
-      <problem>
-        <p>
-          <me>
-            \bmat{2 \\ 4 \\ -6}
-          </me>
-        </p>
-      </problem>
-      
     </subsubsection>
 
   </subsection>
@@ -354,26 +319,28 @@ See the file COPYING for copying conditions.
   <subsection xml:id="subsec-vdtt-vector-cot">
     <title>Vấn Đề Tiếp Theo (Cũ)</title>
 
-    <ol marker="a">
-      <li>
-        <p>
-          Như vậy, ta có thể coi vector cột là sự <lq/>mở rộng<rq/> của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự <lq/>mở rộng<rq/> của các số thực theo chiều ngang.
-        </p>
-      </li>
+    <p>
+      <ol marker="a">
+        <li>
+          <p>
+            Như vậy, ta có thể coi vector cột là sự <lq/>mở rộng<rq/> của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự <lq/>mở rộng<rq/> của các số thực theo chiều ngang.
+          </p>
+        </li>
 
-      <li>
-        <p>
-          Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là <term>ma trận</term>.
-        </p>
-      </li>
+        <li>
+          <p>
+            Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là <term>ma trận</term>.
+          </p>
+        </li>
 
-      <li>
-        <p>
-          Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?
-        </p>
-      </li>
+        <li>
+          <p>
+            Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?
+          </p>
+        </li>
 
-    </ol>
+      </ol>
+    </p>
     
   </subsection>
 

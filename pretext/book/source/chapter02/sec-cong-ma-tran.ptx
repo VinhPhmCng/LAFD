@@ -18,6 +18,90 @@ See the file COPYING for copying conditions.
     </ul>
   </objectives>
   
-  <p> Coming soon. </p>
+  <subsection xml:id="subsec-cong-ma-tran-code">
+    <title>Cộng ma trận trong lập trình</title>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            Để cộng trong lập trình, ta dùng <c>+</c>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Để trừ trong lập trình, ta dùng <c>-</c>.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <sage language="python">
+      <input>
+        # Trong Numpy (Python)
+        import numpy as np # Su dung thu vien Numpy
+        
+        a = np.matrix([
+            [1, 2],
+            [3, 4],
+            [5, 6]
+        ])
+
+        b = np.matrix([
+            [1, 2],
+            [0, 1],
+            [-1, -2]
+        ])
+
+        print(a + b)
+        print()
+        print(a - b)
+      </input>
+    </sage>
+    <problem>
+      <pre>
+        [[2 4]
+         [3 5]
+         [4 4]]
+
+        [[0 0]
+         [3 3]
+         [6 8]]
+      </pre>
+    </problem>
+
+    <p>
+      Ví dụ cộng 2 ma trận không có cùng kích thước <m>\rightarrow</m> <alert>Lỗi</alert>:
+    </p>
+
+    <sage>
+      <input>
+        # Trong SageMath
+        
+        c = matrix([
+            [1, 2],
+            [3, 4],
+        ])
+
+        d = matrix([
+            [1, 2, 3],
+            [4, 5, 6],
+        ])
+
+        print(c + d)
+      </input>
+    </sage>
+    <problem>
+      <pre>
+        TypeError
+        Cell In [1], line 13
+
+        ...
+
+        TypeError: unsupported operand parent(s) for +: 'Full MatrixSpace of 2 by 2 dense matrices over Integer Ring' and 'Full MatrixSpace of 2 by 3 dense matrices over Integer Ring'
+      </pre>
+    </problem>
+
+  </subsection>
 
 </section>
