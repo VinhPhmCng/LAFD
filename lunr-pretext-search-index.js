@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "1.1",
   "title": "Số Thực Và Các Tính Chất",
-  "body": " Số Thực Và Các Tính Chất    Các mục tiêu của section.       Tập Số Thực   Tập số tự nhiên (hay tập số nguyên không âm), kí hiệu     Tập số tự nhiên dương , kí hiệu .    Tập số nguyên , kí hiệu     Tập số hữu tỷ , kí hiệu . Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng hữu hạn hoặc vô hạn tuần hoàn .  Ví dụ:    Tập số vô tỷ , kí hiệu , là tập các số thập phân vô hạn không tuần hoàn.   Ví dụ:    Tập số thực , kí hiệu , là tập bao gồm các số hữu tỷ và các số vô tỷ.    Mối quan hệ giữa 4 tập số cơ bản       Bốn tập số cơ bản   Hình biểu diễn bốn tập số cơ bản N, Z, Q, R      Các Phép Toán Trên Tập Số Thực     Phép cộng  Cộng 2 số thực ta được 1 số thực , gọi là tổng của và .  Ký hiệu:   Phép nhân  Nhân 2 số thực ta được 1 số thực , gọi là tích của và .  Ký hiệu:     Tính Chất Của Các Phép Toán         Phép cộng có các tính chất:  Giao hoán:  Kết hợp:  Số :  Số đối:       Phép nhân có các tính chất:  Giao hoán:  Kết hợp:  Số :       Tính phân phối của 2 phép toán:       Tính giao hoán và phân phối  Do tính giao hoán và , ta có:     Tính phân phối và giao hoán        Tính Đóng Của Một Phép Toán  Với mọi , khi:     Tổng , ta nói phép cộng các số thực có tính đóng.    Tích , ta nói phép nhân các số thực có tính đóng.      Sự phụ thuộc của tính đóng với tập số  Với phép cộng và phép nhân, tính đóng phụ thuộc vào tập chứa các phần tử mà ta thực hiện phép toán.    Tính đóng đối với tập số nguyên âm  Trên tập số nguyên âm      Phép cộng có tính đóng.     Phép nhân không có tính đóng.        Sự quan trọng của tính đóng  Tính đóng đối với phép toán có mối quan hệ mật thiết với một đặc tính khái niệm của không gian vector .    Bài Tập Về Tính Đóng Của Các Tập Số Cơ Bản  Bài Tập Về Tính Đóng   Tập Số Tự Nhiên   Đánh giá tính đóng của các phép toán đối với tập số tự nhiên .    Phép cộng số tự nhiên có tính đóng không?   Nháp một vài phép cộng hai số tự nhiên bất kỳ và xem xét tổng có thuộc tập số tự nhiên không.   Phép cộng số tự nhiên có tính đóng.    Ví dụ:     Phép trừ số tự nhiên có tính đóng không?   Nháp một vài phép trừ hai số tự nhiên bất kỳ và xem xét hiệu có thuộc tập số tự nhiên không.   Phép trừ số tự nhiên không có tính đóng.    Ví dụ:     Tương tự, phép nhân số tự nhiên có tính đóng không? Phép chia số tự nhiên có tính đóng không?   Phép nhân số tự nhiên có tính đóng. Còn phép chia số tự nhiên không có tính đóng.    Ví dụ:       Các tập số cơ bản còn lại   Đánh giá tính đóng của các phép toán đối với các tập số nguyên , hữu tỷ , thực .    Các phép toán có tính đóng đối với tập số nguyên là?     Phép cộng    Phép cộng số nguyên có tính đóng.      Phép trừ    Phép trừ số nguyên có tính đóng.      Phép nhân    Phép nhân số nguyên có tính đóng.      Phép chia    Phép chia số nguyên không có tính đóng.      Cả 4 phép toán trên đều có tính đóng với tập số hữu tỷ ?   Tập số hữu tỷ là tập số nguyên hợp với tập các phân số của các số nguyên đó. Vì vậy, phép chia số hữu tỷ cũng có tính đóng. Vậy, cả bốn phép toán trên đều có tính đóng với tập số hữu tỷ .    Các phép toán nào có tính đóng đối với tập số thực ?   Cả bốn phép toán cộng, trừ, nhân, chia trên tập số thực đều có tính đóng.    Kết luận: Ảnh về tính đóng của các phép toán đối với các tập số cơ bản.      "
+  "body": " Số Thực Và Các Tính Chất    Giới thiệu các tập số thực cơ bản.  Giới thiệu các phép toán cơ bản trên tập số thực và tính chất của chúng.  Giới thiệu tính đóng của một phép toán trên một tập số.     Tập Số Thực   Tập số tự nhiên (hay tập số nguyên không âm), kí hiệu     Tập số tự nhiên dương , kí hiệu .    Tập số nguyên , kí hiệu     Tập số hữu tỷ , kí hiệu . Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng hữu hạn hoặc vô hạn tuần hoàn .  Ví dụ:    Tập số vô tỷ , kí hiệu , là tập các số thập phân vô hạn không tuần hoàn.   Ví dụ:    Tập số thực , kí hiệu , là tập bao gồm các số hữu tỷ và các số vô tỷ.    Mối quan hệ giữa 4 tập số cơ bản       Bốn tập số cơ bản   Hình biểu diễn bốn tập số cơ bản N, Z, Q, R      Các Phép Toán Trên Tập Số Thực     Phép cộng  Cộng 2 số thực ta được 1 số thực , gọi là tổng của và .  Ký hiệu:   Phép nhân  Nhân 2 số thực ta được 1 số thực , gọi là tích của và .  Ký hiệu:     Tính Chất Của Các Phép Toán         Phép cộng có các tính chất:  Giao hoán:  Kết hợp:  Số :  Số đối:       Phép nhân có các tính chất:  Giao hoán:  Kết hợp:  Số :       Tính phân phối của 2 phép toán:       Tính giao hoán và phân phối  Do tính giao hoán và , ta có:     Tính phân phối và giao hoán        Tính Đóng Của Một Phép Toán  Với mọi , khi:     Tổng , ta nói phép cộng các số thực có tính đóng.    Tích , ta nói phép nhân các số thực có tính đóng.      Sự phụ thuộc của tính đóng với tập số  Với phép cộng và phép nhân, tính đóng phụ thuộc vào tập chứa các phần tử mà ta thực hiện phép toán.    Tính đóng đối với tập số nguyên âm  Trên tập số nguyên âm      Phép cộng có tính đóng.     Phép nhân không có tính đóng.        Sự quan trọng của tính đóng  Tính đóng đối với phép toán có mối quan hệ mật thiết với một đặc tính khái niệm của không gian vector .    Bài Tập Về Tính Đóng Của Các Tập Số Cơ Bản  Bài Tập Về Tính Đóng   Tập Số Tự Nhiên   Đánh giá tính đóng của các phép toán đối với tập số tự nhiên .    Phép cộng số tự nhiên có tính đóng không?   Nháp một vài phép cộng hai số tự nhiên bất kỳ và xem xét tổng có thuộc tập số tự nhiên không.   Phép cộng số tự nhiên có tính đóng.    Ví dụ:     Phép trừ số tự nhiên có tính đóng không?   Nháp một vài phép trừ hai số tự nhiên bất kỳ và xem xét hiệu có thuộc tập số tự nhiên không.   Phép trừ số tự nhiên không có tính đóng.    Ví dụ:     Tương tự, phép nhân số tự nhiên có tính đóng không? Phép chia số tự nhiên có tính đóng không?   Phép nhân số tự nhiên có tính đóng. Còn phép chia số tự nhiên không có tính đóng.    Ví dụ:       Các tập số cơ bản còn lại   Đánh giá tính đóng của các phép toán đối với các tập số nguyên , hữu tỷ , thực .    Các phép toán có tính đóng đối với tập số nguyên là?     Phép cộng    Phép cộng số nguyên có tính đóng.      Phép trừ    Phép trừ số nguyên có tính đóng.      Phép nhân    Phép nhân số nguyên có tính đóng.      Phép chia    Phép chia số nguyên không có tính đóng.      Cả 4 phép toán trên đều có tính đóng với tập số hữu tỷ ?   Tập số hữu tỷ là tập số nguyên hợp với tập các phân số của các số nguyên đó. Vì vậy, phép chia số hữu tỷ cũng có tính đóng. Vậy, cả bốn phép toán trên đều có tính đóng với tập số hữu tỷ .    Các phép toán nào có tính đóng đối với tập số thực ?   Cả bốn phép toán cộng, trừ, nhân, chia trên tập số thực đều có tính đóng.    Kết luận: Ảnh về tính đóng của các phép toán đối với các tập số cơ bản.      "
 },
 {
   "id": "sec-so-thuc-va-tc-2",
@@ -34,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Mục Tiêu",
   "number": "1.1",
   "title": "",
-  "body": "  Các mục tiêu của section.     "
+  "body": "  Giới thiệu các tập số thực cơ bản.  Giới thiệu các phép toán cơ bản trên tập số thực và tính chất của chúng.  Giới thiệu tính đóng của một phép toán trên một tập số.   "
 },
 {
   "id": "subsec-tap-so-thuc-2",
@@ -235,27 +235,27 @@ var ptx_lunr_docs = [
   "body": " Các phép toán nào có tính đóng đối với tập số thực ?   Cả bốn phép toán cộng, trừ, nhân, chia trên tập số thực đều có tính đóng.  "
 },
 {
-  "id": "sec-vector-cot",
+  "id": "sec-vector",
   "level": "1",
-  "url": "sec-vector-cot.html",
+  "url": "sec-vector.html",
   "type": "Mục",
   "number": "1.2",
-  "title": "Vector Cột—Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector",
-  "body": " Vector Cột Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector  Vector Cột    Các mục tiêu của section.       Vector cột     Vector cột là bộ các số thực được sắp xếp theo chiều dọc.    Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.  Ví dụ:   Sắp xếp bộ 2 số thực thành 1 cột ta được vector cột .    Sắp xếp bộ 3 số thực thành 1 cột ta được vector cột       Sắp xếp bộ n số thực thành 1 cột ta được vector cột     Vector cột có n hàng (và 1 cột) được kí hiệu     Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .   Ví dụ: Vector có các phần tử    phần tử thứ nhất (có chỉ số ) là     phần tử thứ hai (có chỉ số ) là     phần tử thứ ba (có chỉ số ) là    Khái niệm chỉ số sẽ được nhắc đến ở dưới trong .   Số phần tử, hay kích thước, của một vector và thứ tự của chúng rất quan trọng.     Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .    Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph     Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra        Vector hàng    Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .     Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng     Vector hàng có n cột (và 1 hàng) được kí hiệu     Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.     Phép Chuyển Vị     Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.     Phép chuyển vị được kí hiệu bằng chữ .        Vector Trong Lập Trình   Nhập, Xuất Vector    [[1] [2] [3]] [[4 5 6]]                 Tính Chuyển Vị Của Vector  Để tính chuyển vị của một vector, ta sử dụng hàm transpose() .    [[1 2 3]] [[4] [5] [6]]                  Vấn Đề Tiếp Theo (Cũ)    Như vậy, ta có thể coi vector cột là sự mở rộng của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự mở rộng của các số thực theo chiều ngang.    Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là ma trận .    Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?     "
+  "title": "Vector—Sự Mở Rộng Số Thực Theo Một Chiều. Chuyển Vị Vector",
+  "body": " Vector Sự Mở Rộng Số Thực Theo Một Chiều. Chuyển Vị Vector  Vector    Giới thiệu vector cột và vector hàng.  Giới thiệu phép chuyển vị vector cột thành vector hàng và ngược lại.     Vector cột     Vector cột là bộ các số thực được sắp xếp theo chiều dọc.    Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.  Ví dụ:   Sắp xếp bộ 2 số thực thành 1 cột ta được vector cột .    Sắp xếp bộ 3 số thực thành 1 cột ta được vector cột       Sắp xếp bộ n số thực thành 1 cột ta được vector cột     Vector cột có n hàng (và 1 cột) được kí hiệu     Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .   Ví dụ: Vector có các phần tử    phần tử thứ nhất (có chỉ số ) là     phần tử thứ hai (có chỉ số ) là     phần tử thứ ba (có chỉ số ) là    Khái niệm chỉ số sẽ được nhắc đến trong .   Số phần tử, hay kích thước, của một vector và thứ tự của chúng rất quan trọng.     Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .    Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph     Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra        Vector hàng    Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .     Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng     Vector hàng có n cột (và 1 hàng) được kí hiệu     Tương tự như đối với vector cột, ta có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số.     Phép Chuyển Vị     Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.     Phép chuyển vị được kí hiệu bằng chữ .        Vector Trong Lập Trình   Nhập, Xuất Vector    [[1] [2] [3]] [[4 5 6]]                 Tính Chuyển Vị Của Vector  Để tính chuyển vị của một vector, ta sử dụng hàm transpose() .    [[1 2 3]] [[4] [5] [6]]                  Vấn Đề Tiếp Theo (Cũ)    Như vậy, ta có thể coi vector cột là sự mở rộng của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự mở rộng của các số thực theo chiều ngang.    Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là ma trận .    Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?     "
 },
 {
-  "id": "sec-vector-cot-3",
+  "id": "sec-vector-3",
   "level": "2",
-  "url": "sec-vector-cot.html#sec-vector-cot-3",
+  "url": "sec-vector.html#sec-vector-3",
   "type": "Mục Tiêu",
   "number": "1.2",
   "title": "",
-  "body": "  Các mục tiêu của section.     "
+  "body": "  Giới thiệu vector cột và vector hàng.  Giới thiệu phép chuyển vị vector cột thành vector hàng và ngược lại.   "
 },
 {
   "id": "def-vector-cot",
   "level": "2",
-  "url": "sec-vector-cot.html#def-vector-cot",
+  "url": "sec-vector.html#def-vector-cot",
   "type": "Định Nghĩa",
   "number": "1.2.1",
   "title": "",
@@ -264,7 +264,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-vector-cot-5",
   "level": "2",
-  "url": "sec-vector-cot.html#subsec-vector-cot-5",
+  "url": "sec-vector.html#subsec-vector-cot-5",
   "type": "Quy Ước",
   "number": "1.2.2",
   "title": "",
@@ -273,7 +273,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-vector-cot-6",
   "level": "2",
-  "url": "sec-vector-cot.html#subsec-vector-cot-6",
+  "url": "sec-vector.html#subsec-vector-cot-6",
   "type": "Quy Ước",
   "number": "1.2.3",
   "title": "",
@@ -282,7 +282,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-vector-cot-7",
   "level": "2",
-  "url": "sec-vector-cot.html#subsec-vector-cot-7",
+  "url": "sec-vector.html#subsec-vector-cot-7",
   "type": "Quy Ước",
   "number": "1.2.4",
   "title": "",
@@ -291,7 +291,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-vector-cot-8",
   "level": "2",
-  "url": "sec-vector-cot.html#subsec-vector-cot-8",
+  "url": "sec-vector.html#subsec-vector-cot-8",
   "type": "Đoạn (with a defined term)",
   "number": "",
   "title": "",
@@ -300,7 +300,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-vector-cot-9",
   "level": "2",
-  "url": "sec-vector-cot.html#subsec-vector-cot-9",
+  "url": "sec-vector.html#subsec-vector-cot-9",
   "type": "Chú Ý",
   "number": "1.2.5",
   "title": "",
@@ -309,7 +309,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-vector-cot-10",
   "level": "2",
-  "url": "sec-vector-cot.html#subsec-vector-cot-10",
+  "url": "sec-vector.html#subsec-vector-cot-10",
   "type": "Chú Ý",
   "number": "1.2.6",
   "title": "",
@@ -318,7 +318,7 @@ var ptx_lunr_docs = [
 {
   "id": "example-vector2d",
   "level": "2",
-  "url": "sec-vector-cot.html#example-vector2d",
+  "url": "sec-vector.html#example-vector2d",
   "type": "Ví Dụ",
   "number": "1.2.7",
   "title": "Biểu diễn vector 2<span class=\"times-sign\">×<\/span>1 trong không gian 2 chiều với JSXGraph.",
@@ -327,7 +327,7 @@ var ptx_lunr_docs = [
 {
   "id": "example-vector3d",
   "level": "2",
-  "url": "sec-vector-cot.html#example-vector3d",
+  "url": "sec-vector.html#example-vector3d",
   "type": "Ví Dụ",
   "number": "1.2.8",
   "title": "Biểu diễn vector 3<span class=\"times-sign\">×<\/span>1 trong không gian 3 chiều với GeoGebra.",
@@ -336,7 +336,7 @@ var ptx_lunr_docs = [
 {
   "id": "def-vector-hang",
   "level": "2",
-  "url": "sec-vector-cot.html#def-vector-hang",
+  "url": "sec-vector.html#def-vector-hang",
   "type": "Định Nghĩa",
   "number": "1.2.9",
   "title": "",
@@ -345,7 +345,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-vector-hang-3",
   "level": "2",
-  "url": "sec-vector-cot.html#subsec-vector-hang-3",
+  "url": "sec-vector.html#subsec-vector-hang-3",
   "type": "Quy Ước",
   "number": "1.2.10",
   "title": "",
@@ -354,7 +354,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-vector-hang-4",
   "level": "2",
-  "url": "sec-vector-cot.html#subsec-vector-hang-4",
+  "url": "sec-vector.html#subsec-vector-hang-4",
   "type": "Quy Ước",
   "number": "1.2.11",
   "title": "",
@@ -363,16 +363,16 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-vector-hang-5",
   "level": "2",
-  "url": "sec-vector-cot.html#subsec-vector-hang-5",
+  "url": "sec-vector.html#subsec-vector-hang-5",
   "type": "Nhận Xét",
   "number": "1.2.12",
   "title": "",
-  "body": " Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.  "
+  "body": " Tương tự như đối với vector cột, ta có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số.  "
 },
 {
   "id": "def-phep-chuyen-vi-vector",
   "level": "2",
-  "url": "sec-vector-cot.html#def-phep-chuyen-vi-vector",
+  "url": "sec-vector.html#def-phep-chuyen-vi-vector",
   "type": "Định Nghĩa",
   "number": "1.2.13",
   "title": "",
@@ -381,7 +381,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-phep-chuyen-vi-vector-4",
   "level": "2",
-  "url": "sec-vector-cot.html#subsec-phep-chuyen-vi-vector-4",
+  "url": "sec-vector.html#subsec-phep-chuyen-vi-vector-4",
   "type": "Quan Sát",
   "number": "1.2.14",
   "title": "",
@@ -390,7 +390,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsubsec-nhap-xuat-vector-3",
   "level": "2",
-  "url": "sec-vector-cot.html#subsubsec-nhap-xuat-vector-3",
+  "url": "sec-vector.html#subsubsec-nhap-xuat-vector-3",
   "type": "Output",
   "number": "1.2.15",
   "title": "",
@@ -399,7 +399,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsubsec-nhap-xuat-vector-5",
   "level": "2",
-  "url": "sec-vector-cot.html#subsubsec-nhap-xuat-vector-5",
+  "url": "sec-vector.html#subsubsec-nhap-xuat-vector-5",
   "type": "Output",
   "number": "1.2.16",
   "title": "",
@@ -408,7 +408,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsubsec-nhap-xuat-vector-7",
   "level": "2",
-  "url": "sec-vector-cot.html#subsubsec-nhap-xuat-vector-7",
+  "url": "sec-vector.html#subsubsec-nhap-xuat-vector-7",
   "type": "Output",
   "number": "1.2.17",
   "title": "",
@@ -417,7 +417,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsubsec-chuyen-vi-vector-4",
   "level": "2",
-  "url": "sec-vector-cot.html#subsubsec-chuyen-vi-vector-4",
+  "url": "sec-vector.html#subsubsec-chuyen-vi-vector-4",
   "type": "Output",
   "number": "1.2.18",
   "title": "",
@@ -426,7 +426,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsubsec-chuyen-vi-vector-6",
   "level": "2",
-  "url": "sec-vector-cot.html#subsubsec-chuyen-vi-vector-6",
+  "url": "sec-vector.html#subsubsec-chuyen-vi-vector-6",
   "type": "Output",
   "number": "1.2.19",
   "title": "",
@@ -435,7 +435,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsubsec-chuyen-vi-vector-8",
   "level": "2",
-  "url": "sec-vector-cot.html#subsubsec-chuyen-vi-vector-8",
+  "url": "sec-vector.html#subsubsec-chuyen-vi-vector-8",
   "type": "Output",
   "number": "1.2.20",
   "title": "",
@@ -444,7 +444,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-vdtt-vector-cot-2-2-1",
   "level": "2",
-  "url": "sec-vector-cot.html#subsec-vdtt-vector-cot-2-2-1",
+  "url": "sec-vector.html#subsec-vdtt-vector-cot-2-2-1",
   "type": "Đoạn (with a defined term)",
   "number": "",
   "title": "",
@@ -457,7 +457,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "1.3",
   "title": "Cộng Vector",
-  "body": " Cộng Vector    Các mục tiêu của section.       Cộng Vector Cột  Thực hiện và cho kết quả tương tự phép cộng số với số.   Điều kiện để cộng 2 hoặc nhiều vectors  Để cộng 2 hoặc nhiều vectors cột thì các vector đó phải có cùng số hàng.   Ví dụ:    Tính chất  Phép cộng các vector cột có 8 tính chất đã nêu ở .    Trừ vector cột  Thực hiện và cho kết quả tương tự phép trừ số với số.      Cộng vector trong lập trình     Để cộng vector, ta dùng + .    Để trừ vector, ta dùng - .      Ví dụ cộng 2 vectors cột không có cùng số hàng  Lỗi :    "
+  "body": " Cộng Vector    Giới thiệu phép cộng hai vector có cùng kích thước.     Cộng Vector Cột  Thực hiện và cho kết quả tương tự phép cộng số với số.   Điều kiện để cộng 2 hoặc nhiều vectors  Để cộng 2 hoặc nhiều vectors cột thì các vector đó phải có cùng số hàng.   Ví dụ:    Tính chất  Phép cộng các vector cột có các tính chất đã nêu ở .    Trừ vector cột  Thực hiện và cho kết quả tương tự phép trừ số với số.      Cộng vector trong lập trình   Ví dụ cộng 2 vectors cột không có cùng số hàng  Lỗi :    "
 },
 {
   "id": "sec-cong-vector-2",
@@ -466,7 +466,7 @@ var ptx_lunr_docs = [
   "type": "Mục Tiêu",
   "number": "1.3",
   "title": "",
-  "body": "  Các mục tiêu của section.     "
+  "body": "  Giới thiệu phép cộng hai vector có cùng kích thước.   "
 },
 {
   "id": "subsec-cong-vector-cot-3",
@@ -484,7 +484,7 @@ var ptx_lunr_docs = [
   "type": "Nhận Xét",
   "number": "1.3.2",
   "title": "Tính chất.",
-  "body": " Tính chất  Phép cộng các vector cột có 8 tính chất đã nêu ở .  "
+  "body": " Tính chất  Phép cộng các vector cột có các tính chất đã nêu ở .  "
 },
 {
   "id": "subsec-cong-vector-cot-6",
@@ -502,7 +502,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "1.4",
   "title": "Nhân Vector Với 1 Số",
-  "body": " Nhân Vector Với 1 Số    Các mục tiêu của section.       Nhân vector cột với 1 số  Thực hiện và cho kết quả tương tự phép nhân số với số.  Ví dụ:     Tính chất  Phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .    Chia vector cột cho 1 số  Thực hiện và cho kết quả tương tự phép chia số với số.      Nhân vector với 1 số trong lập trình     Để nhân vector, ta dùng * .    Để chia vector, ta dùng \/ .       [[2] [4] [6]] [[0.5] [1. ] [1.5]]    "
+  "body": " Nhân Vector Với 1 Số    Giới thiệu phép nhân vector với một số.     Nhân vector cột với 1 số  Thực hiện và cho kết quả tương tự phép nhân số với số.  Ví dụ:     Tính chất  Phép nhân vector cột với 1 số có các tính chất đã nêu ở .    Chia vector cột cho 1 số  Thực hiện và cho kết quả tương tự phép chia số với số.      Nhân vector với 1 số trong lập trình     Để nhân vector, ta dùng * .    Để chia vector, ta dùng \/ .       [[2] [4] [6]] [[0.5] [1. ] [1.5]]    "
 },
 {
   "id": "sec-nhan-vector-voi-1-so-2",
@@ -511,7 +511,7 @@ var ptx_lunr_docs = [
   "type": "Mục Tiêu",
   "number": "1.4",
   "title": "",
-  "body": "  Các mục tiêu của section.     "
+  "body": "  Giới thiệu phép nhân vector với một số.   "
 },
 {
   "id": "subsec-nhan-vector-cot-voi-1-so-4",
@@ -520,7 +520,7 @@ var ptx_lunr_docs = [
   "type": "Nhận Xét",
   "number": "1.4.1",
   "title": "Tính chất.",
-  "body": " Tính chất  Phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .  "
+  "body": " Tính chất  Phép nhân vector cột với 1 số có các tính chất đã nêu ở .  "
 },
 {
   "id": "subsec-nhan-vector-cot-voi-1-so-5",
@@ -547,7 +547,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "1.5",
   "title": "Tổ Hợp Tuyến Tính Của Các Vectors",
-  "body": " Tổ Hợp Tuyến Tính Của Các Vectors  Tổ Hợp Tuyến Tính    Các mục tiêu của section.      Coming soon.  "
+  "body": " Tổ Hợp Tuyến Tính Của Các Vectors  Tổ Hợp Tuyến Tính    Giới thiệu tổ hợp tuyến tính sự kết hợp giữa phép cộng vector và phép nhân vector với một số.     Coming soon.  "
 },
 {
   "id": "sec-to-hop-tuyen-tinh-3",
@@ -556,7 +556,7 @@ var ptx_lunr_docs = [
   "type": "Mục Tiêu",
   "number": "1.5",
   "title": "",
-  "body": "  Các mục tiêu của section.     "
+  "body": "  Giới thiệu tổ hợp tuyến tính sự kết hợp giữa phép cộng vector và phép nhân vector với một số.    "
 },
 {
   "id": "sec-khong-gian-vector-1",
@@ -565,7 +565,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "1.6",
   "title": "Không Gian Vector. Hạng Và Chuẩn Của Vector",
-  "body": " Không Gian Vector. Hạng Và Chuẩn Của Vector  Không Gian Vector    Các mục tiêu của section.       Vector cơ sở  Giả sử ta có 1 vector . Để hình dung vector này trong không gian 2D, ta có thể sử dụng đến sự hỗ trợ của 2 vectors cơ sở cơ bản và .   Hai vectors cở sở cơ bản trong không gian 2D   Ta bắt đầu từ điểm , còn được gọi là gốc tọa độ .  Đầu tiên, chúng ta có thể đi đến điểm trên trục bằng cách đi sang bên phải đơn vị. Vector sẽ giúp ta làm việc đó. Ta chỉ cần kéo dài  lên lần sẽ được 1 vector mới .   Kéo dài vector i lên 3 lần   Tiếp theo, chúng ta sẽ đi lên trên đơn vị. Tương tự, ta chỉ việc kéo dài  lên lần sẽ được vector .   Kéo dài vector j lên 2 lần   Cuối cùng, ta cộng hai vectors mới với nhau để được kết quả là .   Cộng hai vectors 3i + 2j = a    "
+  "body": " Không Gian Vector. Hạng Và Chuẩn Của Vector  Không Gian Vector    Biểu diễn trực quan các vector trong mặt phẳng và trong không gian.  Giới thiệu và hệ cơ sở của và .  Tổng quát hóa cho hệ cơ sở của .     Vector cơ sở  Giả sử ta có 1 vector . Để hình dung vector này trong không gian 2D, ta có thể sử dụng đến sự hỗ trợ của 2 vectors cơ sở cơ bản và .   Hai vectors cở sở cơ bản trong không gian 2D   Ta bắt đầu từ điểm , còn được gọi là gốc tọa độ .  Đầu tiên, chúng ta có thể đi đến điểm trên trục bằng cách đi sang bên phải đơn vị. Vector sẽ giúp ta làm việc đó. Ta chỉ cần kéo dài  lên lần sẽ được 1 vector mới .   Kéo dài vector i lên 3 lần   Tiếp theo, chúng ta sẽ đi lên trên đơn vị. Tương tự, ta chỉ việc kéo dài  lên lần sẽ được vector .   Kéo dài vector j lên 2 lần   Cuối cùng, ta cộng hai vectors mới với nhau để được kết quả là .   Cộng hai vectors 3i + 2j = a    "
 },
 {
   "id": "sec-khong-gian-vector-1-3",
@@ -574,7 +574,7 @@ var ptx_lunr_docs = [
   "type": "Mục Tiêu",
   "number": "1.6",
   "title": "",
-  "body": "  Các mục tiêu của section.     "
+  "body": "  Biểu diễn trực quan các vector trong mặt phẳng và trong không gian.  Giới thiệu và hệ cơ sở của và .  Tổng quát hóa cho hệ cơ sở của .   "
 },
 {
   "id": "subsec-vector-co-so-2",
@@ -601,16 +601,16 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "2.1",
   "title": "Ma Trận",
-  "body": " Ma Trận    Các mục tiêu của section.      Coming soon.  "
+  "body": " Ma Trận  Ma Trận    Giới thiệu ma trận như sự mở rộng số thực theo hai chiều.  Nhìn ma trận như cách ghép các cột.  Nhìn ma trận như cách ghép các hàng.    Coming soon.  "
 },
 {
-  "id": "sec-ma-tran-2",
+  "id": "sec-ma-tran-3",
   "level": "2",
-  "url": "sec-ma-tran.html#sec-ma-tran-2",
+  "url": "sec-ma-tran.html#sec-ma-tran-3",
   "type": "Mục Tiêu",
   "number": "2.1",
   "title": "",
-  "body": "  Các mục tiêu của section.     "
+  "body": "  Giới thiệu ma trận như sự mở rộng số thực theo hai chiều.  Nhìn ma trận như cách ghép các cột.  Nhìn ma trận như cách ghép các hàng.   "
 },
 {
   "id": "sec-cong-ma-tran",
@@ -619,7 +619,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "2.2",
   "title": "Cộng Ma Trận",
-  "body": " Cộng Ma Trận    Các mục tiêu của section.      Coming soon.  "
+  "body": " Cộng Ma Trận    Giới thiệu về phép cộng ma trận như sự mở rộng phép cộng số thực.  Cộng ma trận như cộng các vector cột.  Cộng ma trận như cộng các vector hàng.    Coming soon.  "
 },
 {
   "id": "sec-cong-ma-tran-2",
@@ -628,7 +628,7 @@ var ptx_lunr_docs = [
   "type": "Mục Tiêu",
   "number": "2.2",
   "title": "",
-  "body": "  Các mục tiêu của section.     "
+  "body": "  Giới thiệu về phép cộng ma trận như sự mở rộng phép cộng số thực.  Cộng ma trận như cộng các vector cột.  Cộng ma trận như cộng các vector hàng.   "
 },
 {
   "id": "sec-nhan-ma-tran-voi-1-so",
@@ -637,7 +637,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "2.3",
   "title": "Nhân Ma Trận Với 1 Số",
-  "body": " Nhân Ma Trận Với 1 Số    Các mục tiêu của section.      Coming soon.  "
+  "body": " Nhân Ma Trận Với 1 Số    Giới thiệu phép nhân ma trận với một số.    Coming soon.  "
 },
 {
   "id": "sec-nhan-ma-tran-voi-1-so-2",
@@ -646,7 +646,7 @@ var ptx_lunr_docs = [
   "type": "Mục Tiêu",
   "number": "2.3",
   "title": "",
-  "body": "  Các mục tiêu của section.     "
+  "body": "  Giới thiệu phép nhân ma trận với một số.   "
 },
 {
   "id": "sec-A-bang-Ciei",
@@ -654,8 +654,8 @@ var ptx_lunr_docs = [
   "url": "sec-A-bang-Ciei.html",
   "type": "Mục",
   "number": "2.4",
-  "title": "Biểu Diễn Cơ Bản Ma Trận <span class=\"process-math\">\\(A\\)<\/span> Theo Các Vectors Cột",
-  "body": " Biểu Diễn Cơ Bản Ma Trận Theo Các Vectors Cột     Các mục tiêu của section.      Coming soon.  "
+  "title": "Biểu Diễn Cơ Bản Ma Trận <span class=\"process-math\">\\(A\\)<\/span> Theo Các Vector Cột",
+  "body": " Biểu Diễn Cơ Bản Ma Trận Theo Các Vector Cột     Biểu diễn ma trận theo các vector cột.  Biểu diễn ma trận thành tổng của các vector cột nhân các vector cơ sở.    Coming soon.  "
 },
 {
   "id": "sec-A-bang-Ciei-3",
@@ -664,50 +664,86 @@ var ptx_lunr_docs = [
   "type": "Mục Tiêu",
   "number": "2.4",
   "title": "",
-  "body": "  Các mục tiêu của section.     "
+  "body": "  Biểu diễn ma trận theo các vector cột.  Biểu diễn ma trận thành tổng của các vector cột nhân các vector cơ sở.   "
+},
+{
+  "id": "sec-nhan-vector-voi-vector",
+  "level": "1",
+  "url": "sec-nhan-vector-voi-vector.html",
+  "type": "Mục",
+  "number": "2.5",
+  "title": "Nhân Vector Với Vector",
+  "body": " Nhân Vector Với Vector    Giới thiệu phép nhân vector cột với vector hàng.  Giới thiệu phép nhân vector hàng với vector cột.    Coming soon.  "
+},
+{
+  "id": "sec-nhan-vector-voi-vector-2",
+  "level": "2",
+  "url": "sec-nhan-vector-voi-vector.html#sec-nhan-vector-voi-vector-2",
+  "type": "Mục Tiêu",
+  "number": "2.5",
+  "title": "",
+  "body": "  Giới thiệu phép nhân vector cột với vector hàng.  Giới thiệu phép nhân vector hàng với vector cột.   "
 },
 {
   "id": "sec-nhan-ma-tran-voi-vector",
   "level": "1",
   "url": "sec-nhan-ma-tran-voi-vector.html",
   "type": "Mục",
-  "number": "2.5",
+  "number": "2.6",
   "title": "Nhân Ma Trận Với Vector",
-  "body": " Nhân Ma Trận Với Vector    Các mục tiêu của section.      Coming soon.  "
+  "body": " Nhân Ma Trận Với Vector    Giới thiệu phép nhân ma trận và vector .   Biểu diễn kết quả của phép toán trên theo hai cách:  Vector  Tổ hợp tuyến tính của các vector cột của ma trận       Coming soon.  "
 },
 {
   "id": "sec-nhan-ma-tran-voi-vector-2",
   "level": "2",
   "url": "sec-nhan-ma-tran-voi-vector.html#sec-nhan-ma-tran-voi-vector-2",
   "type": "Mục Tiêu",
-  "number": "2.5",
+  "number": "2.6",
   "title": "",
-  "body": "  Các mục tiêu của section.     "
+  "body": "  Giới thiệu phép nhân ma trận và vector .   Biểu diễn kết quả của phép toán trên theo hai cách:  Vector  Tổ hợp tuyến tính của các vector cột của ma trận      "
+},
+{
+  "id": "sec-nhan-ma-tran-voi-ma-tran",
+  "level": "1",
+  "url": "sec-nhan-ma-tran-voi-ma-tran.html",
+  "type": "Mục",
+  "number": "2.7",
+  "title": "Nhân Ma Trận Với Ma Trận",
+  "body": " Nhân Ma Trận Với Ma Trận    Giới thiệu bốn cách nhân hai ma trận và :    Nhân thông thường: Nhân các hàng của với các cột của (thường sử dụng khi viết tài liệu).  Nhân ma trận với các cột của .  Nhân các hàng của với ma trận .  Tổng của các phép nhân các cột của với các hàng của (thường được sử dụng trong tính toán).    Coming soon.  "
+},
+{
+  "id": "sec-nhan-ma-tran-voi-ma-tran-2",
+  "level": "2",
+  "url": "sec-nhan-ma-tran-voi-ma-tran.html#sec-nhan-ma-tran-voi-ma-tran-2",
+  "type": "Mục Tiêu",
+  "number": "2.7",
+  "title": "",
+  "body": "  Giới thiệu bốn cách nhân hai ma trận và :    Nhân thông thường: Nhân các hàng của với các cột của (thường sử dụng khi viết tài liệu).  Nhân ma trận với các cột của .  Nhân các hàng của với ma trận .  Tổng của các phép nhân các cột của với các hàng của (thường được sử dụng trong tính toán).   "
 },
 {
   "id": "sec-ma-tran-hoan-vi",
   "level": "1",
   "url": "sec-ma-tran-hoan-vi.html",
   "type": "Mục",
-  "number": "2.6",
+  "number": "2.8",
   "title": "Ma Trận Hoán Vị",
-  "body": " Ma Trận Hoán Vị    Các mục tiêu của section.       Tương tác ma trận hoán vị với SageMath Interact    Coming soon.  "
+  "body": " Ma Trận Hoán Vị    Giới thiệu ma trận hoán vị .  Phép nhân sự hoán vị các cột.  Phép nhân sự hoán vị các hàng.     Tương tác ma trận hoán vị với SageMath Interact    Coming soon.  "
 },
 {
   "id": "sec-ma-tran-hoan-vi-2",
   "level": "2",
   "url": "sec-ma-tran-hoan-vi.html#sec-ma-tran-hoan-vi-2",
   "type": "Mục Tiêu",
-  "number": "2.6",
+  "number": "2.8",
   "title": "",
-  "body": "  Các mục tiêu của section.     "
+  "body": "  Giới thiệu ma trận hoán vị .  Phép nhân sự hoán vị các cột.  Phép nhân sự hoán vị các hàng.   "
 },
 {
   "id": "figure-sage-interact-ma-tran-hoan-vi",
   "level": "2",
   "url": "sec-ma-tran-hoan-vi.html#figure-sage-interact-ma-tran-hoan-vi",
   "type": "Hình",
-  "number": "2.6.1",
+  "number": "2.8.1",
   "title": "",
   "body": " Tương tác ma trận hoán vị với SageMath Interact   "
 },
@@ -716,25 +752,25 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-A-bang-CiRk.html",
   "type": "Mục",
-  "number": "2.7",
+  "number": "2.9",
   "title": "Biểu Diễn Rút Gọn Ma Trận <span class=\"process-math\">\\(A\\)<\/span> Theo Các Cột",
-  "body": " Biểu Diễn Rút Gọn Ma Trận Theo Các Cột     Các mục tiêu của section.       Tương tác ma trận hoán vị với SageMath Interact    Coming soon.  "
+  "body": " Biểu Diễn Rút Gọn Ma Trận Theo Các Cột     Biểu diễn thông qua các cột và hàng của .     Tương tác ma trận hoán vị với SageMath Interact    Coming soon.  "
 },
 {
   "id": "sec-A-bang-CiRk-3",
   "level": "2",
   "url": "sec-A-bang-CiRk.html#sec-A-bang-CiRk-3",
   "type": "Mục Tiêu",
-  "number": "2.7",
+  "number": "2.9",
   "title": "",
-  "body": "  Các mục tiêu của section.     "
+  "body": "  Biểu diễn thông qua các cột và hàng của .   "
 },
 {
   "id": "figure-sage-interact-CiRk",
   "level": "2",
   "url": "sec-A-bang-CiRk.html#figure-sage-interact-CiRk",
   "type": "Hình",
-  "number": "2.7.1",
+  "number": "2.9.1",
   "title": "",
   "body": " Tương tác ma trận hoán vị với SageMath Interact   "
 },
@@ -743,36 +779,36 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-hang-cua-ma-tran.html",
   "type": "Mục",
-  "number": "2.8",
+  "number": "2.10",
   "title": "Hạng Của Ma Trận",
-  "body": " Hạng Của Ma Trận    Các mục tiêu của section.      Coming soon.  "
+  "body": " Hạng Của Ma Trận    Giới thiệu hạng của ma trận.  Giới thiệu ma trận hạng .    Coming soon.  "
 },
 {
   "id": "sec-hang-cua-ma-tran-2",
   "level": "2",
   "url": "sec-hang-cua-ma-tran.html#sec-hang-cua-ma-tran-2",
   "type": "Mục Tiêu",
-  "number": "2.8",
+  "number": "2.10",
   "title": "",
-  "body": "  Các mục tiêu của section.     "
+  "body": "  Giới thiệu hạng của ma trận.  Giới thiệu ma trận hạng .   "
 },
 {
   "id": "sec-AP-bang-LU",
   "level": "1",
   "url": "sec-AP-bang-LU.html",
   "type": "Mục",
-  "number": "2.9",
-  "title": "Phân Tích <span class=\"process-math\">\\(AP = LU\\)<\/span>",
-  "body": " Phân Tích    Các mục tiêu của section.      Coming soon.  "
+  "number": "2.11",
+  "title": "Phân Tích <span class=\"process-math\">\\(P = LU\\)<\/span>",
+  "body": " Phân Tích    Giới tiệu phân rã .  Giới tiệu phân rã .    Coming soon.  "
 },
 {
   "id": "sec-AP-bang-LU-2",
   "level": "2",
   "url": "sec-AP-bang-LU.html#sec-AP-bang-LU-2",
   "type": "Mục Tiêu",
-  "number": "2.9",
+  "number": "2.11",
   "title": "",
-  "body": "  Các mục tiêu của section.     "
+  "body": "  Giới tiệu phân rã .  Giới tiệu phân rã .   "
 },
 {
   "id": "sec-dinh-thuc",
