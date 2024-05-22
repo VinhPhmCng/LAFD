@@ -13,7 +13,6 @@ See the file COPYING for copying conditions.
 
   <objectives>
     <ul>
-      <li>Biểu diễn ma trận theo các vector cột.</li>
       <li>Biểu diễn ma trận thành tổng của các vector cột nhân các vector cơ sở.</li>
     </ul>
   </objectives>

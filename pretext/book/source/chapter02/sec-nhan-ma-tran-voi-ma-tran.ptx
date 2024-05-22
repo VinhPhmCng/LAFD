@@ -24,6 +24,87 @@ See the file COPYING for copying conditions.
     </ol>
   </objectives>
 
-  <p> Coming soon. </p>
+  <subsection xml:id="subsec-nhan-ma-tran-voi-ma-tran-code">
+    <title>Nhân ma trận với ma trận trong lập trình</title>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            Để nhân trong lập trình, ta dùng <c>*</c>.
+          </p>
+        </li>
+      </ul>
+    </p>
+    
+    <sage language="python">
+      <input>
+        # Trong Numpy (Python)
+        import numpy as np # Su dung thu vien Numpy
+        
+        A = np.matrix([
+            [1, 2, 3],
+            [4, 5, 6],
+        ])
+
+        B = np.matrix([
+            [1, 2],
+            [3, 4],
+            [5, 6]
+        ])
+
+        print(A * B)
+      </input>
+    </sage>
+    <problem>
+      <pre>
+        [[22 28]
+         [49 64]]
+      </pre>
+    </problem>
+
+    <sage>
+      <input>
+        # Trong SageMath
+        A = matrix(QQ, [
+            [1/3, 2, 3],
+            [4, 5, 6],
+        ])
+
+        B = matrix(QQ, [
+            [1, 2],
+            [-3, 4],
+            [5, 6]
+        ])
+
+        latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
+        pretty_print(html(r'$%s \cdot %s = %s$' % (latex(A), latex(B), latex(A*B))))
+      </input>
+    </sage>
+    <problem>
+      <p>
+        <me>
+          \bmat{\frac{1}{3} &amp; 2  &amp; 3 \\ 4 &amp; 5 &amp; 6} \cdot \bmat{1 &amp; 2 \\ -3 &amp; 4 \\ 5 &amp; 6} = \bmat{\frac{28}{3} &amp; \frac{80}{3} \\ 19 &amp; 64}
+        </me>
+      </p>
+    </problem>
+
+    <sage>
+      <input>
+        # ...
+        pretty_print(html(r'$%s \cdot %s = %s$' % (latex(B), latex(A), latex(B*A))))
+      </input>
+    </sage>
+    <problem>
+      <p>
+        <me>
+          \bmat{1 &amp; 2 \\ -3 &amp; 4 \\ 5 &amp; 6} \cdot \bmat{\frac{1}{3} &amp; 2  &amp; 3 \\ 4 &amp; 5 &amp; 6} = \bmat{\frac{25}{3} &amp; 12 &amp; 15 \\ 15 &amp; 14 &amp; 15 \\ \frac{77}{3} &amp; 40 &amp; 51}
+        </me>
+      </p>
+    </problem>
+
+
+    </subsection>
+
 
 </section>

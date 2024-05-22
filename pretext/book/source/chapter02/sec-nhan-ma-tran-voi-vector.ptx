@@ -25,7 +25,92 @@ See the file COPYING for copying conditions.
     </ul>
   </objectives>
 
+  <subsection xml:id="subsec-nhan-ma-tran-voi-vector-code">
+    <title>Nhân ma trận với vector trong lập trình</title>
 
-  <p> Coming soon. </p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            Để nhân trong lập trình, ta dùng <c>*</c>.
+          </p>
+        </li>
+      </ul>
+    </p>
+    
+    <sage language="python">
+      <input>
+        # Trong Numpy (Python)
+        import numpy as np # Su dung thu vien Numpy
+        
+        mt = np.matrix([
+            [1, 2, 3],
+            [2, 3, 4],
+            [3, 4, 5]
+        ])
+
+        cot = np.matrix([
+            [1],
+            [2],
+            [3]
+        ])
+
+        hang = np.matrix([
+            [1, 2, 3]
+        ])
+
+        print(mt * cot)
+        print()
+        print(hang * mt)
+      </input>
+    </sage>
+    <problem>
+      <pre>
+        [[14]
+         [20]
+         [26]]
+
+        [[14 20 26]]
+      </pre>
+    </problem>
+
+    <sage>
+      <input>
+        # Trong SageMath
+        mt = matrix(QQ, [
+            [1/3, 0, -1],
+            [2, 1, -2],
+            [3, 3, 0]
+        ])
+
+        cot = matrix(QQ, [
+            [1],
+            [2],
+            [3]
+        ])
+
+        hang = matrix(QQ, [
+            [1, 2, 3]
+        ])
+
+        latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
+        pretty_print(html(r'$%s \cdot %s = %s$' % (latex(mt), latex(cot), latex(mt*cot))))
+        pretty_print("\n")
+        pretty_print(html(r'$%s \cdot %s = %s$' % (latex(hang), latex(mt), latex(hang*mt))))
+      </input>
+    </sage>
+    <problem>
+      <p>
+        <me>
+          \bmat{\frac{1}{3} &amp; 0  &amp; -1 \\ 2 &amp; 1 &amp; -2 \\ 3 &amp; 3 &amp; 0} \cdot \bmat{1 \\ 2 \\ 3} = \bmat{-\frac{8}{3} \\ -2 \\ 9}
+        </me>
+        <me>
+          \bmat{1 &amp; 2 &amp; 3} \cdot \bmat{\frac{1}{3} &amp; 0  &amp; -1 \\ 2 &amp; 1 &amp; -2 \\ 3 &amp; 3 &amp; 0} = \bmat{\frac{40}{3} &amp; 11 &amp; -5}
+        </me>
+      </p>
+    </problem>
+
+    </subsection>
+
 
 </section>

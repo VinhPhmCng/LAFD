@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--*****************************************
+This is part of the Ma Trận Sơ Cấp
+Copyright (C) 2023-2024
+Phạm Công Vinh, Phạm Xuân Trung
+See the file COPYING for copying conditions.
+******************************************-->
+
+<section xml:id="sec-A-bang-LU" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Phân Tích <m>A = LU</m></title>
+
+  <objectives>
+    <ul>
+      <li>Giới thiệu phân rã <m>AP = LU</m>.</li>
+      <li>Giới thiệu phân rã <m>PA = LU</m>.</li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="subsec-A-bang-LU-code">
+    <title>Phân rã <m>A = LU</m> trong lập trình</title>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            Để tính <m>LU</m> trong lập trình, ta dùng hàm <c>LU()</c>.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <sage>
+      <input>
+# Trong SageMath
+A = matrix(QQ, [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [10, 11, 12]
+])
+      
+P, L, U = A.LU(pivot="nonzero")
+
+latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
+pretty_print(html(r'$%s = %s \cdot %s \cdot %s$' % (latex(A), latex(P), latex(L), latex(U))))
+      </input>
+    </sage>
+    <problem>
+      <p>
+        <me>
+          \bmat{1 &amp; 2  &amp; 3 \\ 4 &amp; 5 &amp; 6 \\ 7 &amp; 8 &amp; 9 \\ 10 &amp; 11 &amp; 12} = \bmat{1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1} \cdot \bmat{1 &amp; 0 &amp; 0 &amp; 0 \\ 4 &amp; 1 &amp; 0 &amp; 0 \\ 7 &amp; 2 &amp; 1 &amp; 0 \\ 10 &amp; 3 &amp; 0 &amp; 1} \cdot \bmat{1 &amp; 2 &amp; 3 \\ 0 &amp; -3 &amp; -6 \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0}
+        </me>
+      </p>
+    </problem>
+
+    <sage>
+      <input>
+# ...
+P, L, U = A.LU(pivot="partial")
+
+pretty_print(html(r'$%s = %s \cdot %s \cdot %s$' % (latex(A), latex(P), latex(L), latex(U))))
+      </input>
+    </sage>
+    <problem>
+      <p>
+        <me>
+          \bmat{1 &amp; 2  &amp; 3 \\ 4 &amp; 5 &amp; 6 \\ 7 &amp; 8 &amp; 9 \\ 10 &amp; 11 &amp; 12} = \bmat{0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0} \cdot \bmat{1 &amp; 0 &amp; 0 &amp; 0 \\ \frac{1}{10} &amp; 1 &amp; 0 &amp; 0 \\ \frac{7}{10} &amp; \frac{1}{3} &amp; 1 &amp; 0 \\ \frac{2}{5} &amp; \frac{2}{3} &amp; 0 &amp; 1} \cdot \bmat{10 &amp; 11 &amp; 12 \\ 0 &amp; \frac{9}{10} &amp; \frac{9}{5} \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0}
+        </me>
+      </p>
+    </problem>
+
+    </subsection>
+
+</section>

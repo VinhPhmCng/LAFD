@@ -306,7 +306,7 @@ See the file COPYING for copying conditions.
       <problem>
         <p>
           <me>
-            \bmat{3.33333333333333 \amp 0.000000000000000 \amp 1.52000000000000}
+            \bmat{\frac{10}{3} &amp; 0 &amp; \frac{3}{2}}
           </me>
         </p>
       </problem>
