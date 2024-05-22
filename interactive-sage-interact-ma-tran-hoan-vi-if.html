@@ -116,6 +116,7 @@ def matrix_dimensions(
   @interact(layout=dict(top = [['A'], ['P1'], ['P2']]))
   def func1(
     A = ('Ma trận A', matrix(
+      QQ,
       nrows = m,
       ncols = n,
       entries = lambda i, j: i + j + 1,
