@@ -78,29 +78,29 @@ See the file COPYING for copying conditions.
     
     <sage language="python">
       <input>
-        # Trong Numpy (Python)
-        import numpy as np # Su dung thu vien Numpy
+# Trong Numpy (Python)
+import numpy as np # Su dung thu vien Numpy
         
-        a = np.matrix([
-            [1],
-            [2],
-            [3]
-        ])
+a = np.matrix([
+    [1],
+    [2],
+    [3]
+])
 
-        print(a * 2)
-        print()
-        print(a / 2)
+print(a * 2)
+print()
+print(a / 2)
       </input>
     </sage>
     <problem>
       <pre>
-        [[2]
-         [4]
-         [6]]
+[[2]
+ [4]
+ [6]]
 
-        [[0.5]
-         [1. ]
-         [1.5]]
+[[0.5]
+ [1. ]
+ [1.5]]
       </pre>
     </problem>
 

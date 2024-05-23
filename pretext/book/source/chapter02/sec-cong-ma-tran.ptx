@@ -38,35 +38,35 @@ See the file COPYING for copying conditions.
 
     <sage language="python">
       <input>
-        # Trong Numpy (Python)
-        import numpy as np # Su dung thu vien Numpy
+# Trong Numpy (Python)
+import numpy as np # Su dung thu vien Numpy
         
-        a = np.matrix([
-            [1, 2],
-            [3, 4],
-            [5, 6]
-        ])
+a = np.matrix([
+    [1, 2],
+    [3, 4],
+    [5, 6]
+])
 
-        b = np.matrix([
-            [1, 2],
-            [0, 1],
-            [-1, -2]
-        ])
+b = np.matrix([
+    [1, 2],
+    [0, 1],
+    [-1, -2]
+])
 
-        print(a + b)
-        print()
-        print(a - b)
+print(a + b)
+print()
+print(a - b)
       </input>
     </sage>
     <problem>
       <pre>
-        [[2 4]
-         [3 5]
-         [4 4]]
+[[2 4]
+ [3 5]
+ [4 4]]
 
-        [[0 0]
-         [3 3]
-         [6 8]]
+[[0 0]
+ [3 3]
+ [6 8]]
       </pre>
     </problem>
 
@@ -76,29 +76,29 @@ See the file COPYING for copying conditions.
 
     <sage>
       <input>
-        # Trong SageMath
+# Trong SageMath
         
-        c = matrix([
-            [1, 2],
-            [3, 4],
-        ])
+c = matrix([
+    [1, 2],
+    [3, 4],
+])
 
-        d = matrix([
-            [1, 2, 3],
-            [4, 5, 6],
-        ])
+d = matrix([
+    [1, 2, 3],
+    [4, 5, 6],
+])
 
-        print(c + d)
+print(c + d)
       </input>
     </sage>
     <problem>
       <pre>
-        TypeError
-        Cell In [1], line 13
+TypeError
+Cell In [1], line 13
 
-        ...
+...
 
-        TypeError: unsupported operand parent(s) for +: 'Full MatrixSpace of 2 by 2 dense matrices over Integer Ring' and 'Full MatrixSpace of 2 by 3 dense matrices over Integer Ring'
+TypeError: unsupported operand parent(s) for +: 'Full MatrixSpace of 2 by 2 dense matrices over Integer Ring' and 'Full MatrixSpace of 2 by 3 dense matrices over Integer Ring'
       </pre>
     </problem>
 

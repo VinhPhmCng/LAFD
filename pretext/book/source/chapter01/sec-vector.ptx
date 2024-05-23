@@ -221,42 +221,42 @@ See the file COPYING for copying conditions.
 
       <sage language="python">
         <input>
-          import numpy as np # Su dung thu vien Numpy
-          cot_1 = np.matrix([
-              [1],
-              [2],
-              [3]
-          ])
+import numpy as np # Su dung thu vien Numpy
+cot_1 = np.matrix([
+    [1],
+    [2],
+    [3]
+])
 
-          hang_1 = np.matrix([
-              [4, 5, 6]
-          ])
+hang_1 = np.matrix([
+    [4, 5, 6]
+])
 
-          print(cot_1)
-          print()
-          print(hang_1)
+print(cot_1)
+print()
+print(hang_1)
         </input>
       </sage>
       <problem>
         <pre>
-          [[1]
-           [2]
-           [3]]
+[[1]
+ [2]
+ [3]]
 
-          [[4 5 6]]
+[[4 5 6]]
         </pre>
       </problem>
       
       <sage>
         <input>
-          # Trong SageMath
-          cot_2 = matrix(QQ, [
-              [10/3],
-              [0],
-              [1.5]
-          ])
-          latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
-          show(cot_2)
+# Trong SageMath
+cot_2 = matrix(QQ, [
+    [10/3],
+    [0],
+    [1.5]
+])
+latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
+show(cot_2)
         </input>
       </sage>
       <problem>
@@ -279,28 +279,28 @@ See the file COPYING for copying conditions.
 
       <sage language="python">
         <input>
-          # ...
-          # Trong Numpy (Python)
-          print(cot_1.transpose())
-          print()
-          print(hang_1.transpose())
+# ...
+# Trong Numpy (Python)
+print(cot_1.transpose())
+print()
+print(hang_1.transpose())
         </input>
       </sage>
       <problem>
         <pre>
-          [[1 2 3]]
+[[1 2 3]]
 
-          [[4]
-           [5]
-           [6]]
+[[4]
+ [5]
+ [6]]
         </pre>
       </problem>
       
       <sage>
         <input>
-          # ...
-          # Trong SageMath
-          show(cot_2.transpose())
+# ...
+# Trong SageMath
+show(cot_2.transpose())
         </input>
       </sage>
       <problem>

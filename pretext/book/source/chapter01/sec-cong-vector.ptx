@@ -77,35 +77,35 @@ See the file COPYING for copying conditions.
 
     <sage language="python">
       <input>
-        # Trong Numpy (Python)
-        import numpy as np # Su dung thu vien Numpy
+# Trong Numpy (Python)
+import numpy as np # Su dung thu vien Numpy
         
-        a = np.matrix([
-            [1],
-            [2],
-            [3]
-        ])
+a = np.matrix([
+    [1],
+    [2],
+    [3]
+])
 
-        b = np.matrix([
-            [4],
-            [-2],
-            [0.5]
-        ])
+b = np.matrix([
+    [4],
+    [-2],
+    [0.5]
+])
 
-        print(a + b)
-        print()
-        print(a - b)
+print(a + b)
+print()
+print(a - b)
       </input>
     </sage>
     <problem>
       <pre>
-        [[5. ]
-        [0. ]
-        [3.5]]
+[[5. ]
+ [0. ]
+ [3.5]]
 
-        [[-3. ]
-        [ 4. ]
-        [ 2.5]]
+[[-3. ]
+ [ 4. ]
+ [ 2.5]]
       </pre>
     </problem>
 
@@ -115,32 +115,32 @@ See the file COPYING for copying conditions.
 
     <sage>
       <input>
-        # Trong SageMath
+# Trong SageMath
         
-        c = matrix([
-            [1],
-            [2],
-            [3],
-            [4]
-        ])
+c = matrix([
+    [1],
+    [2],
+    [3],
+    [4]
+])
 
-        d = matrix([
-            [4],
-            [-2],
-            [0.5]
-        ])
+d = matrix([
+    [4],
+    [-2],
+    [0.5]
+])
 
-        print(c + d)
+print(c + d)
       </input>
     </sage>
     <problem>
       <pre>
-        TypeError
-        Cell In [1], line 16
+TypeError
+Cell In [1], line 16
 
-        ...
+...
 
-        TypeError: unsupported operand parent(s) for +:'Full MatrixSpace of 4 by 1 dense matrices over Integer Ring' and 'Full MatrixSpace of 3 by 1 dense matrices over Real Field with 53 bits of precision'
+TypeError: unsupported operand parent(s) for +:'Full MatrixSpace of 4 by 1 dense matrices over Integer Ring' and 'Full MatrixSpace of 3 by 1 dense matrices over Real Field with 53 bits of precision'
       </pre>
     </problem>
 

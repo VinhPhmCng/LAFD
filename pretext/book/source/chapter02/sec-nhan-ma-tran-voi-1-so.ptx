@@ -36,26 +36,26 @@ See the file COPYING for copying conditions.
     
     <sage language="python">
       <input>
-        # Trong Numpy (Python)
-        import numpy as np # Su dung thu vien Numpy
+# Trong Numpy (Python)
+import numpy as np # Su dung thu vien Numpy
         
-        a = np.matrix([
-            [1, 2, 3],
-            [4, 5, 6],
-        ])
+a = np.matrix([
+    [1, 2, 3],
+    [4, 5, 6],
+])
 
-        print(a * 2)
-        print()
-        print(a / 2)
+print(a * 2)
+print()
+print(a / 2)
       </input>
     </sage>
     <problem>
       <pre>
-        [[ 2  4  6]
-         [ 8 10 12]]
+[[ 2  4  6]
+ [ 8 10 12]]
 
-        [[0.5 1.  1.5]
-         [2.  2.5 3. ]]
+[[0.5 1.  1.5]
+ [2.  2.5 3. ]]
       </pre>
     </problem>
 
