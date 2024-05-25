@@ -16,32 +16,36 @@ See the file COPYING for copying conditions.
       <li>Biểu diễn <m>A</m> thông qua các cột và hàng của <m>A</m>.</li>
     </ul>
   </objectives>
-  
-  <figure xml:id="figure-sage-interact-CiRk">
-    <caption>Tương tác ma trận hoán vị với SageMath Interact</caption>
 
-    <interactive xml:id="interactive-sage-interact-CiRk" platform="sage" width="100%" aspect="1:1">
-      <slate surface="sage">
+  <subsection xml:id="subsec-CiRk-interact">
+    <title>Tương tác <m>A = \sum C_{i}R_{k}</m> với SageMath Interact</title>
+    
+    <figure xml:id="figure-CiRk">
+
+      <caption>Tương tác <m>A = \sum C_{i}R_{k}</m> với SageMath Interact</caption>
+
+      <interactive xml:id="interactive-CiRk" platform="sage" width="100%" aspect="1:1">
+        <slate surface="sage">
 import numpy as np
 
 def print_html(s):
     pretty_print(html(s))
     pretty_print("\n")
-        
+            
 def tag(s, t):
     return "&lt;" + t + "&gt;" + s + "&lt;/" + t + "&gt;" 
-        
+            
 def format_matrix(mat):
     return mat
     #def for_mat(x):
     #    if x.is_zero():
     #        return 0
     #    return x
-        
+            
     #sage_mat = matrix(QQ, np_mat)
     #new_mat = mat.apply_map(for_mat, R=QQ)
     #return new_mat
-                
+                    
 def decom(mat):
     m = 0 # Hang
     n = 0 # Cot
@@ -49,21 +53,21 @@ def decom(mat):
     rank = 0
     pairs = []
     decoms = []
-        
+            
     while m &lt; mat.nrows() and n &lt; mat.ncols():
         i += 1
         row_m = mat.matrix_from_rows([m])
         col_n = mat.matrix_from_columns([n])
-        
+            
         if m != 0 and n != 0:
             print_html(tag("-&gt; Duyệt tiếp hàng %s và cột %s." % (
                     str(m+1), 
                     str(n+1),
                 ), "h3"))
-                
+                    
         print_html(tag("", "hr"))
         print_html(tag("Duyệt lần %s" % str(i), "h2"))
-        
+            
         t = r''
         if len(pairs) == 0:
             t = r'$A = %s' % latex(format_matrix(mat))
@@ -72,12 +76,12 @@ def decom(mat):
                 latex(len(pairs)), 
                 latex(format_matrix(mat)),
             )
-        
+            
         if mat.is_zero():
             t += r'$'
             print_html(t)
             break
-        
+            
         t += r'\ có \ C_{%s} = %s \ và \  R_{%s} = %s$' % (
             latex(n+1), 
             latex(format_matrix(col_n)), 
@@ -85,18 +89,18 @@ def decom(mat):
             latex(format_matrix(row_m)),
         )
         print_html(t)
-        
+            
         # Hang != 0 VA Cot != 0
         if not row_m.is_zero() and not col_n.is_zero():
             row_m = row_m / mat[m, n] # Chia hang
             CnRm = col_n * row_m
             rem = mat - CnRm
-                
+                    
             print_html(tag("Nhận thấy: Hàng %s và cột %s đều KHÁC 0." % (
                 str(n+1), 
                 str(m+1),
             ), "h3"))
-                    
+                        
             CnRm_str = r''
             if mat[m, n] == 1:
                 CnRm_str = r'C_{%s} \cdot R_{%s}' % (
@@ -109,14 +113,14 @@ def decom(mat):
                     latex(m+1),
                     latex(mat[m, n]),
                 )                
-                    
+                        
             print_html(r'$\rightarrow %s = %s \cdot %s = %s$' % (
                 CnRm_str,
                 latex(format_matrix(col_n)),
                 latex(format_matrix(row_m)),
                 latex(format_matrix(CnRm)),
             ))
-        
+            
             t = r""
             if len(pairs) == 0:
                 t = r'$\rightarrow A - %s = %s' % (
@@ -131,19 +135,19 @@ def decom(mat):
                 )
             t += r'= A_{%s}$' % (len(pairs)+1)
             print_html(t)
-        
+            
             pretty_print("\n")
-                
+                    
             mat = rem
             rank += 1
             pairs.append([m, n])
             decoms.append([row_m, col_n])
-                
+                    
             m += 1
             m = min(m, mat.nrows() - 1)
             n += 1
             n = min(n, mat.ncols() - 1)
-                
+                    
         # Hang != 0 VA Cot == 0
         elif not row_m.is_zero() and col_n.is_zero():
             print_html(tag("Nhận thấy: Cột %s BẰNG 0, và hàng %s KHÁC 0." % (
@@ -152,7 +156,7 @@ def decom(mat):
             ), "h3"))
             n += 1
             n = min(n, mat.ncols() - 1)
-                
+                    
         # Hang == 0 VA Cot != 0
         elif row_m.is_zero() and not col_n.is_zero():
             print_html(tag("Nhận thấy: Hàng %s BẰNG 0, và cột %s KHÁC 0." % (
@@ -161,7 +165,7 @@ def decom(mat):
             ), "h3"))
             m += 1
             m = min(m, mat.nrows() - 1)
-                
+                    
         # Hang == 0 VA Cot == 0
         else:
             if mat.is_zero():
@@ -170,17 +174,17 @@ def decom(mat):
                 str(n+1), 
                 str(m+1),
             ), "h3"))
-        
+            
             m += 1
             m = min(m, mat.nrows() - 1)
             n += 1
             n = min(n, mat.ncols() - 1)
-                    
+                        
     print_html(tag("Nhận thấy: Ma trận không -&gt; Phân rã hoàn tất!", "h3"))
-        
+            
     print_html(tag("", "hr"))
     print_html(tag("Kết quả:", "h2"))
-        
+            
     #result = r""
     #for i, pair in enumerate(pairs):
     #    result += r"c_{%s} \cdot r_{%s}" % (
@@ -191,7 +195,7 @@ def decom(mat):
     #        result += r"+"
     #result = r"$A = " + result + r"$"
     #print_html(result)
-        
+            
     result = r""
     for i, pair in enumerate(decoms):
         result += r"%s \cdot %s" % (
@@ -202,9 +206,9 @@ def decom(mat):
             result += r"+"
     result = r"$A = " + result + r"$"
     print_html(result)
-            
-    print_html(r'$\Rightarrow Rank = %s$' % (latex(rank)))
                 
+    print_html(r'$\Rightarrow Rank = %s$' % (latex(rank)))
+                    
 ###########################################
 @interact(layout=dict(top = [['m', 'n']]))
 def matrix_dimensions(
@@ -217,7 +221,7 @@ def matrix_dimensions(
     if not n in [2, 3, 4, 5]:
         print('Số cột phải là một số nguyên từ 2 đến 5')
         return
-                
+                    
     @interact(layout=dict(top = [['A']]))
     def func1(
         A = ('Ma trận A', matrix(
@@ -230,14 +234,13 @@ def matrix_dimensions(
         if A.is_zero():
             print('Ma trận đầu vào phải khác 0.')
             return
-        
+            
         latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
         decom(A)
-      </slate>
-    </interactive>
-  </figure>
+        </slate>
+      </interactive>
+    </figure>
 
-
-  <p> Coming soon. </p>
-
+  </subsection>
+  
 </section>

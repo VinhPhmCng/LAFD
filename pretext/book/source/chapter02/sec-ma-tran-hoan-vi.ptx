@@ -18,45 +18,116 @@ See the file COPYING for copying conditions.
     </ul>
   </objectives>
 
+  <subsection xml:id="subsec-ma-tran-hoan-vi-code">
+    <title>Ma trận hoán vị trong lập trình</title>
 
-  <figure xml:id="figure-sage-interact-ma-tran-hoan-vi">
-    <caption>Tương tác ma trận hoán vị với SageMath Interact</caption>
+    <p>
+      <ul>
+        <li>
+          <p>
+            Để nhân trong lập trình, ta dùng <c>*</c>.
+          </p>
+        </li>
+      </ul>
+    </p>
+    
+    <sage language="python">
+      <input>
+# Trong Numpy (Python)
+import numpy as np # Su dung thu vien Numpy
+        
+P = np.matrix([
+    [1, 0, 0],
+    [0, 0, 1],
+    [0, 1, 0]
+])
 
-    <interactive xml:id="interactive-sage-interact-ma-tran-hoan-vi" platform="sage" width="100%" aspect="1:1">
-      <slate surface="sage">
-        @interact(layout=dict(top = [['m', 'n']]))
-        def matrix_dimensions(
-          m = ('Số hàng', 3),
-          n = ('Số cột', 3),
-        ):
-          if not m in [2, 3, 4, 5]:
-            print('Số hàng phải là một số nguyên từ 2 đến 5')
-            return
-          if not n in [2, 3, 4, 5]:
-            print('Số cột phải là một số nguyên từ 2 đến 5')
-            return
+A = np.matrix([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
 
-          @interact(layout=dict(top = [['A'], ['P1'], ['P2']]))
-          def func1(
-            A = ('Ma trận A', matrix(
-              QQ,
-              nrows = m,
-              ncols = n,
-              entries = lambda i, j: i + j + 1,
-            )),
-            P1 = ('Ma trận hoán vị hàng P1', matrix.identity(m)),
-            P2 = ('Ma trận hoán vị cột P2', matrix.identity(n)),
-          ):
-            pretty_print('\n')
-            latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
-            pretty_print(html(r'$P_{1} \cdot A = %s \cdot %s = %s$' % (latex(P1), latex(A), latex(P1 * A))))
-            pretty_print('\n\n')
-            pretty_print(html(r'$A \cdot P_{2} = %s \cdot %s = %s$' % (latex(A), latex(P2), latex(A * P2))))
+print("OK")
+      </input>
+    </sage>
+    <problem>
+      <pre>
+OK
+      </pre>
+    </problem>
 
-      </slate>
-    </interactive>
-  </figure>
+    <sage language="python">
+      <input>
+# ...
+print(A * P)
+      </input>
+    </sage>
+    <problem>
+      <pre>
+[[1 3 2]
+ [4 6 5]
+ [7 9 8]]
+      </pre>
+    </problem>
 
-  <p> Coming soon. </p>
+    <sage language="python">
+      <input>
+# ...
+print(P * A)
+      </input>
+    </sage>
+    <problem>
+      <pre>
+[[1 2 3]
+ [7 8 9]
+ [4 5 6]]
+      </pre>
+    </problem>
+
+  </subsection>
+
+  <subsection xml:id="subsec-ma-tran-hoan-vi-interact">
+    <title>Tương tác ma trận hoán vị với SageMath Interact</title>
+    
+    <figure xml:id="figure-ma-tran-hoan-vi">
+      <caption>Tương tác ma trận hoán vị với SageMath Interact</caption>
+
+      <interactive xml:id="interactive-ma-tran-hoan-vi" platform="sage" width="100%" aspect="1:1">
+        <slate surface="sage">
+@interact(layout=dict(top = [['m', 'n']]))
+def matrix_dimensions(
+  m = ('Số hàng', 3),
+  n = ('Số cột', 3),
+):
+  if not m in [2, 3, 4, 5]:
+    print('Số hàng phải là một số nguyên từ 2 đến 5')
+    return
+  if not n in [2, 3, 4, 5]:
+    print('Số cột phải là một số nguyên từ 2 đến 5')
+    return
+
+  @interact(layout=dict(top = [['A'], ['P1'], ['P2']]))
+  def func1(
+    A = ('Ma trận A', matrix(
+      QQ,
+      nrows = m,
+      ncols = n,
+      entries = lambda i, j: i + j + 1,
+    )),
+    P1 = ('Ma trận hoán vị hàng P1', matrix.identity(m)),
+    P2 = ('Ma trận hoán vị cột P2', matrix.identity(n)),
+  ):
+    pretty_print('\n')
+    latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
+    pretty_print(html(r'$P_{1} \cdot A = %s \cdot %s = %s$' % (latex(P1), latex(A), latex(P1 * A))))
+    pretty_print('\n\n')
+    pretty_print(html(r'$A \cdot P_{2} = %s \cdot %s = %s$' % (latex(A), latex(P2), latex(A * P2))))
+
+        </slate>
+      </interactive>
+    </figure>
+
+  </subsection>
 
 </section>
