@@ -59,6 +59,33 @@ print(a / 2)
       </pre>
     </problem>
 
+    <p>
+      Ví dụ chia ma trận cho <m>0 \rightarrow</m> <alert>Lỗi</alert>:
+    </p>
+
+    <sage>
+      <input>
+# Trong SageMath
+        
+b = matrix([
+    [1, 2],
+    [3, 4],
+])
+
+print(b / 0)
+      </input>
+    </sage>
+    <problem>
+      <pre>
+ZeroDivisionError
+Cell In [1], line 8
+
+...
+
+ZeroDivisionError: rational division by zero
+      </pre>
+    </problem>
+
   </subsection>
 
 </section>

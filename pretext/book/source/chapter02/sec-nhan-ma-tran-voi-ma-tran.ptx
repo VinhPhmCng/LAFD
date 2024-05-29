@@ -13,7 +13,7 @@ See the file COPYING for copying conditions.
   <objectives>
     <introduction>
       <p>
-        Giới thiệu bốn cách nhân hai ma trận <m>A</m> và <m><m>B</m></m>:
+        Giới thiệu bốn cách nhân hai ma trận <m>A</m> và <m>B</m>:
       </p>
     </introduction>
     <ol>
@@ -103,8 +103,37 @@ pretty_print(html(r'$%s \cdot %s = %s$' % (latex(B), latex(A), latex(B*A))))
       </p>
     </problem>
 
+    <p>
+      Ví dụ nhân hai ma trận không thỏa mãn điều kiện kích thước <m>\rightarrow</m> <alert>Lỗi</alert>:
+    </p>
+
+    <sage>
+      <input>
+# Trong SageMath
+        
+b = matrix([
+    [1, 2],
+    [3, 4],
+])
+
+c = matrix([
+    [1, 2, 3]
+])
+
+print(b * c)
+      </input>
+    </sage>
+    <problem>
+      <pre>
+TypeError
+Cell In [1], line 12
+
+...
+
+TypeError: unsupported operand parent(s) for *: 'Full MatrixSpace of 2 by 2 dense matrices over Integer Ring' and 'Full MatrixSpace of 1 by 3 dense matrices over Integer Ring'
+      </pre>
+    </problem>
 
     </subsection>
-
 
 </section>
