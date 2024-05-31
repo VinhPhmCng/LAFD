@@ -24,7 +24,7 @@ See the file COPYING for copying conditions.
       <ul>
         <li>
           <p>
-            Để tính <m>LU</m> trong lập trình, ta dùng hàm <c>LU()</c>.
+            Để tính <m>LU</m> trong SageMath, ta dùng hàm <c>LU()</c>.
           </p>
         </li>
       </ul>

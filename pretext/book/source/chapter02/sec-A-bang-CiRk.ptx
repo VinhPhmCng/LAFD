@@ -220,10 +220,10 @@ def matrix_dimensions(
     n = ('Số cột', 3),
 ):
     if not m in [2, 3, 4, 5]:
-        print('Số hàng phải là một số nguyên từ 2 đến 5')
+        print('Số hàng phải là một số nguyên từ 2 đến 5.')
         return
     if not n in [2, 3, 4, 5]:
-        print('Số cột phải là một số nguyên từ 2 đến 5')
+        print('Số cột phải là một số nguyên từ 2 đến 5.')
         return
                     
     @interact(layout=dict(top = [['A']]))
