@@ -48,6 +48,7 @@ def format_matrix(mat):
                     
 def decom(mat):
     is_e_zero = False
+    m_save = 0
     m = 0 # Hang
     n = 0 # Cot
     i = 0
@@ -55,12 +56,7 @@ def decom(mat):
     pairs = []
     decoms = []
     
-    is_wide_matrix = True
-    if mat.nrows() &lt; mat.ncols():
-        is_wide_matrix = False
-    print(is_wide_matrix)
-            
-    while m &lt; mat.nrows() and n &lt; mat.ncols() and i &lt; 8:
+    while m &lt; mat.nrows() and n &lt; mat.ncols():
         i += 1
         row_m = mat.matrix_from_rows([m])
         col_n = mat.matrix_from_columns([n])
@@ -100,10 +96,11 @@ def decom(mat):
         if not row_m.is_zero() and not col_n.is_zero():
             if mat[m, n] == 0:
                 is_e_zero = True
-                if is_wide_matrix:
-                    m += 1
-                else:
-                    n += 1
+                temp = m
+                while mat[temp, n] == 0:
+                    temp += 1
+                m_save = m
+                m = temp
                 continue
                 
             row_m = row_m / mat[m, n] # Chia hang
@@ -196,10 +193,7 @@ def decom(mat):
         
         if is_e_zero:
             is_e_zero = False
-            if is_wide_matrix:
-                m -= 2
-            else:
-                n -= 2
+            m = m_save
 
     #
     #print_html(tag("Nhận thấy: Ma trận không -&gt; Phân rã hoàn tất!", "h3"))
