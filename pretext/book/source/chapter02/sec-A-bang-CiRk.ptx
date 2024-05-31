@@ -95,6 +95,7 @@ def decom(mat):
         # Hang != 0 VA Cot != 0
         if not row_m.is_zero() and not col_n.is_zero():
             if mat[m, n] == 0:
+                print_html(tag("Trường hợp: Phần tử giao của hàng và cột bằng 0", "h3"))
                 is_e_zero = True
                 temp = m
                 while mat[temp, n] == 0:
@@ -107,10 +108,7 @@ def decom(mat):
             CnRm = col_n * row_m
             rem = mat - CnRm
                     
-            #print_html(tag("Nhận thấy: Hàng %s và cột %s đều KHÁC 0." % (
-                #str(m+1), 
-                #str(n+1),
-            #), "h3"))
+            print_html(tag("Trường hợp: Hàng và cột đều khác 0", "h3"))
                         
             CnRm_str = r''
             if mat[m, n] == 1:
@@ -161,19 +159,13 @@ def decom(mat):
                     
         # Hang != 0 VA Cot == 0
         elif not row_m.is_zero() and col_n.is_zero():
-            #print_html(tag("Nhận thấy: Cột %s BẰNG 0, và hàng %s KHÁC 0." % (
-                #str(n+1), 
-                #str(m+1),
-            #), "h3"))
+            print_html("Trường hợp: Hàng khác 0 và cột bằng 0")
             n += 1
             n = min(n, mat.ncols() - 1)
                     
         # Hang == 0 VA Cot != 0
         elif row_m.is_zero() and not col_n.is_zero():
-            #print_html(tag("Nhận thấy: Hàng %s BẰNG 0, và cột %s KHÁC 0." % (
-                #str(m+1), 
-                #str(n+1),
-            #), "h3"))
+            print_html("Trường hợp: Hàng bằng 0 và cột khác 0")
             m += 1
             m = min(m, mat.nrows() - 1)
                     
@@ -181,11 +173,7 @@ def decom(mat):
         else:
             if mat.is_zero():
                 break
-            #print_html(tag("Nhận thấy: Hàng %s và cột %s đều BẰNG 0." % (
-                #str(m+1), 
-                #str(1+1),
-            #), "h3"))
-            
+            print_html("Trường hợp: Hàng và cột đều bằng 0")
             m += 1
             m = min(m, mat.nrows() - 1)
             n += 1
@@ -195,8 +183,8 @@ def decom(mat):
             is_e_zero = False
             m = m_save
 
-    #
-    #print_html(tag("Nhận thấy: Ma trận không -&gt; Phân rã hoàn tất!", "h3"))
+    # Finish decomposition
+    print_html(tag("Ma trận dư bằng 0 -&gt; Phân rã hoàn tất!", "h3"))
             
     print_html(tag("", "hr"))
     print_html(tag("Kết quả:", "h2"))
