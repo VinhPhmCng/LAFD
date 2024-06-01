@@ -239,9 +239,9 @@ def multiply1(A, B):
     print_html(tag("", "hr"))
     print_html(tag("Kết quả:", "h2"))
     print_html(r'$%s \cdot %s = %s$' % (
-      latex(format_matrix(A)),
-      latex(format_matrix(B)),
-      latex(format_matrix(M)),
+        latex(format_matrix(A)),
+        latex(format_matrix(B)),
+        latex(format_matrix(M)),
     ))
 
 ###########################################
@@ -317,20 +317,75 @@ def format_matrix(mat):
     #new_mat = mat.apply_map(for_mat, R=QQ)
     #return new_mat
                     
-def multiply1(A, B):
-    C = A * B
+def multiply2(A, B):
+    M = A * B
+    size = r'%s \times %s' % (
+        latex(M.nrows()),
+        latex(M.ncols()),
+    )
+
+    print_html(tag("", "hr"))
+    print_html(r'$A = %s \qquad B = %s$' % (
+        latex(format_matrix(A)),
+        latex(format_matrix(B)),
+    ))
+    pretty_print("\n")
+    print_html(r'$M = A \cdot B \rightarrow M_{%s}$' % (
+        size,
+    ))
+
+    M1 = A * B.matrix_from_columns([0])
+    print_html(tag("", "hr"))
+    print_html(r'$A \cdot C_{1}^{B} = %s \cdot %s = %s$' % (
+        latex(format_matrix(A)),
+        latex(format_matrix(B.matrix_from_columns([0]))),
+        latex(format_matrix(M1)),
+    ))
+    t = r'$\rightarrow M = \begin{bmatrix} %s &amp; \cdot &amp; \cdots ' 
+    for i in range(1, M.nrows()):
+        t += r'\\ %s &amp; \cdot &amp; \cdots '
+    t += r'\end{bmatrix}_{%s}$'
+    print_html(t % (
+        *M1.list(),
+        size,
+    ))
+
+    M12 = A * B.matrix_from_columns([0, 1])
+    M2 = A * B.matrix_from_columns([1])
+    print_html(tag("", "hr"))
+    print_html(r'$A \cdot C_{2}^{B} = %s \cdot %s = %s$' % (
+        latex(format_matrix(A)),
+        latex(format_matrix(B.matrix_from_columns([1]))),
+        latex(format_matrix(M2)),
+    ))
+    t = r'$\rightarrow M = \begin{bmatrix} %s &amp; %s &amp; \cdots ' 
+    for i in range(1, M.nrows()):
+        t += r'\\ %s &amp; %s &amp; \cdots '
+    t += r'\end{bmatrix}_{%s}$'
+    print_html(t % (
+        *M12.list(),
+        size,
+    ))
+
+    print_html(tag("", "hr"))
+    print_html(tag("Tương tự, tính tất cả các cột của M", "h3"))
+    print_html(tag("...", "h3"))
+
+    print_html(tag("", "hr"))
+    print_html(tag("Kết quả:", "h2"))
     print_html(r'$%s \cdot %s = %s$' % (
         latex(format_matrix(A)),
         latex(format_matrix(B)),
-        latex(format_matrix(C)),
+        latex(format_matrix(M)),
     ))
+
 
 ###########################################
 @interact(layout=dict(top = [['m', 'n', 'p']]))
 def matrix_dimensions(
-    m = ('Số hàng của A', 3),
+    m = ('Số hàng của A', 2),
     n = ('Số cột của A', 3),
-    p = ('Số cột của B', 2),
+    p = ('Số cột của B', 3),
 ):
     if not m in [2, 3, 4, 5]:
         print('Số hàng của A phải là một số nguyên từ 2 đến 5.')
@@ -362,7 +417,7 @@ def matrix_dimensions(
             #return
             
         latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
-        multiply1(A, B)
+        multiply2(A, B)
         </slate>
       </interactive>
     </figure>
@@ -398,12 +453,86 @@ def format_matrix(mat):
     #new_mat = mat.apply_map(for_mat, R=QQ)
     #return new_mat
                     
-def multiply1(A, B):
-    C = A * B
+def multiply3(A, B):
+    M = A * B
+    size = r'%s \times %s' % (
+        latex(M.nrows()),
+        latex(M.ncols()),
+    )
+
+    print_html(tag("", "hr"))
+    print_html(r'$A = %s \qquad B = %s$' % (
+        latex(format_matrix(A)),
+        latex(format_matrix(B)),
+    ))
+    pretty_print("\n")
+    print_html(r'$M = A \cdot B \rightarrow M_{%s}$' % (
+        size,
+    ))
+
+    M1 = A.matrix_from_rows([0]) * B
+    print_html(tag("", "hr"))
+    print_html(r'$R_{1}^{A} \cdot B = %s \cdot %s = %s$' % (
+        latex(format_matrix(A.matrix_from_rows([0]))),
+        latex(format_matrix(B)),
+        latex(format_matrix(M1)),
+    ))
+    t = r'$\rightarrow M = \begin{bmatrix} ' 
+    for i in range(1, M.ncols()):
+        t += r'%s &amp; '
+    t += r'%s \\ '
+
+    for i in range(1, M.ncols()):
+        t += r'\cdot &amp; '
+    t += r'\cdot \\ '
+
+    for i in range(1, M.ncols()):
+        t += r'\vdots &amp; '
+    t += r'\vdots'
+    t += r'\end{bmatrix}_{%s}$'
+
+    print_html(t % (
+        *M1.list(),
+        size,
+    ))
+
+    M12 = A.matrix_from_rows([0, 1]) * B
+    M2 = A.matrix_from_rows([1]) * B
+    print_html(tag("", "hr"))
+    print_html(r'$R_{2}^{A} \cdot B = %s \cdot %s = %s$' % (
+        latex(format_matrix(A.matrix_from_rows([1]))),
+        latex(format_matrix(B)),
+        latex(format_matrix(M2)),
+    ))
+    t = r'$\rightarrow M = \begin{bmatrix} ' 
+    for i in range(1, M.ncols()):
+        t += r'%s &amp; '
+    t += r'%s \\ '
+
+    for i in range(1, M.ncols()):
+        t += r'%s &amp; '
+    t += r'%s \\ '
+
+    for i in range(1, M.ncols()):
+        t += r'\vdots &amp; '
+    t += r'\vdots'
+    t += r'\end{bmatrix}_{%s}$'
+
+    print_html(t % (
+        *M12.list(),
+        size,
+    ))
+
+    print_html(tag("", "hr"))
+    print_html(tag("Tương tự, tính tất cả các hàng của M", "h3"))
+    print_html(tag("...", "h3"))
+
+    print_html(tag("", "hr"))
+    print_html(tag("Kết quả:", "h2"))
     print_html(r'$%s \cdot %s = %s$' % (
         latex(format_matrix(A)),
         latex(format_matrix(B)),
-        latex(format_matrix(C)),
+        latex(format_matrix(M)),
     ))
 
 ###########################################
@@ -443,7 +572,7 @@ def matrix_dimensions(
             #return
             
         latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
-        multiply1(A, B)
+        multiply3(A, B)
         </slate>
       </interactive>
     </figure>
@@ -479,12 +608,60 @@ def format_matrix(mat):
     #new_mat = mat.apply_map(for_mat, R=QQ)
     #return new_mat
                     
-def multiply1(A, B):
-    C = A * B
-    print_html(r'$%s \cdot %s = %s$' % (
+def multiply4(A, B):
+    M = A * B
+    size = r'%s \times %s' % (
+        latex(M.nrows()),
+        latex(M.ncols()),
+    )
+
+    print_html(tag("", "hr"))
+    print_html(r'$A = %s \qquad B = %s$' % (
         latex(format_matrix(A)),
         latex(format_matrix(B)),
-        latex(format_matrix(C)),
+    ))
+    pretty_print("\n")
+    print_html(r'$M = A \cdot B \rightarrow M_{%s}$' % (
+        size,
+    ))
+
+    X1 = A.matrix_from_columns([0]) * B.matrix_from_rows([0])
+    print_html(tag("", "hr"))
+    print_html(r'$C_{1}^{A} \cdot R_{1}^{B} = %s \cdot %s = %s$' % (
+        latex(format_matrix(A.matrix_from_columns([0]))),
+        latex(format_matrix(B.matrix_from_rows([0]))),
+        latex(format_matrix(X1)),
+    ))
+
+    X2 = A.matrix_from_columns([1]) * B.matrix_from_rows([1])
+    print_html(tag("", "hr"))
+    print_html(r'$C_{2}^{A} \cdot R_{2}^{B} = %s \cdot %s = %s$' % (
+        latex(format_matrix(A.matrix_from_columns([1]))),
+        latex(format_matrix(B.matrix_from_rows([1]))),
+        latex(format_matrix(X2)),
+    ))
+
+    print_html(tag("", "hr"))
+    print_html(tag("Tương tự, tính tất cả các ma trận thành phần", "h3"))
+    print_html(tag("...", "h3"))
+
+    print_html(tag("", "hr"))
+    print_html(tag("Kết quả:", "h2"))
+
+    Xs = []
+    t = r'$M = '
+    for i in range(A.ncols()):
+        Xs.append(A.matrix_from_columns([i]) * B.matrix_from_rows([i]))
+        t += r'%s '
+        if i != A.ncols() - 1:
+            t += r'+ '
+    t += r'$'
+    print_html(t % (
+        *[latex(format_matrix(X)) for X in Xs],
+    ))
+
+    print_html(r'$\leftrightarrow M = %s$' % (
+        latex(format_matrix(M)),
     ))
 
 ###########################################
@@ -524,7 +701,7 @@ def matrix_dimensions(
             #return
             
         latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
-        multiply1(A, B)
+        multiply4(A, B)
         </slate>
       </interactive>
     </figure>
