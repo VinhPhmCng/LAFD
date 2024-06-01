@@ -502,7 +502,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "1.4",
   "title": "Nhân Vector Với 1 Số",
-  "body": " Nhân Vector Với 1 Số    Giới thiệu phép nhân vector với một số.     Nhân vector cột với 1 số  Thực hiện và cho kết quả tương tự phép nhân số với số.  Ví dụ:     Tính chất  Phép nhân vector cột với 1 số có các tính chất đã nêu ở .    Chia vector cột cho 1 số  Thực hiện và cho kết quả tương tự phép chia số với số.      Nhân vector với 1 số trong lập trình     Để nhân trong lập trình, ta dùng * .    Để chia trong lập trình, ta dùng \/ .       [[2] [4] [6]] [[0.5] [1. ] [1.5]]    "
+  "body": " Nhân Vector Với 1 Số    Giới thiệu phép nhân vector với một số.     Nhân vector cột với 1 số  Thực hiện và cho kết quả tương tự phép nhân số với số.  Ví dụ:     Tính chất  Phép nhân vector cột với 1 số có các tính chất đã nêu ở .    Chia vector cột cho 1 số  Thực hiện và cho kết quả tương tự phép chia số với số.      Nhân vector với 1 số trong lập trình     Để nhân trong lập trình, ta dùng * .    Để chia trong lập trình, ta dùng \/ .       [[2] [4] [6]] [[0.5] [1. ] [1.5]]   Ví dụ chia vector cho  Lỗi :    ZeroDivisionError Cell In [1], line 7 ... ZeroDivisionError: rational division by zero    "
 },
 {
   "id": "sec-nhan-vector-voi-1-so-2",
@@ -539,6 +539,15 @@ var ptx_lunr_docs = [
   "number": "1.4.3",
   "title": "",
   "body": " [[2] [4] [6]] [[0.5] [1. ] [1.5]]  "
+},
+{
+  "id": "subsec-nhan-vector-voi-1-so-code-7",
+  "level": "2",
+  "url": "sec-nhan-vector-voi-1-so.html#subsec-nhan-vector-voi-1-so-code-7",
+  "type": "Output",
+  "number": "1.4.4",
+  "title": "",
+  "body": " ZeroDivisionError Cell In [1], line 7 ... ZeroDivisionError: rational division by zero  "
 },
 {
   "id": "sec-to-hop-tuyen-tinh",
@@ -673,7 +682,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "2.3",
   "title": "Nhân Ma Trận Với 1 Số",
-  "body": " Nhân Ma Trận Với 1 Số    Giới thiệu phép nhân ma trận với một số.     Nhân ma trận với 1 số trong lập trình     Để nhân trong lập trình, ta dùng * .    Để chia trong lập trình, ta dùng \/ .       [[ 2 4 6] [ 8 10 12]] [[0.5 1. 1.5] [2. 2.5 3. ]]    "
+  "body": " Nhân Ma Trận Với 1 Số    Giới thiệu phép nhân ma trận với một số.     Nhân ma trận với 1 số trong lập trình     Để nhân trong lập trình, ta dùng * .    Để chia trong lập trình, ta dùng \/ .       [[ 2 4 6] [ 8 10 12]] [[0.5 1. 1.5] [2. 2.5 3. ]]   Ví dụ chia ma trận cho  Lỗi :    ZeroDivisionError Cell In [1], line 8 ... ZeroDivisionError: rational division by zero    "
 },
 {
   "id": "sec-nhan-ma-tran-voi-1-so-2",
@@ -692,6 +701,15 @@ var ptx_lunr_docs = [
   "number": "2.3.1",
   "title": "",
   "body": " [[ 2 4 6] [ 8 10 12]] [[0.5 1. 1.5] [2. 2.5 3. ]]  "
+},
+{
+  "id": "subsec-nhan-ma-tran-voi-1-so-code-7",
+  "level": "2",
+  "url": "sec-nhan-ma-tran-voi-1-so.html#subsec-nhan-ma-tran-voi-1-so-code-7",
+  "type": "Output",
+  "number": "2.3.2",
+  "title": "",
+  "body": " ZeroDivisionError Cell In [1], line 8 ... ZeroDivisionError: rational division by zero  "
 },
 {
   "id": "sec-A-bang-Ciei",
@@ -790,7 +808,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "2.7",
   "title": "Nhân Ma Trận Với Ma Trận",
-  "body": " Nhân Ma Trận Với Ma Trận    Giới thiệu bốn cách nhân hai ma trận và :    Nhân thông thường: Nhân các hàng của với các cột của (thường sử dụng khi viết tài liệu).  Nhân ma trận với các cột của .  Nhân các hàng của với ma trận .  Tổng của các phép nhân các cột của với các hàng của (thường được sử dụng trong tính toán).     Nhân ma trận với ma trận trong lập trình     Để nhân trong lập trình, ta dùng * .       [[22 28] [49 64]]                "
+  "body": " Nhân Ma Trận Với Ma Trận    Giới thiệu bốn cách nhân hai ma trận và :    Nhân thông thường: Nhân các hàng của với các cột của (thường sử dụng khi viết tài liệu).  Nhân ma trận với các cột của .  Nhân các hàng của với ma trận .  Tổng của các phép nhân các cột của với các hàng của (thường được sử dụng trong tính toán).     Nhân hai ma trận trong lập trình     Để nhân trong lập trình, ta dùng * .       [[22 28] [49 64]]               Ví dụ nhân hai ma trận không thỏa mãn điều kiện kích thước  Lỗi :    TypeError Cell In [1], line 12 ... TypeError: unsupported operand parent(s) for *: 'Full MatrixSpace of 2 by 2 dense matrices over Integer Ring' and 'Full MatrixSpace of 1 by 3 dense matrices over Integer Ring'     Tương tác cách nhân thứ nhất với SageMath Interact   Tương tác cách nhân thứ nhất với SageMath Interact      Tương tác cách nhân thứ hai với SageMath Interact   Tương tác cách nhân thứ hai với SageMath Interact      Tương tác cách nhân thứ ba với SageMath Interact   Tương tác cách nhân thứ ba với SageMath Interact      Tương tác cách nhân thứ tư với SageMath Interact   Tương tác cách nhân thứ tư với SageMath Interact     "
 },
 {
   "id": "sec-nhan-ma-tran-voi-ma-tran-2",
@@ -829,13 +847,58 @@ var ptx_lunr_docs = [
   "body": "    "
 },
 {
+  "id": "subsec-nhan-ma-tran-voi-ma-tran-code-11",
+  "level": "2",
+  "url": "sec-nhan-ma-tran-voi-ma-tran.html#subsec-nhan-ma-tran-voi-ma-tran-code-11",
+  "type": "Output",
+  "number": "2.7.4",
+  "title": "",
+  "body": " TypeError Cell In [1], line 12 ... TypeError: unsupported operand parent(s) for *: 'Full MatrixSpace of 2 by 2 dense matrices over Integer Ring' and 'Full MatrixSpace of 1 by 3 dense matrices over Integer Ring'  "
+},
+{
+  "id": "figure-nhan-ma-tran-voi-ma-tran-1",
+  "level": "2",
+  "url": "sec-nhan-ma-tran-voi-ma-tran.html#figure-nhan-ma-tran-voi-ma-tran-1",
+  "type": "Hình",
+  "number": "2.7.5",
+  "title": "",
+  "body": " Tương tác cách nhân thứ nhất với SageMath Interact   "
+},
+{
+  "id": "figure-nhan-ma-tran-voi-ma-tran-2",
+  "level": "2",
+  "url": "sec-nhan-ma-tran-voi-ma-tran.html#figure-nhan-ma-tran-voi-ma-tran-2",
+  "type": "Hình",
+  "number": "2.7.6",
+  "title": "",
+  "body": " Tương tác cách nhân thứ hai với SageMath Interact   "
+},
+{
+  "id": "figure-nhan-ma-tran-voi-ma-tran-3",
+  "level": "2",
+  "url": "sec-nhan-ma-tran-voi-ma-tran.html#figure-nhan-ma-tran-voi-ma-tran-3",
+  "type": "Hình",
+  "number": "2.7.7",
+  "title": "",
+  "body": " Tương tác cách nhân thứ ba với SageMath Interact   "
+},
+{
+  "id": "figure-nhan-ma-tran-voi-ma-tran-4",
+  "level": "2",
+  "url": "sec-nhan-ma-tran-voi-ma-tran.html#figure-nhan-ma-tran-voi-ma-tran-4",
+  "type": "Hình",
+  "number": "2.7.8",
+  "title": "",
+  "body": " Tương tác cách nhân thứ tư với SageMath Interact   "
+},
+{
   "id": "sec-ma-tran-hoan-vi",
   "level": "1",
   "url": "sec-ma-tran-hoan-vi.html",
   "type": "Mục",
   "number": "2.8",
   "title": "Ma Trận Hoán Vị",
-  "body": " Ma Trận Hoán Vị    Giới thiệu ma trận hoán vị .  Phép nhân sự hoán vị các cột.  Phép nhân sự hoán vị các hàng.     Tương tác ma trận hoán vị với SageMath Interact    Coming soon.  "
+  "body": " Ma Trận Hoán Vị    Giới thiệu ma trận hoán vị .  Phép nhân sự hoán vị các cột.  Phép nhân sự hoán vị các hàng.     Ma trận hoán vị trong lập trình     Để nhân trong lập trình, ta dùng * .       OK     [[1 3 2] [4 6 5] [7 9 8]]     [[1 2 3] [7 8 9] [4 5 6]]     Tương tác ma trận hoán vị với SageMath Interact   Tương tác ma trận hoán vị với SageMath Interact     "
 },
 {
   "id": "sec-ma-tran-hoan-vi-2",
@@ -847,11 +910,38 @@ var ptx_lunr_docs = [
   "body": "  Giới thiệu ma trận hoán vị .  Phép nhân sự hoán vị các cột.  Phép nhân sự hoán vị các hàng.   "
 },
 {
-  "id": "figure-sage-interact-ma-tran-hoan-vi",
+  "id": "subsec-ma-tran-hoan-vi-code-4",
   "level": "2",
-  "url": "sec-ma-tran-hoan-vi.html#figure-sage-interact-ma-tran-hoan-vi",
-  "type": "Hình",
+  "url": "sec-ma-tran-hoan-vi.html#subsec-ma-tran-hoan-vi-code-4",
+  "type": "Output",
   "number": "2.8.1",
+  "title": "",
+  "body": " OK  "
+},
+{
+  "id": "subsec-ma-tran-hoan-vi-code-6",
+  "level": "2",
+  "url": "sec-ma-tran-hoan-vi.html#subsec-ma-tran-hoan-vi-code-6",
+  "type": "Output",
+  "number": "2.8.2",
+  "title": "",
+  "body": " [[1 3 2] [4 6 5] [7 9 8]]  "
+},
+{
+  "id": "subsec-ma-tran-hoan-vi-code-8",
+  "level": "2",
+  "url": "sec-ma-tran-hoan-vi.html#subsec-ma-tran-hoan-vi-code-8",
+  "type": "Output",
+  "number": "2.8.3",
+  "title": "",
+  "body": " [[1 2 3] [7 8 9] [4 5 6]]  "
+},
+{
+  "id": "figure-ma-tran-hoan-vi",
+  "level": "2",
+  "url": "sec-ma-tran-hoan-vi.html#figure-ma-tran-hoan-vi",
+  "type": "Hình",
+  "number": "2.8.4",
   "title": "",
   "body": " Tương tác ma trận hoán vị với SageMath Interact   "
 },
@@ -862,7 +952,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "2.9",
   "title": "Biểu Diễn Rút Gọn Ma Trận <span class=\"process-math\">\\(A\\)<\/span> Theo Các Cột",
-  "body": " Biểu Diễn Rút Gọn Ma Trận Theo Các Cột     Biểu diễn thông qua các cột và hàng của .     Tương tác ma trận hoán vị với SageMath Interact    Coming soon.  "
+  "body": " Biểu Diễn Rút Gọn Ma Trận Theo Các Cột     Biểu diễn thông qua các cột và hàng của .     Tương tác với SageMath Interact   Tương tác với SageMath Interact     "
 },
 {
   "id": "sec-A-bang-CiRk-3",
@@ -874,13 +964,13 @@ var ptx_lunr_docs = [
   "body": "  Biểu diễn thông qua các cột và hàng của .   "
 },
 {
-  "id": "figure-sage-interact-CiRk",
+  "id": "figure-CiRk",
   "level": "2",
-  "url": "sec-A-bang-CiRk.html#figure-sage-interact-CiRk",
+  "url": "sec-A-bang-CiRk.html#figure-CiRk",
   "type": "Hình",
   "number": "2.9.1",
   "title": "",
-  "body": " Tương tác ma trận hoán vị với SageMath Interact   "
+  "body": " Tương tác với SageMath Interact   "
 },
 {
   "id": "sec-hang-cua-ma-tran",
@@ -907,7 +997,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "2.11",
   "title": "Phân Tích <span class=\"process-math\">\\(A = LU\\)<\/span>",
-  "body": " Phân Tích    Giới thiệu phân rã .  Giới thiệu phân rã .     Phân rã trong lập trình     Để tính trong lập trình, ta dùng hàm LU() .                  "
+  "body": " Phân Tích    Giới thiệu phân rã .  Giới thiệu phân rã .     Phân rã trong lập trình     Để tính trong SageMath, ta dùng hàm LU() .                  "
 },
 {
   "id": "sec-A-bang-LU-2",

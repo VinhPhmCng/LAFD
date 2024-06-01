@@ -87,7 +87,19 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* pre with class 'sagecell-python' an executable Sage cell
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "pre.sagecell-sage",
+  "linked": true,
+  "linkKey": "linked-sage",
+  "autoeval": false,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Chạy Code (Sage)"
+});
+</script><script>// Make *any* pre with class 'sagecell-python' an executable Sage cell
 // Their results will be linked, only within language type
 sagecell.makeSagecell({
   "inputLocation": "pre.sagecell-python",
@@ -289,10 +301,25 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-nhan-ma-tran-voi-ma-tran.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Nhân Ma Trận Với Ma Trận</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-nhan-ma-tran-voi-ma-tran.html#subsec-nhan-ma-tran-voi-ma-tran-code" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Nhân ma trận với ma trận trong lập trình</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-nhan-ma-tran-voi-ma-tran.html#subsec-nhan-ma-tran-voi-ma-tran-code" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Nhân hai ma trận trong lập trình</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-nhan-ma-tran-voi-ma-tran.html#subsec-nhan-ma-tran-voi-ma-tran-1-interact" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Tương tác cách nhân thứ nhất với SageMath Interact</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-nhan-ma-tran-voi-ma-tran.html#subsec-nhan-ma-tran-voi-ma-tran-2-interact" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Tương tác cách nhân thứ hai với SageMath Interact</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-nhan-ma-tran-voi-ma-tran.html#subsec-nhan-ma-tran-voi-ma-tran-3-interact" class="internal"><span class="codenumber">2.7.4</span> <span class="title">Tương tác cách nhân thứ ba với SageMath Interact</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-nhan-ma-tran-voi-ma-tran.html#subsec-nhan-ma-tran-voi-ma-tran-4-interact" class="internal"><span class="codenumber">2.7.5</span> <span class="title">Tương tác cách nhân thứ tư với SageMath Interact</span></a></div></li>
+</ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ma-tran-hoan-vi.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Ma Trận Hoán Vị</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-A-bang-CiRk.html" class="internal"><span class="codenumber">2.9</span> <span class="title"><span class="process-math">\(A = \sum C_{i}R_{k}\)</span></span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ma-tran-hoan-vi.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Ma Trận Hoán Vị</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ma-tran-hoan-vi.html#subsec-ma-tran-hoan-vi-code" class="internal"><span class="codenumber">2.8.1</span> <span class="title">Ma trận hoán vị trong lập trình</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ma-tran-hoan-vi.html#subsec-ma-tran-hoan-vi-interact" class="internal"><span class="codenumber">2.8.2</span> <span class="title">Tương tác ma trận hoán vị với SageMath Interact</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-A-bang-CiRk.html" class="internal"><span class="codenumber">2.9</span> <span class="title"><span class="process-math">\(A = \sum C_{i}R_{k}\)</span></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-A-bang-CiRk.html#subsec-CiRk-interact" class="internal"><span class="codenumber">2.9.1</span> <span class="title">Tương tác <span class="process-math">\(A = \sum C_{i}R_{k}\)</span> với SageMath Interact</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hang-cua-ma-tran.html" class="internal"><span class="codenumber">2.10</span> <span class="title">Hạng Của Ma Trận</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-A-bang-LU.html" class="internal"><span class="codenumber">2.11</span> <span class="title">Phân Tích <span class="process-math">\(A = LU\)</span></span></a></div>
@@ -374,7 +401,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul></div>
 <pre id="subsec-nhan-ma-tran-voi-1-so-code-3" class="ptx-sagecell sagecell-python"><script type="text/x-sage"># Trong Numpy (Python)
 import numpy as np # Su dung thu vien Numpy
-
+        
 a = np.matrix([
     [1, 2, 3],
     [4, 5, 6],
@@ -391,6 +418,24 @@ print(a / 2)
 
 [[0.5 1.  1.5]
  [2.  2.5 3. ]]
+</pre></article></details><div class="para" id="subsec-nhan-ma-tran-voi-1-so-code-5">Ví dụ chia ma trận cho <span class="process-math">\(0 \rightarrow\)</span> <em class="alert">Lỗi</em>:</div>
+<pre id="subsec-nhan-ma-tran-voi-1-so-code-6" class="ptx-sagecell sagecell-sage"><script type="text/x-sage"># Trong SageMath
+        
+b = matrix([
+    [1, 2],
+    [3, 4],
+])
+
+print(b / 0)
+</script></pre>
+<details id="subsec-nhan-ma-tran-voi-1-so-code-7" class="problem example-like born-hidden-knowl"><summary><h4 class="heading">
+<span class="type">Output</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="period">.</span>
+</h4></summary><article class="problem example-like"><pre class="code-block tex2jax_ignore">ZeroDivisionError
+Cell In [1], line 8
+
+...
+
+ZeroDivisionError: rational division by zero
 </pre></article></details></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-cong-ma-tran.html" title="Trước"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Trc</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-A-bang-Ciei.html" title="Tiếp"><span class="name">Tiếp</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
