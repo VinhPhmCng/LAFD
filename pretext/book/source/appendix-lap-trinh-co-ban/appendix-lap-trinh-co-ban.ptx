@@ -10,61 +10,117 @@ See the file COPYING for copying conditions.
 <appendix xml:id="appendix-lap-trinh-co-ban" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Lập Trình Cơ Bản</title>
 
-  <introduction>
+  <paragraphs>
+    <title></title>
     <p>
       Trong quyển sách này, các đoạn code mang tính tương tác giúp giới thiệu cho bạn đọc những khái niệm liên quan đến ma trận. Ngoài ra, ma trận là một đối tượng rất phổ biến trong lập trình và khoa học máy tính, đặc biệt là trong công nghệ trí tuệ nhân tạo (AI). Vì vậy, việc hiểu được phần nào cách làm việc với ma trận trong lập trình là một kỹ năng có giá trị trong thế giới ngày nay.
     </p>
 
     <p>
-      Phụ lục này là dành cho những bạn đọc mới làm quen với khái niệm lập trình. Vì vậy, những khái niệm được trình bày sẽ ở mức <em>đơn giản nhất và không chuyên sâu</em>. Nhưng nếu bạn có hứng thú với thế giới của lập trình, thì mạng Internet là tất cả những gì bạn cần để bắt đầu!
+      <url href="https://vinhphmcng.github.io/lap-trinh-co-ban-article/frontmatter.html" visual="vinhphmcng.github.io/lap-trinh-co-ban-article/">Lập Trình Cơ Bản: Dành Cho Người Mới Bắt Đầu</url> là một bài viết về lập trình và các khái niệm cơ bản nhất, được thiết kế thân thiện với người mới bắt đầu và có thời lượng đọc từ 5 đến 10 phút mỗi mục.
     </p>
+  </paragraphs>
+
+  <paragraphs>
+    <title>Kiến Thức Lập Trình Cơ Bản</title>
+    
+    <p>
+      Để đảm bảo việc hiểu các ví dụ code, bạn nên đọc qua bài viết trên. Những khái niệm cốt lõi nhất bạn nên biết là:
+        <ul>
+          <li>
+            <p>
+              <url href="https://vinhphmcng.github.io/lap-trinh-co-ban-article/sec-pro-environment.html" visual="vinhphmcng.github.io/lap-trinh-co-ban-article/sec-pro-environment">Môi Trường Lập Trình</url> 
+            </p>
+          </li>
+          <li>
+            <p>
+              <url href="https://vinhphmcng.github.io/lap-trinh-co-ban-article/sec-pro-language.html" visual="vinhphmcng.github.io/lap-trinh-co-ban-article/sec-pro-language">Ngôn Ngữ Lập Trình</url> 
+            </p>
+          </li>
+          <li>
+            <p>
+              <url href="https://vinhphmcng.github.io/lap-trinh-co-ban-article/sec-comment.html" visual="vinhphmcng.github.io/lap-trinh-co-ban-article/sec-comment">Ghi Chú</url> 
+            </p>
+          </li>
+          <li>
+            <p>
+              <url href="https://vinhphmcng.github.io/lap-trinh-co-ban-article/sec-variable.html" visual="vinhphmcng.github.io/lap-trinh-co-ban-article/sec-variable">Biến</url> 
+            </p>
+          </li>
+          <li>
+            <p>
+              <url href="https://vinhphmcng.github.io/lap-trinh-co-ban-article/sec-data-type.html" visual="vinhphmcng.github.io/lap-trinh-co-ban-article/sec-data-type">Kiểu Dữ Liệu</url> 
+            </p>
+          </li>
+          <li>
+            <p>
+              <url href="https://vinhphmcng.github.io/lap-trinh-co-ban-article/sec-data-structure.html" visual="vinhphmcng.github.io/lap-trinh-co-ban-article/sec-data-structure">Cấu Trúc Dữ Liệu</url> 
+            </p>
+          </li>
+          <li>
+            <p>
+              <url href="https://vinhphmcng.github.io/lap-trinh-co-ban-article/sec-operator.html" visual="vinhphmcng.github.io/lap-trinh-co-ban-article/sec-operator">Toán Tử</url> 
+            </p>
+          </li>
+          <li>
+            <p>
+              <url href="https://vinhphmcng.github.io/lap-trinh-co-ban-article/sec-attribute.html" visual="vinhphmcng.github.io/lap-trinh-co-ban-article/sec-attribute">Thuộc Tính</url> 
+            </p>
+          </li>
+          <li>
+            <p>
+              <url href="https://vinhphmcng.github.io/lap-trinh-co-ban-article/sec-function.html" visual="vinhphmcng.github.io/lap-trinh-co-ban-article/sec-function">Hàm</url> 
+            </p>
+          </li>
+          <li>
+            <p>
+              <url href="https://vinhphmcng.github.io/lap-trinh-co-ban-article/sec-error.html" visual="vinhphmcng.github.io/lap-trinh-co-ban-article/sec-error">Lỗi</url> 
+            </p>
+          </li>
+        </ul>
+    </p>
+  </paragraphs>
+
+  <paragraphs>
+    <title>Numpy Và SageMath</title>
 
     <p>
-      Những khái niệm mới sẽ được trình bày theo cấu trúc như sau:
-      <ol>
+      Phần lớn các ví dụ sử dụng một trong hai thư viện Numpy hoặc SageMath. Bạn có thể tham khảo các tài liệu sau:
+
+      <ul>
         <li>
           <p>
-            Định nghĩa
+            <url href="https://numpy.org/doc/stable/reference/generated/numpy.array.html" visual="numpy.org/doc/stable/reference/generated/numpy.array">numpy.array</url> 
           </p>
         </li>
         <li>
           <p>
-            Đoạn code ví dụ
+            <url href="https://numpy.org/doc/stable/reference/generated/numpy.matrix.html" visual="numpy.org/doc/stable/reference/generated/numpy.matrix">numpy.matrix</url> 
           </p>
         </li>
         <li>
           <p>
-            Lời giải thích cho đoạn code
+            <url href="https://numpy.org/doc/stable/reference/routines.linalg.html" visual="numpy.org/doc/stable/reference/routines.linalg">numpy.linalg</url> 
           </p>
         </li>
-      </ol>
-
-      <em>Khi chạy ví dụ code</em>, bạn hãy <term>song song</term> đọc lời giải thích để dễ dàng tiếp thu vấn đề.
+        <li>
+          <p>
+            <url href="https://doc.sagemath.org/html/en/prep/Quickstarts/Linear-Algebra.html" visual="doc.sagemath.org/html/en/prep/Quickstarts/Linear-Algebra">Sage Quickstart for Linear Algebra</url> 
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://doc.sagemath.org/html/en/reference/matrices/index.html" visual="doc.sagemath.org/html/en/reference/matrices/index">SageMath<mdash />Matrices and Spaces of Matrices</url> 
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://doc.sagemath.org/html/en/constructions/linear_algebra.html" visual="doc.sagemath.org/html/en/constructions/linear_algebra">SageMath<mdash />Linear Algebra</url> 
+          </p>
+        </li>
+      </ul>
     </p>
-
-    <p>
-      Phần lớn các khái niệm đều được trình bày qua ví dụ cụ thể để dễ dàng hơn cho bạn đọc, cũng như giảm khối lượng của phụ lục này. Đọc xong phụ lục này nghĩa là bạn <em>có thể đọc hiểu</em> phần lớn các ví dụ có code trong quyển sách này.
-    </p>
-
-    <p>
-      Nhưng, hãy hiểu rằng khả năng bạn có thể tự viết code sau phụ lục này là hạn chế, và đó cũng không phải là mục đích. Nếu đó là mong muốn của bạn, thì một lần nữa, mạng Internet là nơi hoàn hảo để bắt đầu khám phá.
-    </p>
-
-    <p>
-      Vậy thì, bắt đầu nào!
-    </p>
-  </introduction>
-
-  <!-- include sections -->
-  <xi:include href="./sec-pro-environment.ptx" />
-  <xi:include href="./sec-pro-language.ptx" />
-  <xi:include href="./sec-comment.ptx" />
-  <xi:include href="./sec-variable.ptx" />
-  <xi:include href="./sec-data-type.ptx" />
-  <xi:include href="./sec-data-structure.ptx" />
-  <xi:include href="./sec-operator.ptx" />
-  <xi:include href="./sec-attribute.ptx" />
-  <xi:include href="./sec-function.ptx" />
-  <xi:include href="./sec-error.ptx" />
+    
+  </paragraphs>
 
 </appendix>
