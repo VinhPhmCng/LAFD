@@ -18,11 +18,11 @@ See the file COPYING for copying conditions.
   <!-- include sections -->
   <xi:include href="sec-ma-tran.ptx" />
   <xi:include href="sec-cong-ma-tran.ptx" />
-  <xi:include href="sec-nhan-ma-tran-voi-1-so.ptx" />
+  <xi:include href="sec-nhan-ma-tran-va-so.ptx" />
   <xi:include href="sec-A-bang-Ciei.ptx" />
-  <xi:include href="sec-nhan-vector-voi-vector.ptx" />
-  <xi:include href="sec-nhan-ma-tran-voi-vector.ptx" />
-  <xi:include href="sec-nhan-ma-tran-voi-ma-tran.ptx" />
+  <xi:include href="sec-nhan-vector-va-vector.ptx" />
+  <xi:include href="sec-nhan-ma-tran-va-vector.ptx" />
+  <xi:include href="sec-nhan-ma-tran-va-ma-tran.ptx" />
   <xi:include href="sec-ma-tran-hoan-vi.ptx" />
   <xi:include href="sec-A-bang-CiRk.ptx" />
   <xi:include href="sec-hang-cua-ma-tran.ptx" />

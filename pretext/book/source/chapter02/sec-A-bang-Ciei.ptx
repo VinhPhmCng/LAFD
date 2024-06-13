@@ -18,11 +18,11 @@ See the file COPYING for copying conditions.
   </objectives>
   
   <subsection xml:id="subsec-Ciei-interact">
-    <title>Tương tác <m>A = \sum C_{i}e_{i}</m> với SageMath Interact</title>
+    <title>Trực quan hóa <m>A = \sum C_{i}e_{i}</m> với SageMath Interact</title>
     
     <figure xml:id="figure-Ciei">
 
-      <caption>Tương tác <m>A = \sum C_{i}e_{i}</m> với SageMath Interact</caption>
+      <caption>Trực quan hóa <m>A = \sum C_{i}e_{i}</m> với SageMath Interact</caption>
 
       <interactive xml:id="interactive-Ciei" platform="sage" width="100%" aspect="1:1">
         <slate surface="sage">

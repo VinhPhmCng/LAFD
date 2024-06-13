@@ -88,10 +88,10 @@ print(P * A)
   </subsection>
 
   <subsection xml:id="subsec-ma-tran-hoan-vi-interact">
-    <title>Tương tác ma trận hoán vị với SageMath Interact</title>
+    <title>Trực quan hóa ma trận hoán vị với SageMath Interact</title>
     
     <figure xml:id="figure-ma-tran-hoan-vi">
-      <caption>Tương tác ma trận hoán vị với SageMath Interact</caption>
+      <caption>Trực quan hóa ma trận hoán vị với SageMath Interact</caption>
 
       <interactive xml:id="interactive-ma-tran-hoan-vi" platform="sage" width="100%" aspect="1:1">
         <slate surface="sage">

@@ -72,21 +72,20 @@ See the file COPYING for copying conditions.
       <ul>
         <li>
           <p>
-            phần tử thứ nhất (có chỉ số <m>0</m>) là <m>-2</m>
+            phần tử thứ nhất là <m>-2</m>
           </p>
         </li>
         <li>
           <p>
-            phần tử thứ hai (có chỉ số <m>1</m>) là <m>0</m>
+            phần tử thứ hai là <m>0</m>
           </p>
         </li>
         <li>
           <p>
-            phần tử thứ ba (có chỉ số <m>2</m>) là <m>4.5</m>
+            phần tử thứ ba là <m>4.5</m>
           </p>
         </li>
       </ul>
-      Khái niệm <term>chỉ số</term> sẽ được nhắc đến trong <xref provisional="chi-so"></xref>.
     </p>
 
     <note>

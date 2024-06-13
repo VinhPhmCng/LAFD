@@ -7,8 +7,8 @@ Phạm Công Vinh, Phạm Xuân Trung
 See the file COPYING for copying conditions.
 ******************************************-->
 
-<section xml:id="sec-nhan-ma-tran-voi-ma-tran" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Nhân Ma Trận Với Ma Trận</title>
+<section xml:id="sec-nhan-ma-tran-va-ma-tran" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Nhân Ma Trận Và Ma Trận</title>
 
   <objectives>
     <introduction>
@@ -24,7 +24,7 @@ See the file COPYING for copying conditions.
     </ol>
   </objectives>
 
-  <subsection xml:id="subsec-nhan-ma-tran-voi-ma-tran-code">
+  <subsection xml:id="subsec-nhan-ma-tran-va-ma-tran-code">
     <title>Nhân hai ma trận trong lập trình</title>
 
     <p>
@@ -136,14 +136,14 @@ TypeError: unsupported operand parent(s) for *: 'Full MatrixSpace of 2 by 2 dens
 
   </subsection>
 
-  <subsection xml:id="subsec-nhan-ma-tran-voi-ma-tran-1-interact">
-    <title>Tương tác cách nhân thứ nhất với SageMath Interact</title>
+  <subsection xml:id="subsec-nhan-ma-tran-va-ma-tran-1-interact">
+    <title>Trực quan hóa cách nhân thứ nhất với SageMath Interact</title>
     
-    <figure xml:id="figure-nhan-ma-tran-voi-ma-tran-1">
+    <figure xml:id="figure-nhan-ma-tran-va-ma-tran-1">
 
-      <caption>Tương tác cách nhân thứ nhất với SageMath Interact</caption>
+      <caption>Trực quan hóa cách nhân thứ nhất với SageMath Interact</caption>
 
-      <interactive xml:id="interactive-nhan-ma-tran-voi-ma-tran-1" platform="sage" width="100%" aspect="1:1">
+      <interactive xml:id="interactive-nhan-ma-tran-va-ma-tran-1" platform="sage" width="100%" aspect="1:1">
         <slate surface="sage">
 import numpy as np
 
@@ -288,14 +288,14 @@ def matrix_dimensions(
 
   </subsection>
 
-  <subsection xml:id="subsec-nhan-ma-tran-voi-ma-tran-2-interact">
-    <title>Tương tác cách nhân thứ hai với SageMath Interact</title>
+  <subsection xml:id="subsec-nhan-ma-tran-va-ma-tran-2-interact">
+    <title>Trực quan hóa cách nhân thứ hai với SageMath Interact</title>
     
-    <figure xml:id="figure-nhan-ma-tran-voi-ma-tran-2">
+    <figure xml:id="figure-nhan-ma-tran-va-ma-tran-2">
 
-      <caption>Tương tác cách nhân thứ hai với SageMath Interact</caption>
+      <caption>Trực quan hóa cách nhân thứ hai với SageMath Interact</caption>
 
-      <interactive xml:id="interactive-nhan-ma-tran-voi-ma-tran-2" platform="sage" width="100%" aspect="1:1">
+      <interactive xml:id="interactive-nhan-ma-tran-va-ma-tran-2" platform="sage" width="100%" aspect="1:1">
         <slate surface="sage">
 import numpy as np
 
@@ -424,14 +424,14 @@ def matrix_dimensions(
 
   </subsection>
 
-  <subsection xml:id="subsec-nhan-ma-tran-voi-ma-tran-3-interact">
-    <title>Tương tác cách nhân thứ ba với SageMath Interact</title>
+  <subsection xml:id="subsec-nhan-ma-tran-va-ma-tran-3-interact">
+    <title>Trực quan hóa cách nhân thứ ba với SageMath Interact</title>
     
-    <figure xml:id="figure-nhan-ma-tran-voi-ma-tran-3">
+    <figure xml:id="figure-nhan-ma-tran-va-ma-tran-3">
 
-      <caption>Tương tác cách nhân thứ ba với SageMath Interact</caption>
+      <caption>Trực quan hóa cách nhân thứ ba với SageMath Interact</caption>
 
-      <interactive xml:id="interactive-nhan-ma-tran-voi-ma-tran-3" platform="sage" width="100%" aspect="1:1">
+      <interactive xml:id="interactive-nhan-ma-tran-va-ma-tran-3" platform="sage" width="100%" aspect="1:1">
         <slate surface="sage">
 import numpy as np
 
@@ -579,14 +579,14 @@ def matrix_dimensions(
 
   </subsection>
 
-  <subsection xml:id="subsec-nhan-ma-tran-voi-ma-tran-4-interact">
-    <title>Tương tác cách nhân thứ tư với SageMath Interact</title>
+  <subsection xml:id="subsec-nhan-ma-tran-va-ma-tran-4-interact">
+    <title>Trực quan hóa cách nhân thứ tư với SageMath Interact</title>
     
-    <figure xml:id="figure-nhan-ma-tran-voi-ma-tran-4">
+    <figure xml:id="figure-nhan-ma-tran-va-ma-tran-4">
 
-      <caption>Tương tác cách nhân thứ tư với SageMath Interact</caption>
+      <caption>Trực quan hóa cách nhân thứ tư với SageMath Interact</caption>
 
-      <interactive xml:id="interactive-nhan-ma-tran-voi-ma-tran-4" platform="sage" width="100%" aspect="1:1">
+      <interactive xml:id="interactive-nhan-ma-tran-va-ma-tran-4" platform="sage" width="100%" aspect="1:1">
         <slate surface="sage">
 import numpy as np
 

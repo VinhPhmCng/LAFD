@@ -19,7 +19,7 @@ See the file COPYING for copying conditions.
   <xi:include href="sec-so-thuc-va-tc.ptx" />
   <xi:include href="sec-vector.ptx" />
   <xi:include href="sec-cong-vector.ptx" />
-  <xi:include href="sec-nhan-vector-voi-1-so.ptx" />
+  <xi:include href="sec-nhan-vector-va-so.ptx" />
   <xi:include href="sec-to-hop-tuyen-tinh.ptx" />
   <xi:include href="sec-khong-gian-vector-1.ptx" />
 

@@ -17,15 +17,15 @@ See the file COPYING for copying conditions.
   </objectives>
   
 
-  <subsection xml:id="subsec-cong-vector-cot">
-    <title>Cộng Vector Cột</title>
+  <subsection xml:id="subsec-cong-vector">
+    <title>Cộng Vector</title>
 
     <p>Thực hiện và cho kết quả tương tự phép cộng số với số.</p>
 
     <note>
       <title>Điều kiện để cộng 2 hoặc nhiều vectors</title>
 
-      <p>Để cộng 2 hoặc nhiều vectors cột thì các vector đó phải có cùng số hàng.</p>
+      <p>Để cộng 2 hoặc nhiều vectors thì các vector đó phải có cùng kích thước.</p>
     </note>
 
     <p>
@@ -33,9 +33,17 @@ See the file COPYING for copying conditions.
       <md>
         <mrow number="yes">\bmat{2 \\ 3} + \bmat{3 \\ -1} = \bmat{5 \\ 2}</mrow>
         <mrow></mrow>
+
         <mrow number="yes">\bmat{-3 \\ 3} + \bmat{0 \\ 1}  + \bmat{3 \\ -4} = \bmat{0 \\ 0}</mrow>
         <mrow></mrow>
+
+        <mrow number="yes">\hvec{1 &amp; 2} + \hvec{3 &amp; 4}  = \hvec{4 &amp; 6}</mrow>
+        <mrow></mrow>
+
         <mrow number="yes">\bmat{1 \\ 2} + \bmat{1 \\ 2 \\ 3} \rightarrow \text{Không tính được}</mrow>
+        <mrow></mrow>
+
+        <mrow number="yes">\hvec{1 &amp; 2} + \bmat{1 \\ 2} \rightarrow \text{Không tính được}</mrow>
       </md>
     </p>
 
@@ -43,13 +51,13 @@ See the file COPYING for copying conditions.
       <title>Tính chất</title>
       
       <p>
-        Phép cộng các vector cột có các tính chất đã nêu ở <xref ref="subsec-tinh-chat-cua-cac-phep-toan"/>.
+        Phép cộng các vector có các tính chất đã nêu ở <xref ref="subsec-tinh-chat-cua-cac-phep-toan"/>.
       </p>
       
     </remark>
     
     <remark>
-      <title>Trừ vector cột</title>
+      <title>Trừ vector</title>
 
       <p>
         Thực hiện và cho kết quả tương tự phép trừ số với số. <me>a - b = a + (-b)</me>
@@ -110,7 +118,7 @@ print(a - b)
     </problem>
 
     <p>
-      Ví dụ cộng 2 vectors cột không có cùng số hàng <m>\rightarrow</m> <alert>Lỗi</alert>:
+      Ví dụ cộng 2 vectors không có cùng kích thước <m>\rightarrow</m> <alert>Lỗi</alert>:
     </p>
 
     <sage>

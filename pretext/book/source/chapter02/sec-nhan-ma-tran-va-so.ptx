@@ -7,17 +7,17 @@ Phạm Công Vinh, Phạm Xuân Trung
 See the file COPYING for copying conditions.
 ******************************************-->
 
-<section xml:id="sec-nhan-ma-tran-voi-1-so" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Nhân Ma Trận Với 1 Số</title>
+<section xml:id="sec-nhan-ma-tran-va-so" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Nhân Ma Trận Và Số</title>
 
   <objectives>
     <ul>
-      <li>Giới thiệu phép nhân ma trận với một số.</li>
+      <li>Giới thiệu phép nhân ma trận và số.</li>
     </ul>
   </objectives>
 
-  <subsection xml:id="subsec-nhan-ma-tran-voi-1-so-code">
-    <title>Nhân ma trận với 1 số trong lập trình</title>
+  <subsection xml:id="subsec-nhan-ma-tran-va-so-code">
+    <title>Nhân ma trận và số trong lập trình</title>
 
     <p>
       <ul>

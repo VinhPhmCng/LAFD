@@ -7,27 +7,29 @@ Phạm Công Vinh, Phạm Xuân Trung
 See the file COPYING for copying conditions.
 ******************************************-->
 
-<section xml:id="sec-nhan-vector-voi-1-so" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Nhân Vector Với 1 Số</title>
+<section xml:id="sec-nhan-vector-va-so" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Nhân Vector Và Số</title>
 
   <objectives>
     <ul>
-      <li>Giới thiệu phép nhân vector với một số.</li>
+      <li>Giới thiệu phép nhân vector và số.</li>
     </ul>
   </objectives>
   
-  <subsection xml:id="subsec-nhan-vector-cot-voi-1-so">
-    <title>Nhân vector cột với 1 số</title>
+  <subsection xml:id="subsec-nhan-vector-va-so">
+    <title>Nhân vector và số</title>
 
-    <p>Thực hiện và cho kết quả tương tự phép nhân số với số.</p>
+    <p>Thực hiện và cho kết quả tương tự phép nhân số và số.</p>
 
     <p>
       Ví dụ:
       <md>
         <mrow number="yes">3 \cdot \bmat{-5 \\ 2.5} = \bmat{3 \cdot (-5) \\ 3 \cdot 2.5} = \bmat{-15 \\ 7.5}</mrow>
         <mrow></mrow>
-        <mrow number="yes">(-2) \bmat{3 \\ 4} = \bmat{-2 \cdot 3 \\ -2 \cdot 4} = \bmat{-6 \\ -8}</mrow>
+
+        <mrow number="yes">(-2) \hvec{3 &amp; 4} = \hvec{-2 \cdot 3 &amp; -2 \cdot 4} = \hvec{-6 &amp; -8}</mrow>
         <mrow></mrow>
+
         <mrow number="yes">5 \bmat{1 \\ 0} + (-3) \bmat{0 \\ 1} = \bmat{5 \\ -3}</mrow>
       </md>
 
@@ -43,23 +45,23 @@ See the file COPYING for copying conditions.
       <title>Tính chất</title>
       
       <p>
-        Phép nhân vector cột với 1 số có các tính chất đã nêu ở <xref ref="subsec-tinh-chat-cua-cac-phep-toan"/>.
+        Phép nhân vector và số có các tính chất đã nêu ở <xref ref="subsec-tinh-chat-cua-cac-phep-toan"/>.
       </p>
       
     </remark>
 
     <remark>
-      <title>Chia vector cột cho 1 số</title>
+      <title>Chia vector cho số</title>
 
       <p>
-        Thực hiện và cho kết quả tương tự phép chia số với số. <me>a / b = a \cdot \frac{1}{b}</me>
+        Thực hiện và cho kết quả tương tự phép chia số cho số. <me>a / b = a \cdot \frac{1}{b}</me>
       </p>
     </remark>
     
   </subsection>
 
-  <subsection xml:id="subsec-nhan-vector-voi-1-so-code">
-    <title>Nhân vector với 1 số trong lập trình</title>
+  <subsection xml:id="subsec-nhan-vector-va-so-code">
+    <title>Nhân vector và số trong lập trình</title>
 
     <p>
       <ul>
