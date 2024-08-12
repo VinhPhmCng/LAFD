@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>sagecell.makeSagecell({
+  "inputLocation": ".sage-interact",
+  "autoeval": true,
+  "hide": [
+    "editor",
+    "evalButton",
+    "permalink"
+  ]
+});
+</script><link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
+</head>
+<body class="ptx-content ignore-math" id="changeme">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\require{mathtools}\require{color}\require{boldsymbol}\newcommand{\N}{\mathbb{N}}
+\newcommand{\pN}{\mathbb{N}^{*}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\pZ}{\mathbb{Z}^{+}}
+\newcommand{\mZ}{\mathbb{Z}^{-}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\nQ}{\bar{\mathbb{Q}}}
+\newcommand{\R}{\mathbb{R}}
+
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+
+\newcommand{\mat}[1]{\begin{matrix}#1\end{matrix}}
+\newcommand{\bmat}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\newcommand{\pmat}[1]{\begin{pmatrix}#1\end{pmatrix}}
+\newcommand{\amat}[1]{\left\langle\begin{matrix}#1\end{matrix}\right\rangle}
+\newcommand{\hvec}[1]{\bs{[}\begin{matrix}#1\end{matrix}\bs{]}} 
+
+
+\newcommand{\smat}[1]{\begin{smallmatrix}#1\end{smallmatrix}}
+\newcommand{\sbmat}[1]{\begin{bsmallmatrix}#1\end{bsmallmatrix}}
+\newcommand{\spmat}[1]{\begin{psmallmatrix}#1\end{psmallmatrix}}
+\newcommand{\samat}[1]{\left\langle\begin{smallmatrix}#1\end{smallmatrix}\right\rangle}
+\newcommand{\shvec}[1]{\bs{[}\begin{smallmatrix}#1\end{smallmatrix}\bs{]}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div style="width:600px; height:600px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><pre class="ptx-sagecell sage-interact"><script type="text/x-sage">import numpy as np
+
+def print_html(s):
+    pretty_print(html(s))
+    pretty_print("\n")
+            
+def tag(s, t):
+    return "<" + t + ">" + s + "</" + t + ">" 
+            
+def format_matrix(mat):
+    return mat
+    #def for_mat(x):
+    #    if x.is_zero():
+    #        return 0
+    #    return x
+            
+    #sage_mat = matrix(QQ, np_mat)
+    #new_mat = mat.apply_map(for_mat, R=QQ)
+    #return new_mat
+                    
+def multiply1(A, B):
+    M = A * B
+    size = r'%s \times %s' % (
+        latex(M.nrows()),
+        latex(M.ncols()),
+    )
+
+    print_html(tag("", "hr"))
+    print_html(r'$A = %s \qquad B = %s$' % (
+        latex(format_matrix(A)),
+        latex(format_matrix(B)),
+    ))
+    pretty_print("\n")
+    print_html(r'$M = A \cdot B \rightarrow M_{%s}$' % (
+        size,
+    ))
+
+    print_html(tag("", "hr"))
+    print_html(r'$R_{1}^{A} \cdot C_{1}^{B} = %s \cdot %s = %s$' % (
+        latex(format_matrix(A.matrix_from_rows([0]))),
+        latex(format_matrix(B.matrix_from_columns([0]))),
+        latex(M[0, 0]),
+    ))
+    print_html(r'$\rightarrow M = \begin{bmatrix} %s & \cdot & \cdots \\ \cdot & \cdot & \\ \vdots & & \ddots \end{bmatrix}_{%s}$' % (
+      latex(M[0, 0]),
+      size,
+    ))
+
+    print_html(tag("", "hr"))
+    print_html(r'$R_{2}^{A} \cdot C_{1}^{B} = %s \cdot %s = %s$' % (
+        latex(format_matrix(A.matrix_from_rows([1]))),
+        latex(format_matrix(B.matrix_from_columns([0]))),
+        latex(M[1, 0]),
+    ))
+    print_html(r'$\rightarrow M = \begin{bmatrix} %s & \cdot  & \cdots \\ %s & \cdot & \\ \vdots & & \ddots \end{bmatrix}_{%s}$' % (
+      latex(M[0, 0]),
+      latex(M[1, 0]),
+      size,
+    ))
+
+    print_html(tag("", "hr"))
+    print_html(r'$R_{1}^{A} \cdot C_{2}^{B} = %s \cdot %s = %s$' % (
+        latex(format_matrix(A.matrix_from_rows([0]))),
+        latex(format_matrix(B.matrix_from_columns([1]))),
+        latex(M[0, 1]),
+    ))
+    print_html(r'$\rightarrow M = \begin{bmatrix} %s & %s & \cdots \\ %s & \cdot & \\ \vdots & & \ddots \end{bmatrix}_{%s}$' % (
+      latex(M[0, 0]),
+      latex(M[1, 0]),
+      latex(M[0, 1]),
+      size,
+    ))
+
+    print_html(tag("", "hr"))
+    print_html(r'$R_{2}^{A} \cdot C_{2}^{B} = %s \cdot %s = %s$' % (
+        latex(format_matrix(A.matrix_from_rows([1]))),
+        latex(format_matrix(B.matrix_from_columns([1]))),
+        latex(M[1, 1]),
+    ))
+    print_html(r'$\rightarrow M = \begin{bmatrix} %s & %s & \cdots \\ %s & %s & \\ \vdots & & \ddots \end{bmatrix}_{%s}$' % (
+      latex(M[0, 0]),
+      latex(M[1, 0]),
+      latex(M[0, 1]),
+      latex(M[1, 1]),
+      size,
+    ))
+    
+    print_html(tag("", "hr"))
+    print_html(tag("Tương tự, tính tất cả các phần tử của M", "h3"))
+    print_html(tag("...", "h3"))
+
+    print_html(tag("", "hr"))
+    print_html(tag("Kết quả:", "h2"))
+    print_html(r'$%s \cdot %s = %s$' % (
+        latex(format_matrix(A)),
+        latex(format_matrix(B)),
+        latex(format_matrix(M)),
+    ))
+
+###########################################
+@interact(layout=dict(top = [['m', 'n', 'p']]))
+def matrix_dimensions(
+    m = ('Số hàng của A', 3),
+    n = ('Số cột của A', 3),
+    p = ('Số cột của B', 2),
+):
+    if not m in [2, 3, 4, 5]:
+        print('Số hàng của A phải là một số nguyên từ 2 đến 5.')
+        return
+    if not n in [2, 3, 4, 5]:
+        print('Số cột của A phải là một số nguyên từ 2 đến 5.')
+        return
+    if not p in [2, 3, 4, 5]:
+        print('Số cột của B phải là một số nguyên từ 2 đến 5.')
+        return
+                    
+    @interact(layout=dict(top = [['A', 'B']]))
+    def func1(
+        A = ('Ma trận A', matrix(
+            QQ,
+            nrows = m,
+            ncols = n,
+            entries = lambda i, j: i + j + 1,
+        )),
+        B = ('Ma trận B', matrix(
+            QQ,
+            nrows = n,
+            ncols = p,
+            entries = lambda i, j: i + j + 1,
+        )),
+    ):
+        #if A.is_zero() or B.is_zero():
+            #print('Ma trận đầu vào phải khác 0.')
+            #return
+            
+        latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
+        multiply1(A, B)
+</script></pre></div>
+</body>
+</html>

@@ -68,7 +68,7 @@ window.MathJax = {
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "https://pretextbook.org/js/lib"
+      "pretext": "_static/pretext/js/lib"
     }
   },
   "startup": {
@@ -80,16 +80,16 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://pretextbook.org/css/0.83/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/shell_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/banner_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/navbar_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/toc_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/style_oscarlevin.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/colors_blue_red.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/setcolors.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>sagecell.makeSagecell({
   "inputLocation": ".sage-interact",
   "autoeval": true,
@@ -101,7 +101,37 @@ window.MathJax = {
 });
 </script><link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
 </head>
-<body class="ptx-content ignore-math" id="changeme"><div style="width:600px; height:600px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><pre class="ptx-sagecell sage-interact"><script type="text/x-sage">import numpy as np
+<body class="ptx-content ignore-math" id="changeme">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\require{mathtools}\require{color}\require{boldsymbol}\newcommand{\N}{\mathbb{N}}
+\newcommand{\pN}{\mathbb{N}^{*}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\pZ}{\mathbb{Z}^{+}}
+\newcommand{\mZ}{\mathbb{Z}^{-}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\nQ}{\bar{\mathbb{Q}}}
+\newcommand{\R}{\mathbb{R}}
+
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+
+\newcommand{\mat}[1]{\begin{matrix}#1\end{matrix}}
+\newcommand{\bmat}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\newcommand{\pmat}[1]{\begin{pmatrix}#1\end{pmatrix}}
+\newcommand{\amat}[1]{\left\langle\begin{matrix}#1\end{matrix}\right\rangle}
+\newcommand{\hvec}[1]{\bs{[}\begin{matrix}#1\end{matrix}\bs{]}} 
+
+
+\newcommand{\smat}[1]{\begin{smallmatrix}#1\end{smallmatrix}}
+\newcommand{\sbmat}[1]{\begin{bsmallmatrix}#1\end{bsmallmatrix}}
+\newcommand{\spmat}[1]{\begin{psmallmatrix}#1\end{psmallmatrix}}
+\newcommand{\samat}[1]{\left\langle\begin{smallmatrix}#1\end{smallmatrix}\right\rangle}
+\newcommand{\shvec}[1]{\bs{[}\begin{smallmatrix}#1\end{smallmatrix}\bs{]}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div style="width:600px; height:600px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><pre class="ptx-sagecell sage-interact"><script type="text/x-sage">import numpy as np
 
 def print_html(s):
     pretty_print(html(s))
@@ -170,7 +200,6 @@ def decom(mat):
         # Hang != 0 VA Cot != 0
         if not row_m.is_zero() and not col_n.is_zero():
             if mat[m, n] == 0:
-                print_html(tag("Trường hợp: Phần tử giao của hàng và cột bằng 0", "h3"))
                 is_e_zero = True
                 temp = m
                 while mat[temp, n] == 0:
@@ -183,7 +212,10 @@ def decom(mat):
             CnRm = col_n * row_m
             rem = mat - CnRm
                     
-            print_html(tag("Trường hợp: Hàng và cột đều khác 0", "h3"))
+            #print_html(tag("Nhận thấy: Hàng %s và cột %s đều KHÁC 0." % (
+                #str(m+1), 
+                #str(n+1),
+            #), "h3"))
                         
             CnRm_str = r''
             if mat[m, n] == 1:
@@ -234,13 +266,19 @@ def decom(mat):
                     
         # Hang != 0 VA Cot == 0
         elif not row_m.is_zero() and col_n.is_zero():
-            print_html("Trường hợp: Hàng khác 0 và cột bằng 0")
+            #print_html(tag("Nhận thấy: Cột %s BẰNG 0, và hàng %s KHÁC 0." % (
+                #str(n+1), 
+                #str(m+1),
+            #), "h3"))
             n += 1
             n = min(n, mat.ncols() - 1)
                     
         # Hang == 0 VA Cot != 0
         elif row_m.is_zero() and not col_n.is_zero():
-            print_html("Trường hợp: Hàng bằng 0 và cột khác 0")
+            #print_html(tag("Nhận thấy: Hàng %s BẰNG 0, và cột %s KHÁC 0." % (
+                #str(m+1), 
+                #str(n+1),
+            #), "h3"))
             m += 1
             m = min(m, mat.nrows() - 1)
                     
@@ -248,7 +286,11 @@ def decom(mat):
         else:
             if mat.is_zero():
                 break
-            print_html("Trường hợp: Hàng và cột đều bằng 0")
+            #print_html(tag("Nhận thấy: Hàng %s và cột %s đều BẰNG 0." % (
+                #str(m+1), 
+                #str(1+1),
+            #), "h3"))
+            
             m += 1
             m = min(m, mat.nrows() - 1)
             n += 1
@@ -258,8 +300,8 @@ def decom(mat):
             is_e_zero = False
             m = m_save
 
-    # Finish decomposition
-    print_html(tag("Ma trận dư bằng 0 -> Phân rã hoàn tất!", "h3"))
+    #
+    #print_html(tag("Nhận thấy: Ma trận không -> Phân rã hoàn tất!", "h3"))
             
     print_html(tag("", "hr"))
     print_html(tag("Kết quả:", "h2"))
@@ -286,7 +328,7 @@ def decom(mat):
     result = r"$A = " + result + r"$"
     print_html(result)
                 
-    print_html(r'$\Rightarrow Rank = %s$' % (latex(rank)))
+    #print_html(r'$\Rightarrow Rank = %s$' % (latex(rank)))
                     
 ###########################################
 @interact(layout=dict(top = [['m', 'n']]))
@@ -295,10 +337,10 @@ def matrix_dimensions(
     n = ('Số cột', 3),
 ):
     if not m in [2, 3, 4, 5]:
-        print('Số hàng phải là một số nguyên từ 2 đến 5.')
+        print('Số hàng phải là một số nguyên từ 2 đến 5')
         return
     if not n in [2, 3, 4, 5]:
-        print('Số cột phải là một số nguyên từ 2 đến 5.')
+        print('Số cột phải là một số nguyên từ 2 đến 5')
         return
                     
     @interact(layout=dict(top = [['A']]))
@@ -316,5 +358,6 @@ def matrix_dimensions(
             
         latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
         decom(A)
-</script></pre></div></body>
+</script></pre></div>
+</body>
 </html>

@@ -241,7 +241,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "1.2",
   "title": "Vector—Sự Mở Rộng Số Thực Theo Một Chiều. Chuyển Vị Vector",
-  "body": " Vector Sự Mở Rộng Số Thực Theo Một Chiều. Chuyển Vị Vector  Vector    Giới thiệu vector cột và vector hàng.  Giới thiệu phép chuyển vị vector cột thành vector hàng và ngược lại.     Vector cột     Vector cột là bộ các số thực được sắp xếp theo chiều dọc.    Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.  Ví dụ:   Sắp xếp bộ 2 số thực thành 1 cột ta được vector cột .    Sắp xếp bộ 3 số thực thành 1 cột ta được vector cột       Sắp xếp bộ n số thực thành 1 cột ta được vector cột     Vector cột có n hàng (và 1 cột) được kí hiệu     Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .   Ví dụ: Vector có các phần tử    phần tử thứ nhất (có chỉ số ) là     phần tử thứ hai (có chỉ số ) là     phần tử thứ ba (có chỉ số ) là    Khái niệm chỉ số sẽ được nhắc đến trong .   Số phần tử, hay kích thước, của một vector và thứ tự của chúng rất quan trọng.     Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .    Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph     Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra        Vector hàng    Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .     Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng     Vector hàng có n cột (và 1 hàng) được kí hiệu     Tương tự như đối với vector cột, ta có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số.     Phép Chuyển Vị     Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.     Phép chuyển vị được kí hiệu bằng chữ .        Vector Trong Lập Trình   Nhập, Xuất Vector    [[1] [2] [3]] [[4 5 6]]           Tính Chuyển Vị Của Vector  Để tính chuyển vị của một vector, ta sử dụng hàm transpose() .    [[1 2 3]] [[4] [5] [6]]            Vấn Đề Tiếp Theo (Cũ)     Như vậy, ta có thể coi vector cột là sự mở rộng của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự mở rộng của các số thực theo chiều ngang.    Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là ma trận .    Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?      "
+  "body": " Vector Sự Mở Rộng Số Thực Theo Một Chiều. Chuyển Vị Vector  Vector    Giới thiệu vector cột và vector hàng.  Giới thiệu phép chuyển vị vector cột thành vector hàng và ngược lại.     Vector cột     Vector cột là bộ các số thực được sắp xếp theo chiều dọc.    Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.  Ví dụ:   Sắp xếp bộ 2 số thực thành 1 cột ta được vector cột .    Sắp xếp bộ 3 số thực thành 1 cột ta được vector cột       Sắp xếp bộ n số thực thành 1 cột ta được vector cột     Vector cột có n hàng (và 1 cột) được kí hiệu     Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .   Ví dụ: Vector có các phần tử    phần tử thứ nhất là     phần tử thứ hai là     phần tử thứ ba là       Số phần tử, hay kích thước, của một vector và thứ tự của chúng rất quan trọng.     Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .    Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph     Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra        Vector hàng    Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .     Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng     Vector hàng có n cột (và 1 hàng) được kí hiệu     Tương tự như đối với vector cột, ta có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số.     Phép Chuyển Vị     Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.     Phép chuyển vị được kí hiệu bằng chữ .        Vector Trong Lập Trình   Nhập, Xuất Vector    [[1] [2] [3]] [[4 5 6]]           Tính Chuyển Vị Của Vector  Để tính chuyển vị của một vector, ta sử dụng hàm transpose() .    [[1 2 3]] [[4] [5] [6]]            Vấn Đề Tiếp Theo (Cũ)     Như vậy, ta có thể coi vector cột là sự mở rộng của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự mở rộng của các số thực theo chiều ngang.    Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là ma trận .    Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?      "
 },
 {
   "id": "sec-vector-3",
@@ -295,7 +295,7 @@ var ptx_lunr_docs = [
   "type": "Đoạn (with a defined term)",
   "number": "",
   "title": "",
-  "body": "phần tử chỉ số "
+  "body": "phần tử "
 },
 {
   "id": "subsec-vector-cot-9",
@@ -439,7 +439,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "1.3",
   "title": "Cộng Vector",
-  "body": " Cộng Vector    Giới thiệu phép cộng hai vector có cùng kích thước.     Cộng Vector Cột  Thực hiện và cho kết quả tương tự phép cộng số với số.   Điều kiện để cộng 2 hoặc nhiều vectors  Để cộng 2 hoặc nhiều vectors cột thì các vector đó phải có cùng số hàng.   Ví dụ:    Tính chất  Phép cộng các vector cột có các tính chất đã nêu ở .    Trừ vector cột  Thực hiện và cho kết quả tương tự phép trừ số với số.      Cộng vector trong lập trình     Để cộng trong lập trình, ta dùng + .    Để trừ trong lập trình, ta dùng - .       [[5. ] [0. ] [3.5]] [[-3. ] [ 4. ] [ 2.5]]   Ví dụ cộng 2 vectors cột không có cùng số hàng  Lỗi :    TypeError Cell In [1], line 16 ... TypeError: unsupported operand parent(s) for +:'Full MatrixSpace of 4 by 1 dense matrices over Integer Ring' and 'Full MatrixSpace of 3 by 1 dense matrices over Real Field with 53 bits of precision'    "
+  "body": " Cộng Vector    Giới thiệu phép cộng hai vector có cùng kích thước.     Cộng Vector  Thực hiện và cho kết quả tương tự phép cộng số với số.   Điều kiện để cộng 2 hoặc nhiều vectors  Để cộng 2 hoặc nhiều vectors thì các vector đó phải có cùng kích thước.   Ví dụ:    Tính chất  Phép cộng các vector có các tính chất đã nêu ở .    Trừ vector  Thực hiện và cho kết quả tương tự phép trừ số với số.      Cộng vector trong lập trình     Để cộng trong lập trình, ta dùng + .    Để trừ trong lập trình, ta dùng - .       [[5. ] [0. ] [3.5]] [[-3. ] [ 4. ] [ 2.5]]   Ví dụ cộng 2 vectors không có cùng kích thước  Lỗi :    TypeError Cell In [1], line 16 ... TypeError: unsupported operand parent(s) for +:'Full MatrixSpace of 4 by 1 dense matrices over Integer Ring' and 'Full MatrixSpace of 3 by 1 dense matrices over Real Field with 53 bits of precision'    "
 },
 {
   "id": "sec-cong-vector-2",
@@ -451,31 +451,31 @@ var ptx_lunr_docs = [
   "body": "  Giới thiệu phép cộng hai vector có cùng kích thước.   "
 },
 {
-  "id": "subsec-cong-vector-cot-3",
+  "id": "subsec-cong-vector-3",
   "level": "2",
-  "url": "sec-cong-vector.html#subsec-cong-vector-cot-3",
+  "url": "sec-cong-vector.html#subsec-cong-vector-3",
   "type": "Chú Ý",
   "number": "1.3.1",
   "title": "Điều kiện để cộng 2 hoặc nhiều vectors.",
-  "body": " Điều kiện để cộng 2 hoặc nhiều vectors  Để cộng 2 hoặc nhiều vectors cột thì các vector đó phải có cùng số hàng.  "
+  "body": " Điều kiện để cộng 2 hoặc nhiều vectors  Để cộng 2 hoặc nhiều vectors thì các vector đó phải có cùng kích thước.  "
 },
 {
-  "id": "subsec-cong-vector-cot-5",
+  "id": "subsec-cong-vector-5",
   "level": "2",
-  "url": "sec-cong-vector.html#subsec-cong-vector-cot-5",
+  "url": "sec-cong-vector.html#subsec-cong-vector-5",
   "type": "Nhận Xét",
   "number": "1.3.2",
   "title": "Tính chất.",
-  "body": " Tính chất  Phép cộng các vector cột có các tính chất đã nêu ở .  "
+  "body": " Tính chất  Phép cộng các vector có các tính chất đã nêu ở .  "
 },
 {
-  "id": "subsec-cong-vector-cot-6",
+  "id": "subsec-cong-vector-6",
   "level": "2",
-  "url": "sec-cong-vector.html#subsec-cong-vector-cot-6",
+  "url": "sec-cong-vector.html#subsec-cong-vector-6",
   "type": "Nhận Xét",
   "number": "1.3.3",
-  "title": "Trừ vector cột.",
-  "body": " Trừ vector cột  Thực hiện và cho kết quả tương tự phép trừ số với số.   "
+  "title": "Trừ vector.",
+  "body": " Trừ vector  Thực hiện và cho kết quả tương tự phép trừ số với số.   "
 },
 {
   "id": "subsec-cong-vector-code-4",
@@ -496,54 +496,54 @@ var ptx_lunr_docs = [
   "body": " TypeError Cell In [1], line 16 ... TypeError: unsupported operand parent(s) for +:'Full MatrixSpace of 4 by 1 dense matrices over Integer Ring' and 'Full MatrixSpace of 3 by 1 dense matrices over Real Field with 53 bits of precision'  "
 },
 {
-  "id": "sec-nhan-vector-voi-1-so",
+  "id": "sec-nhan-vector-va-so",
   "level": "1",
-  "url": "sec-nhan-vector-voi-1-so.html",
+  "url": "sec-nhan-vector-va-so.html",
   "type": "Mục",
   "number": "1.4",
-  "title": "Nhân Vector Với 1 Số",
-  "body": " Nhân Vector Với 1 Số    Giới thiệu phép nhân vector với một số.     Nhân vector cột với 1 số  Thực hiện và cho kết quả tương tự phép nhân số với số.  Ví dụ:     Tính chất  Phép nhân vector cột với 1 số có các tính chất đã nêu ở .    Chia vector cột cho 1 số  Thực hiện và cho kết quả tương tự phép chia số với số.      Nhân vector với 1 số trong lập trình     Để nhân trong lập trình, ta dùng * .    Để chia trong lập trình, ta dùng \/ .       [[2] [4] [6]] [[0.5] [1. ] [1.5]]   Ví dụ chia vector cho  Lỗi :    ZeroDivisionError Cell In [1], line 7 ... ZeroDivisionError: rational division by zero    "
+  "title": "Nhân Vector Và Số",
+  "body": " Nhân Vector Và Số    Giới thiệu phép nhân vector và số.     Nhân vector và số  Thực hiện và cho kết quả tương tự phép nhân số và số.  Ví dụ:     Tính chất  Phép nhân vector và số có các tính chất đã nêu ở .    Chia vector cho số  Thực hiện và cho kết quả tương tự phép chia số cho số.      Nhân vector và số trong lập trình     Để nhân trong lập trình, ta dùng * .    Để chia trong lập trình, ta dùng \/ .       [[2] [4] [6]] [[0.5] [1. ] [1.5]]   Ví dụ chia vector cho  Lỗi :    ZeroDivisionError Cell In [1], line 7 ... ZeroDivisionError: rational division by zero    "
 },
 {
-  "id": "sec-nhan-vector-voi-1-so-2",
+  "id": "sec-nhan-vector-va-so-2",
   "level": "2",
-  "url": "sec-nhan-vector-voi-1-so.html#sec-nhan-vector-voi-1-so-2",
+  "url": "sec-nhan-vector-va-so.html#sec-nhan-vector-va-so-2",
   "type": "Mục Tiêu",
   "number": "1.4",
   "title": "",
-  "body": "  Giới thiệu phép nhân vector với một số.   "
+  "body": "  Giới thiệu phép nhân vector và số.   "
 },
 {
-  "id": "subsec-nhan-vector-cot-voi-1-so-4",
+  "id": "subsec-nhan-vector-va-so-4",
   "level": "2",
-  "url": "sec-nhan-vector-voi-1-so.html#subsec-nhan-vector-cot-voi-1-so-4",
+  "url": "sec-nhan-vector-va-so.html#subsec-nhan-vector-va-so-4",
   "type": "Nhận Xét",
   "number": "1.4.1",
   "title": "Tính chất.",
-  "body": " Tính chất  Phép nhân vector cột với 1 số có các tính chất đã nêu ở .  "
+  "body": " Tính chất  Phép nhân vector và số có các tính chất đã nêu ở .  "
 },
 {
-  "id": "subsec-nhan-vector-cot-voi-1-so-5",
+  "id": "subsec-nhan-vector-va-so-5",
   "level": "2",
-  "url": "sec-nhan-vector-voi-1-so.html#subsec-nhan-vector-cot-voi-1-so-5",
+  "url": "sec-nhan-vector-va-so.html#subsec-nhan-vector-va-so-5",
   "type": "Nhận Xét",
   "number": "1.4.2",
-  "title": "Chia vector cột cho 1 số.",
-  "body": " Chia vector cột cho 1 số  Thực hiện và cho kết quả tương tự phép chia số với số.   "
+  "title": "Chia vector cho số.",
+  "body": " Chia vector cho số  Thực hiện và cho kết quả tương tự phép chia số cho số.   "
 },
 {
-  "id": "subsec-nhan-vector-voi-1-so-code-4",
+  "id": "subsec-nhan-vector-va-so-code-4",
   "level": "2",
-  "url": "sec-nhan-vector-voi-1-so.html#subsec-nhan-vector-voi-1-so-code-4",
+  "url": "sec-nhan-vector-va-so.html#subsec-nhan-vector-va-so-code-4",
   "type": "Output",
   "number": "1.4.3",
   "title": "",
   "body": " [[2] [4] [6]] [[0.5] [1. ] [1.5]]  "
 },
 {
-  "id": "subsec-nhan-vector-voi-1-so-code-7",
+  "id": "subsec-nhan-vector-va-so-code-7",
   "level": "2",
-  "url": "sec-nhan-vector-voi-1-so.html#subsec-nhan-vector-voi-1-so-code-7",
+  "url": "sec-nhan-vector-va-so.html#subsec-nhan-vector-va-so-code-7",
   "type": "Output",
   "number": "1.4.4",
   "title": "",
@@ -676,36 +676,36 @@ var ptx_lunr_docs = [
   "body": " TypeError Cell In [1], line 13 ... TypeError: unsupported operand parent(s) for +: 'Full MatrixSpace of 2 by 2 dense matrices over Integer Ring' and 'Full MatrixSpace of 2 by 3 dense matrices over Integer Ring'  "
 },
 {
-  "id": "sec-nhan-ma-tran-voi-1-so",
+  "id": "sec-nhan-ma-tran-va-so",
   "level": "1",
-  "url": "sec-nhan-ma-tran-voi-1-so.html",
+  "url": "sec-nhan-ma-tran-va-so.html",
   "type": "Mục",
   "number": "2.3",
-  "title": "Nhân Ma Trận Với 1 Số",
-  "body": " Nhân Ma Trận Với 1 Số    Giới thiệu phép nhân ma trận với một số.     Nhân ma trận với 1 số trong lập trình     Để nhân trong lập trình, ta dùng * .    Để chia trong lập trình, ta dùng \/ .       [[ 2 4 6] [ 8 10 12]] [[0.5 1. 1.5] [2. 2.5 3. ]]   Ví dụ chia ma trận cho  Lỗi :    ZeroDivisionError Cell In [1], line 8 ... ZeroDivisionError: rational division by zero    "
+  "title": "Nhân Ma Trận Và Số",
+  "body": " Nhân Ma Trận Và Số    Giới thiệu phép nhân ma trận và số.     Nhân ma trận và số trong lập trình     Để nhân trong lập trình, ta dùng * .    Để chia trong lập trình, ta dùng \/ .       [[ 2 4 6] [ 8 10 12]] [[0.5 1. 1.5] [2. 2.5 3. ]]   Ví dụ chia ma trận cho  Lỗi :    ZeroDivisionError Cell In [1], line 8 ... ZeroDivisionError: rational division by zero    "
 },
 {
-  "id": "sec-nhan-ma-tran-voi-1-so-2",
+  "id": "sec-nhan-ma-tran-va-so-2",
   "level": "2",
-  "url": "sec-nhan-ma-tran-voi-1-so.html#sec-nhan-ma-tran-voi-1-so-2",
+  "url": "sec-nhan-ma-tran-va-so.html#sec-nhan-ma-tran-va-so-2",
   "type": "Mục Tiêu",
   "number": "2.3",
   "title": "",
-  "body": "  Giới thiệu phép nhân ma trận với một số.   "
+  "body": "  Giới thiệu phép nhân ma trận và số.   "
 },
 {
-  "id": "subsec-nhan-ma-tran-voi-1-so-code-4",
+  "id": "subsec-nhan-ma-tran-va-so-code-4",
   "level": "2",
-  "url": "sec-nhan-ma-tran-voi-1-so.html#subsec-nhan-ma-tran-voi-1-so-code-4",
+  "url": "sec-nhan-ma-tran-va-so.html#subsec-nhan-ma-tran-va-so-code-4",
   "type": "Output",
   "number": "2.3.1",
   "title": "",
   "body": " [[ 2 4 6] [ 8 10 12]] [[0.5 1. 1.5] [2. 2.5 3. ]]  "
 },
 {
-  "id": "subsec-nhan-ma-tran-voi-1-so-code-7",
+  "id": "subsec-nhan-ma-tran-va-so-code-7",
   "level": "2",
-  "url": "sec-nhan-ma-tran-voi-1-so.html#subsec-nhan-ma-tran-voi-1-so-code-7",
+  "url": "sec-nhan-ma-tran-va-so.html#subsec-nhan-ma-tran-va-so-code-7",
   "type": "Output",
   "number": "2.3.2",
   "title": "",
@@ -718,7 +718,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "2.4",
   "title": "Biểu Diễn Cơ Bản Ma Trận <span class=\"process-math\">\\(A\\)<\/span> Theo Các Vector Cột",
-  "body": " Biểu Diễn Cơ Bản Ma Trận Theo Các Vector Cột     Biểu diễn ma trận thành tổng của các vector cột nhân các vector cơ sở.     Tương tác với SageMath Interact   Tương tác với SageMath Interact     "
+  "body": " Biểu Diễn Cơ Bản Ma Trận Theo Các Vector Cột     Biểu diễn ma trận thành tổng của các vector cột nhân các vector cơ sở.     Trực quan hóa với SageMath Interact   Trực quan hóa với SageMath Interact     "
 },
 {
   "id": "sec-A-bang-Ciei-3",
@@ -736,169 +736,169 @@ var ptx_lunr_docs = [
   "type": "Hình",
   "number": "2.4.1",
   "title": "",
-  "body": " Tương tác với SageMath Interact   "
+  "body": " Trực quan hóa với SageMath Interact   "
 },
 {
-  "id": "sec-nhan-vector-voi-vector",
+  "id": "sec-nhan-vector-va-vector",
   "level": "1",
-  "url": "sec-nhan-vector-voi-vector.html",
+  "url": "sec-nhan-vector-va-vector.html",
   "type": "Mục",
   "number": "2.5",
-  "title": "Nhân Vector Với Vector",
-  "body": " Nhân Vector Với Vector    Giới thiệu phép nhân vector cột với vector hàng.  Giới thiệu phép nhân vector hàng với vector cột.     Nhân vector với vector trong lập trình     Để nhân trong lập trình, ta dùng * .       [[1 2 3] [2 4 6] [3 6 9]] [[14]]           "
+  "title": "Nhân Vector Và Vector",
+  "body": " Nhân Vector Và Vector    Giới thiệu phép nhân vector cột với vector hàng.  Giới thiệu phép nhân vector hàng với vector cột.     Nhân vector và vector trong lập trình     Để nhân trong lập trình, ta dùng * .       [[1 2 3] [2 4 6] [3 6 9]] [[14]]           "
 },
 {
-  "id": "sec-nhan-vector-voi-vector-2",
+  "id": "sec-nhan-vector-va-vector-2",
   "level": "2",
-  "url": "sec-nhan-vector-voi-vector.html#sec-nhan-vector-voi-vector-2",
+  "url": "sec-nhan-vector-va-vector.html#sec-nhan-vector-va-vector-2",
   "type": "Mục Tiêu",
   "number": "2.5",
   "title": "",
   "body": "  Giới thiệu phép nhân vector cột với vector hàng.  Giới thiệu phép nhân vector hàng với vector cột.   "
 },
 {
-  "id": "subsec-nhan-vector-voi-vector-code-4",
+  "id": "subsec-nhan-vector-va-vector-code-4",
   "level": "2",
-  "url": "sec-nhan-vector-voi-vector.html#subsec-nhan-vector-voi-vector-code-4",
+  "url": "sec-nhan-vector-va-vector.html#subsec-nhan-vector-va-vector-code-4",
   "type": "Output",
   "number": "2.5.1",
   "title": "",
   "body": " [[1 2 3] [2 4 6] [3 6 9]] [[14]]  "
 },
 {
-  "id": "subsec-nhan-vector-voi-vector-code-6",
+  "id": "subsec-nhan-vector-va-vector-code-6",
   "level": "2",
-  "url": "sec-nhan-vector-voi-vector.html#subsec-nhan-vector-voi-vector-code-6",
+  "url": "sec-nhan-vector-va-vector.html#subsec-nhan-vector-va-vector-code-6",
   "type": "Output",
   "number": "2.5.2",
   "title": "",
   "body": "     "
 },
 {
-  "id": "sec-nhan-ma-tran-voi-vector",
+  "id": "sec-nhan-ma-tran-va-vector",
   "level": "1",
-  "url": "sec-nhan-ma-tran-voi-vector.html",
+  "url": "sec-nhan-ma-tran-va-vector.html",
   "type": "Mục",
   "number": "2.6",
-  "title": "Nhân Ma Trận Với Vector",
-  "body": " Nhân Ma Trận Với Vector    Giới thiệu phép nhân ma trận và vector .   Biểu diễn kết quả của phép toán trên theo hai cách:  Vector  Tổ hợp tuyến tính của các vector cột của ma trận        Nhân ma trận với vector trong lập trình     Để nhân trong lập trình, ta dùng * .       [[14] [20] [26]] [[14 20 26]]           "
+  "title": "Nhân Ma Trận Và Vector",
+  "body": " Nhân Ma Trận Và Vector    Giới thiệu phép nhân ma trận và vector .   Biểu diễn kết quả của phép toán trên theo hai cách:  Vector  Tổ hợp tuyến tính của các vector cột của ma trận        Nhân ma trận và vector trong lập trình     Để nhân trong lập trình, ta dùng * .       [[14] [20] [26]] [[14 20 26]]           "
 },
 {
-  "id": "sec-nhan-ma-tran-voi-vector-2",
+  "id": "sec-nhan-ma-tran-va-vector-2",
   "level": "2",
-  "url": "sec-nhan-ma-tran-voi-vector.html#sec-nhan-ma-tran-voi-vector-2",
+  "url": "sec-nhan-ma-tran-va-vector.html#sec-nhan-ma-tran-va-vector-2",
   "type": "Mục Tiêu",
   "number": "2.6",
   "title": "",
   "body": "  Giới thiệu phép nhân ma trận và vector .   Biểu diễn kết quả của phép toán trên theo hai cách:  Vector  Tổ hợp tuyến tính của các vector cột của ma trận      "
 },
 {
-  "id": "subsec-nhan-ma-tran-voi-vector-code-4",
+  "id": "subsec-nhan-ma-tran-va-vector-code-4",
   "level": "2",
-  "url": "sec-nhan-ma-tran-voi-vector.html#subsec-nhan-ma-tran-voi-vector-code-4",
+  "url": "sec-nhan-ma-tran-va-vector.html#subsec-nhan-ma-tran-va-vector-code-4",
   "type": "Output",
   "number": "2.6.1",
   "title": "",
   "body": " [[14] [20] [26]] [[14 20 26]]  "
 },
 {
-  "id": "subsec-nhan-ma-tran-voi-vector-code-6",
+  "id": "subsec-nhan-ma-tran-va-vector-code-6",
   "level": "2",
-  "url": "sec-nhan-ma-tran-voi-vector.html#subsec-nhan-ma-tran-voi-vector-code-6",
+  "url": "sec-nhan-ma-tran-va-vector.html#subsec-nhan-ma-tran-va-vector-code-6",
   "type": "Output",
   "number": "2.6.2",
   "title": "",
   "body": "     "
 },
 {
-  "id": "sec-nhan-ma-tran-voi-ma-tran",
+  "id": "sec-nhan-ma-tran-va-ma-tran",
   "level": "1",
-  "url": "sec-nhan-ma-tran-voi-ma-tran.html",
+  "url": "sec-nhan-ma-tran-va-ma-tran.html",
   "type": "Mục",
   "number": "2.7",
-  "title": "Nhân Ma Trận Với Ma Trận",
-  "body": " Nhân Ma Trận Với Ma Trận    Giới thiệu bốn cách nhân hai ma trận và :    Nhân thông thường: Nhân các hàng của với các cột của (thường sử dụng khi viết tài liệu).  Nhân ma trận với các cột của .  Nhân các hàng của với ma trận .  Tổng của các phép nhân các cột của với các hàng của (thường được sử dụng trong tính toán).     Nhân hai ma trận trong lập trình     Để nhân trong lập trình, ta dùng * .       [[22 28] [49 64]]               Ví dụ nhân hai ma trận không thỏa mãn điều kiện kích thước  Lỗi :    TypeError Cell In [1], line 12 ... TypeError: unsupported operand parent(s) for *: 'Full MatrixSpace of 2 by 2 dense matrices over Integer Ring' and 'Full MatrixSpace of 1 by 3 dense matrices over Integer Ring'     Tương tác cách nhân thứ nhất với SageMath Interact   Tương tác cách nhân thứ nhất với SageMath Interact      Tương tác cách nhân thứ hai với SageMath Interact   Tương tác cách nhân thứ hai với SageMath Interact      Tương tác cách nhân thứ ba với SageMath Interact   Tương tác cách nhân thứ ba với SageMath Interact      Tương tác cách nhân thứ tư với SageMath Interact   Tương tác cách nhân thứ tư với SageMath Interact     "
+  "title": "Nhân Ma Trận Và Ma Trận",
+  "body": " Nhân Ma Trận Và Ma Trận    Giới thiệu bốn cách nhân hai ma trận và :    Nhân thông thường: Nhân các hàng của với các cột của (thường sử dụng khi viết tài liệu).  Nhân ma trận với các cột của .  Nhân các hàng của với ma trận .  Tổng của các phép nhân các cột của với các hàng của (thường được sử dụng trong tính toán).     Nhân hai ma trận trong lập trình     Để nhân trong lập trình, ta dùng * .       [[22 28] [49 64]]               Ví dụ nhân hai ma trận không thỏa mãn điều kiện kích thước  Lỗi :    TypeError Cell In [1], line 12 ... TypeError: unsupported operand parent(s) for *: 'Full MatrixSpace of 2 by 2 dense matrices over Integer Ring' and 'Full MatrixSpace of 1 by 3 dense matrices over Integer Ring'     Trực quan hóa cách nhân thứ nhất với SageMath Interact   Trực quan hóa cách nhân thứ nhất với SageMath Interact      Trực quan hóa cách nhân thứ hai với SageMath Interact   Trực quan hóa cách nhân thứ hai với SageMath Interact      Trực quan hóa cách nhân thứ ba với SageMath Interact   Trực quan hóa cách nhân thứ ba với SageMath Interact      Trực quan hóa cách nhân thứ tư với SageMath Interact   Trực quan hóa cách nhân thứ tư với SageMath Interact     "
 },
 {
-  "id": "sec-nhan-ma-tran-voi-ma-tran-2",
+  "id": "sec-nhan-ma-tran-va-ma-tran-2",
   "level": "2",
-  "url": "sec-nhan-ma-tran-voi-ma-tran.html#sec-nhan-ma-tran-voi-ma-tran-2",
+  "url": "sec-nhan-ma-tran-va-ma-tran.html#sec-nhan-ma-tran-va-ma-tran-2",
   "type": "Mục Tiêu",
   "number": "2.7",
   "title": "",
   "body": "  Giới thiệu bốn cách nhân hai ma trận và :    Nhân thông thường: Nhân các hàng của với các cột của (thường sử dụng khi viết tài liệu).  Nhân ma trận với các cột của .  Nhân các hàng của với ma trận .  Tổng của các phép nhân các cột của với các hàng của (thường được sử dụng trong tính toán).   "
 },
 {
-  "id": "subsec-nhan-ma-tran-voi-ma-tran-code-4",
+  "id": "subsec-nhan-ma-tran-va-ma-tran-code-4",
   "level": "2",
-  "url": "sec-nhan-ma-tran-voi-ma-tran.html#subsec-nhan-ma-tran-voi-ma-tran-code-4",
+  "url": "sec-nhan-ma-tran-va-ma-tran.html#subsec-nhan-ma-tran-va-ma-tran-code-4",
   "type": "Output",
   "number": "2.7.1",
   "title": "",
   "body": " [[22 28] [49 64]]  "
 },
 {
-  "id": "subsec-nhan-ma-tran-voi-ma-tran-code-6",
+  "id": "subsec-nhan-ma-tran-va-ma-tran-code-6",
   "level": "2",
-  "url": "sec-nhan-ma-tran-voi-ma-tran.html#subsec-nhan-ma-tran-voi-ma-tran-code-6",
+  "url": "sec-nhan-ma-tran-va-ma-tran.html#subsec-nhan-ma-tran-va-ma-tran-code-6",
   "type": "Output",
   "number": "2.7.2",
   "title": "",
   "body": "    "
 },
 {
-  "id": "subsec-nhan-ma-tran-voi-ma-tran-code-8",
+  "id": "subsec-nhan-ma-tran-va-ma-tran-code-8",
   "level": "2",
-  "url": "sec-nhan-ma-tran-voi-ma-tran.html#subsec-nhan-ma-tran-voi-ma-tran-code-8",
+  "url": "sec-nhan-ma-tran-va-ma-tran.html#subsec-nhan-ma-tran-va-ma-tran-code-8",
   "type": "Output",
   "number": "2.7.3",
   "title": "",
   "body": "    "
 },
 {
-  "id": "subsec-nhan-ma-tran-voi-ma-tran-code-11",
+  "id": "subsec-nhan-ma-tran-va-ma-tran-code-11",
   "level": "2",
-  "url": "sec-nhan-ma-tran-voi-ma-tran.html#subsec-nhan-ma-tran-voi-ma-tran-code-11",
+  "url": "sec-nhan-ma-tran-va-ma-tran.html#subsec-nhan-ma-tran-va-ma-tran-code-11",
   "type": "Output",
   "number": "2.7.4",
   "title": "",
   "body": " TypeError Cell In [1], line 12 ... TypeError: unsupported operand parent(s) for *: 'Full MatrixSpace of 2 by 2 dense matrices over Integer Ring' and 'Full MatrixSpace of 1 by 3 dense matrices over Integer Ring'  "
 },
 {
-  "id": "figure-nhan-ma-tran-voi-ma-tran-1",
+  "id": "figure-nhan-ma-tran-va-ma-tran-1",
   "level": "2",
-  "url": "sec-nhan-ma-tran-voi-ma-tran.html#figure-nhan-ma-tran-voi-ma-tran-1",
+  "url": "sec-nhan-ma-tran-va-ma-tran.html#figure-nhan-ma-tran-va-ma-tran-1",
   "type": "Hình",
   "number": "2.7.5",
   "title": "",
-  "body": " Tương tác cách nhân thứ nhất với SageMath Interact   "
+  "body": " Trực quan hóa cách nhân thứ nhất với SageMath Interact   "
 },
 {
-  "id": "figure-nhan-ma-tran-voi-ma-tran-2",
+  "id": "figure-nhan-ma-tran-va-ma-tran-2",
   "level": "2",
-  "url": "sec-nhan-ma-tran-voi-ma-tran.html#figure-nhan-ma-tran-voi-ma-tran-2",
+  "url": "sec-nhan-ma-tran-va-ma-tran.html#figure-nhan-ma-tran-va-ma-tran-2",
   "type": "Hình",
   "number": "2.7.6",
   "title": "",
-  "body": " Tương tác cách nhân thứ hai với SageMath Interact   "
+  "body": " Trực quan hóa cách nhân thứ hai với SageMath Interact   "
 },
 {
-  "id": "figure-nhan-ma-tran-voi-ma-tran-3",
+  "id": "figure-nhan-ma-tran-va-ma-tran-3",
   "level": "2",
-  "url": "sec-nhan-ma-tran-voi-ma-tran.html#figure-nhan-ma-tran-voi-ma-tran-3",
+  "url": "sec-nhan-ma-tran-va-ma-tran.html#figure-nhan-ma-tran-va-ma-tran-3",
   "type": "Hình",
   "number": "2.7.7",
   "title": "",
-  "body": " Tương tác cách nhân thứ ba với SageMath Interact   "
+  "body": " Trực quan hóa cách nhân thứ ba với SageMath Interact   "
 },
 {
-  "id": "figure-nhan-ma-tran-voi-ma-tran-4",
+  "id": "figure-nhan-ma-tran-va-ma-tran-4",
   "level": "2",
-  "url": "sec-nhan-ma-tran-voi-ma-tran.html#figure-nhan-ma-tran-voi-ma-tran-4",
+  "url": "sec-nhan-ma-tran-va-ma-tran.html#figure-nhan-ma-tran-va-ma-tran-4",
   "type": "Hình",
   "number": "2.7.8",
   "title": "",
-  "body": " Tương tác cách nhân thứ tư với SageMath Interact   "
+  "body": " Trực quan hóa cách nhân thứ tư với SageMath Interact   "
 },
 {
   "id": "sec-ma-tran-hoan-vi",
@@ -907,7 +907,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "2.8",
   "title": "Ma Trận Hoán Vị",
-  "body": " Ma Trận Hoán Vị    Giới thiệu ma trận hoán vị .  Phép nhân sự hoán vị các cột.  Phép nhân sự hoán vị các hàng.     Ma trận hoán vị trong lập trình     Để nhân trong lập trình, ta dùng * .       OK     [[1 3 2] [4 6 5] [7 9 8]]     [[1 2 3] [7 8 9] [4 5 6]]     Tương tác ma trận hoán vị với SageMath Interact   Tương tác ma trận hoán vị với SageMath Interact     "
+  "body": " Ma Trận Hoán Vị    Giới thiệu ma trận hoán vị .  Phép nhân sự hoán vị các cột.  Phép nhân sự hoán vị các hàng.     Ma trận hoán vị trong lập trình     Để nhân trong lập trình, ta dùng * .       OK     [[1 3 2] [4 6 5] [7 9 8]]     [[1 2 3] [7 8 9] [4 5 6]]     Trực quan hóa ma trận hoán vị với SageMath Interact   Trực quan hóa ma trận hoán vị với SageMath Interact     "
 },
 {
   "id": "sec-ma-tran-hoan-vi-2",
@@ -952,7 +952,7 @@ var ptx_lunr_docs = [
   "type": "Hình",
   "number": "2.8.4",
   "title": "",
-  "body": " Tương tác ma trận hoán vị với SageMath Interact   "
+  "body": " Trực quan hóa ma trận hoán vị với SageMath Interact   "
 },
 {
   "id": "sec-A-bang-CiRk",
@@ -961,7 +961,7 @@ var ptx_lunr_docs = [
   "type": "Mục",
   "number": "2.9",
   "title": "Biểu Diễn Rút Gọn Ma Trận <span class=\"process-math\">\\(A\\)<\/span> Theo Các Cột",
-  "body": " Biểu Diễn Rút Gọn Ma Trận Theo Các Cột     Biểu diễn thông qua các cột và hàng của .     Tương tác với SageMath Interact   Tương tác với SageMath Interact     "
+  "body": " Biểu Diễn Rút Gọn Ma Trận Theo Các Cột     Biểu diễn thông qua các cột và hàng của .     Trực quan hóa với SageMath Interact   Trực quan hóa với SageMath Interact     "
 },
 {
   "id": "sec-A-bang-CiRk-3",
@@ -979,7 +979,7 @@ var ptx_lunr_docs = [
   "type": "Hình",
   "number": "2.9.1",
   "title": "",
-  "body": " Tương tác với SageMath Interact   "
+  "body": " Trực quan hóa với SageMath Interact   "
 },
 {
   "id": "sec-hang-cua-ma-tran",

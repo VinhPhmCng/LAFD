@@ -68,7 +68,7 @@ window.MathJax = {
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "https://pretextbook.org/js/lib"
+      "pretext": "_static/pretext/js/lib"
     }
   },
   "startup": {
@@ -80,16 +80,16 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://pretextbook.org/css/0.83/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/shell_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/banner_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/navbar_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/toc_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/style_oscarlevin.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/colors_blue_red.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.83/setcolors.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>sagecell.makeSagecell({
   "inputLocation": ".sage-interact",
   "autoeval": true,
@@ -101,7 +101,37 @@ window.MathJax = {
 });
 </script><link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
 </head>
-<body class="ptx-content ignore-math" id="changeme"><div style="width:600px; height:600px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><pre class="ptx-sagecell sage-interact"><script type="text/x-sage">@interact(layout=dict(top = [['m', 'n']]))
+<body class="ptx-content ignore-math" id="changeme">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\require{mathtools}\require{color}\require{boldsymbol}\newcommand{\N}{\mathbb{N}}
+\newcommand{\pN}{\mathbb{N}^{*}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\pZ}{\mathbb{Z}^{+}}
+\newcommand{\mZ}{\mathbb{Z}^{-}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\nQ}{\bar{\mathbb{Q}}}
+\newcommand{\R}{\mathbb{R}}
+
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+
+\newcommand{\mat}[1]{\begin{matrix}#1\end{matrix}}
+\newcommand{\bmat}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\newcommand{\pmat}[1]{\begin{pmatrix}#1\end{pmatrix}}
+\newcommand{\amat}[1]{\left\langle\begin{matrix}#1\end{matrix}\right\rangle}
+\newcommand{\hvec}[1]{\bs{[}\begin{matrix}#1\end{matrix}\bs{]}} 
+
+
+\newcommand{\smat}[1]{\begin{smallmatrix}#1\end{smallmatrix}}
+\newcommand{\sbmat}[1]{\begin{bsmallmatrix}#1\end{bsmallmatrix}}
+\newcommand{\spmat}[1]{\begin{psmallmatrix}#1\end{psmallmatrix}}
+\newcommand{\samat}[1]{\left\langle\begin{smallmatrix}#1\end{smallmatrix}\right\rangle}
+\newcommand{\shvec}[1]{\bs{[}\begin{smallmatrix}#1\end{smallmatrix}\bs{]}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div style="width:600px; height:600px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><pre class="ptx-sagecell sage-interact"><script type="text/x-sage">@interact(layout=dict(top = [['m', 'n']]))
 def matrix_dimensions(
   m = ('Số hàng', 3),
   n = ('Số cột', 3),
@@ -129,5 +159,6 @@ def matrix_dimensions(
     pretty_print(html(r'$P_{1} \cdot A = %s \cdot %s = %s$' % (latex(P1), latex(A), latex(P1 * A))))
     pretty_print('\n\n')
     pretty_print(html(r'$A \cdot P_{2} = %s \cdot %s = %s$' % (latex(A), latex(P2), latex(A * P2))))
-</script></pre></div></body>
+</script></pre></div>
+</body>
 </html>
